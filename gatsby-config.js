@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Alpha Technologies`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -29,8 +29,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    // `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        // implementation: require("node-sass"),
+        cssLoaderOptions: {
+          modules: {
+            exportLocalsConvention: 'camelCaseOnly'
+          }
+        },
+        additionalData: `@use 'variables' as *;`,
+        sassOptions:{
+          includePaths:[`${__dirname}/src/styles`]
+        }
+        // data: `@import "${__dirname}/src/styles/_variables"`,
+      }
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
