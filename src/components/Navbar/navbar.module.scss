@@ -1,7 +1,16 @@
 .mainNav{
-    background-color: red;
-    width: 100%;
-    max-width: 1200px;
+    // background-color: blue;
+    width: 90%;
+    // max-width: 1200px;
     max-height: 120px;
     color: $test; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1rem 0;
+}
+.logo{
+    width: 80%;
+    // background-color: red;
 }
