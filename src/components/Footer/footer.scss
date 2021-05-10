@@ -1,0 +1,17 @@
+footer{
+    background-color: $a-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footerContent{
+        // background-color: turquoise;
+        width: 90%;
+        max-width: 2000px;
+        margin: 3rem 0;
+        p{
+            text-align: center;
+            color: $a-gray;
+            font: 400 1rem $gothic;
+        }
+    }
+}

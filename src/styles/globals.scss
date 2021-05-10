@@ -44,6 +44,16 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+
+.ml-2{
+    margin-left: 2rem;
+}
+.ml-3{
+    margin-left: 3rem;
+}
+.ml-4{
+    margin-left: 4rem;
+}
 .heroContent{
     position: relative;
     display: flex;
@@ -59,11 +69,18 @@ body {
         width: 50%;
         h1{
             font: 900 4rem $barlow;
-            margin-bottom: 1.3rem;
         }
         h2{
-            font: 400 1.5rem $barlow;
-            line-height: 40px;
+            margin-top: 1.8rem;
+            font: 400 1.4rem $barlow;
+            line-height: 35px;
+        }
+        .certifications{
+            margin-top: 3rem;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .heroContentFooter{
             width: 100%;
@@ -71,7 +88,7 @@ body {
             display: flex;
             flex-flow: column;
             justify-content: center;
-            margin-top: 1rem;
+            margin-top: 2.5rem;
             .hfButtons{
                 padding: 1rem 0;
             }
@@ -117,4 +134,30 @@ body {
         // background-color: $a-blue-hover;
         border: 2px solid $a-black;
     }
+}
+
+.flex{
+    display: flex;
+} 
+.jcBetween{
+    justify-content: space-between;
+}
+.jcAround{
+    justify-content: space-around;
+}
+.jcCenter{
+    justify-content: center;
+}
+.aiCenter{
+    align-items: center;
+}
+.aiBaseLine{
+    align-items: baseline;
+}
+.aiStrech{
+    align-items: stretch;
+}
+
+.flexColumn{
+    flex-flow: column;
 }
