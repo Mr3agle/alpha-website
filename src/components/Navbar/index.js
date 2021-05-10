@@ -1,24 +1,49 @@
 import * as React from 'react'
 import {Link} from 'gatsby'
 
-import * as styles from './navbar.module.scss'
-import Logo from '../../images/logo/AT-Logo-White.svg'
+// import * as styles from './navbar.module.scss'
+import './navbar.scss'
+import Logo from '../../images/logo/AT-Logo-Complete-Black.svg'
 
-const Navbar = () => (
-
-    <nav className={styles.mainNav}>
-        <div>
-            <Link to="/">
-                <img className={styles.logo} src={Logo} alt="AT-Logo" />
-            </Link>
-        </div>
-        <div>
-        aqui va el menu de navegación
-        <br/>
-        <Link to="page-2">Página 2</Link>
-        </div>
-    </nav>
-
-)
+class Navbar extends React.Component{
+    render(){
+        return(
+            <nav className='mainNav'>
+                <div className='logoContainer'>
+                    <Link to="/">
+                        <img className='logo' src={Logo} alt="AT-Logo" />
+                    </Link>
+                </div>
+                <div className='navLinkList'>
+                    <div >
+                        <Link to="/" className='navLink'>
+                            Inicio
+                        </Link>
+                    </div>   
+                    <div >
+                        <Link to="/" className='navLink'>
+                            Nosotros
+                        </Link>
+                    </div>   
+                    <div>
+                        <Link to="/certificados-ssl/" className='navLink'>
+                            SSL
+                        </Link>
+                    </div>   
+                    <div>
+                        <Link to="/productos/" className='navLink'>
+                            Productos
+                        </Link>
+                    </div>   
+                    <div>
+                        <Link to="/certificados-ssl/" className='navLinkBtn'>
+                            Contacto
+                        </Link>
+                    </div>   
+                </div>
+            </nav>
+        )
+    }
+}
 
 export default Navbar
