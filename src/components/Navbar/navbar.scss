@@ -23,10 +23,10 @@
 .navLink{
     background: transparent;
     padding: .3rem;
-    margin: 0 .8rem;
+    margin: 0 1.4rem;
     transition: all ease-in-out .3s;
     color: $a-black;
-    font: 800 1rem $gothic;
+    font: 400 1.1rem $rubik;
     text-decoration: none;
     position: relative;
     &::after{
@@ -53,15 +53,16 @@
     background-color: $a-blue;
     border-radius: 7px;
     padding: .7rem 1rem;
-    margin: 0 .5rem;
+    margin: 0 1.4rem;
     transition: all ease-in-out .3s;
     color: $a-white;
-    font: 600 1rem $gothic;
+    font: 400 1.1rem $rubik;
     text-decoration: none;
     position: relative;
-    transition: background ease-in-out .3s;
+    transition: all ease-in-out .3s;
     &:hover{
         background-color: $a-blue-hover;
+        box-shadow: $btn-shadow-blue
     }
 }
 

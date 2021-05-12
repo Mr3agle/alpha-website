@@ -34,11 +34,12 @@
         z-index: 2;
         width: 50%;
         h1{
-            font: 900 4rem $barlow;
+            font: 700 4rem $poppins;
+            line-height: 1;
         }
         h2{
             margin-top: 1.8rem;
-            font: 400 1.4rem $barlow;
+            font: 400 1.4rem $rubik;
             line-height: 35px;
         }
         .certifications{
@@ -73,9 +74,9 @@
 .primaryBtn{
     background-color: $a-blue;
     transition: all ease-in-out .3s;
-    font: bolder 1.3rem $barlow;
+    font: 500 1.2rem $rubik;
     border-radius: 7px;
-    padding: .8rem 1rem;
+    padding: 1rem 1.3rem;
     text-decoration: none;
     color: $a-white;
     border: 2px solid $a-blue;
@@ -83,16 +84,16 @@
     &:hover{
         background-color: $a-blue-hover;
         border: 2px solid $a-blue-hover;
-        box-shadow: 0 8px 20px -10px rgba($a-blue, $alpha: .8);
+        box-shadow: $btn-shadow-blue
     }
 }
 
 .simpleBtn{
     background-color: transparent;
     transition: all ease-in-out .3s;
-    font: 600 1.7rem $barlow;
+    font: 500 1.2rem $rubik;
     border-radius: 7px;
-    padding: .8rem 1rem;
+    padding: 1.2rem 1.5rem;
     text-decoration: none;
     color: $a-black;
     &:hover{
@@ -139,7 +140,7 @@
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 85%;
         max-width: 2000px;
         .heroContentText{
             // background-color: salmon;
@@ -148,13 +149,13 @@
             z-index: 2;
             width: 100%;
             h1{
-                font: 800 3.2rem $barlow;
+                font: 700 3rem $poppins;
                 line-height: 1;
             }
             h2{
                 margin-top: 1.8rem;
-                font: 400 1.3rem $barlow;
-                line-height: 1.5;
+                font: 400 1.3rem $rubik;
+                line-height: 1.6;
             }
             .certifications{
                 margin-top: 3rem;
@@ -188,7 +189,7 @@
     .primaryBtn{
         background-color: $a-blue;
         transition: all ease-in-out .3s;
-        font: bolder 1.3rem $barlow;
+        font: bolder 1.3rem $rubik;
         border-radius: 7px;
         padding: .8rem 1rem;
         text-decoration: none;
@@ -198,7 +199,6 @@
         &:hover{
             background-color: $a-blue-hover;
             border: 2px solid $a-blue-hover;
-            box-shadow: 0 8px 20px -10px rgba($a-blue, $alpha: .8);
         }
     }
 }

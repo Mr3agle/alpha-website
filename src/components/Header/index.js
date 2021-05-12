@@ -14,7 +14,7 @@ class Header extends React.Component{
   }
 
   handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 20) {
       document.querySelector('header').classList.add('scrolledNav')
     }else{
       document.querySelector('header').classList.remove('scrolledNav')
