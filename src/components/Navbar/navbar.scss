@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center;
 }
-
 .navLink{
     background: transparent;
     padding: .3rem;
@@ -64,4 +63,33 @@
     &:hover{
         background-color: $a-blue-hover;
     }
+}
+
+#hamburgerMenu{
+    display: none;
+}
+
+@media only screen and (max-width: 420px) {
+
+    #hamburgerMenu{
+        display: block;
+    }
+    .navLinkList{
+        display: none;
+    }
+
+    .mainNav{
+        width: 90%;
+    }
+
+    .logoContainer{
+        width: 70%;
+    }
+    
+    .logo{
+        transition: all ease-in-out .2s;
+        margin-top: 10px;
+        width: 150px;
+    }
+    
 }

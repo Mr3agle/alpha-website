@@ -1,13 +1,12 @@
 import * as React from 'react';
 import './footer.scss'
-import ATSign from '../../images/FirmaDigital02-300x88.png'
+// import ATSign from '../../images/FirmaDigital02-300x88.png'
 
 const Footer = () => (
     <footer>
         <div className="footerContent">
-            <div className="flex jcBetween aiCenter">
+            {/* <div className="flex jcBetween aiCenter">
                 <div className="ATSign flex flexColumn jcCenter aiCenter">
-                    {/* <img src={ATSign} alt="Firma AT" /> */}
                     <p>
                     Calificados como proveedores en uno de Bancos más grandes del País, siendo la entidad Certificadora: SGS.
                     </p>
@@ -15,7 +14,7 @@ const Footer = () => (
                 </div>
                 <div className="">contenido1</div>
                 <div>contenido1</div>
-            </div>    
+            </div>     */}
             <p>
                 Copyright &copy; {new Date().getFullYear()} Alpha Technologies. Todos los derechos reservados.
             </p>

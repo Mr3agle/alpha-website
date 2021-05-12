@@ -23,3 +23,13 @@
     //     width: 150px;
     // }
 }
+
+@media only screen and (max-width: 420px) {
+
+    .navHeader{
+        height: 80px;
+    }
+    .scrolledNav{
+        height: 65px;
+    }
+}
