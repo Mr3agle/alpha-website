@@ -3,10 +3,7 @@
     <img alt="Alphaside" src="https://raw.githubusercontent.com/Mr3agle/alpha-website/5696151c8f268f8330f169bac1d101024143acb6/src/images/logo/AT-Logo-Complete-Black.svg" width="120" />
   </a>
 </p>
-<h1 align="center">
-  Alpha Website 
-</h1>
-<span>(beta)</span>
+<b>(beta)</b>
 
 
 ## 🚀 Para colaboración
