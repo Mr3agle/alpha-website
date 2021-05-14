@@ -33,26 +33,35 @@ p{
     display: flex;
 } 
 .jcBetween{
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 .jcAround{
-    justify-content: space-around;
+    justify-content: space-around !important;
 }
 .jcCenter{
-    justify-content: center;
+    justify-content: center !important;
 }
 .aiCenter{
-    align-items: center;
+    align-items: center !important;
 }
-.aiBaseLine{
-    align-items: baseline;
+.aiBaseLine{ 
+    align-items: baseline !important;
 }
 .aiStrech{
-    align-items: stretch;
+    align-items: stretch !important;
+}
+.aiStart{
+    align-items: flex-start !important;
+}
+.aiEnd{
+    align-items: flex-end !important;
 }
 
 .flexColumn{
-    flex-flow: column;
+    flex-flow: column !important;
+}
+.flexRow{
+    flex-flow: row !important;
 }
 
 .ml-1{
@@ -67,21 +76,58 @@ p{
 .ml-4{
     margin-left: 4rem;
 }
+.mr-1{
+    margin-right: 1rem;
+}
+.mr-2{
+    margin-right: 2rem;
+}
+.mr-3{
+    margin-right: 3rem;
+}
+.mr-4{
+    margin-right: 4rem;
+}
 
+.hAuto{
+    height: auto !important;
+}
+.bgBlue{
+    background-color: paleturquoise;
+}
+.bgRed{
+    background-color: palevioletred;
+}
+.bgGreen{
+    background-color: palegreen;
+}
 .simpleSection{
     width: 100%;
-    max-width: 2000px;
+    max-width: 1200px;
     min-height: 50vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
-    // background-color: rosybrown;
+    // padding: 5rem 0;
+    // background-color: rgb(238, 71, 71);
+    margin: auto;
+}
+.fullWSection{
+    width: 100%;
+    // max-width: 1200px;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 5rem 0;
+    // background-color: rgb(238, 71, 71);
+    margin: auto;
 }
 
 .sectionWrapper{
-    width: 50%;
+    width: 100%;
     min-height: 50vh;
     margin: 2rem 0;
     padding: 1rem;
@@ -90,6 +136,7 @@ p{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    // background: #000;
     // border-bottom: 2px solid $a-blue-pale;
     margin-bottom: 4rem;
     h1{
@@ -137,6 +184,15 @@ p{
 .toRight-lg{
     position: relative;
     transform: translateX(20%);
+}
+
+.sectionTitle{
+    font: 700 3rem $poppins;
+    margin: 3rem 0;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    // background-color: violet;
 }
 
 @keyframes floating {

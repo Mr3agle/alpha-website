@@ -25,7 +25,7 @@
     align-items: center;
     // justify-content: space-between;
     width: 80%;
-    max-width: 2000px;
+    max-width: 1200px;
     // background-color: royalblue;
     padding: 1rem;
     .heroContentText{
@@ -110,6 +110,35 @@
 }
 .lottieMobile{
     display: none;
+}
+.counters{
+    // background-color: blue;
+    border-top: solid 1px #c7cbcf;
+    border-bottom: solid 1px #c7cbcf;
+    max-width: 1200px;
+    min-height: 20vh !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+}
+
+.upCounter{
+    align-self: stretch;
+    // background-color: green;
+    padding: .5rem;
+    margin: 2rem .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        font: bold 4rem $poppins !important;
+    }
+    p{
+        width: 70%;
+        margin: 0 !important;
+        font: 200 1.2rem $rubik !important;
+        line-height: 1.1;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -202,3 +231,4 @@
         }
     }
 }
+

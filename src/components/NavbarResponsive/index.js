@@ -5,10 +5,14 @@ import './navbarResponsive.scss'
 
 class NavbarResponsive extends React.Component{
     render(){
+        const collapse = () =>{
+            document.querySelector('.mainNavResponsive').style.height = '0vh'
+            this.toggled = false
+        }
         return(
             <nav className='mainNavResponsive'>
 
-                <div className='navLinkListResponsive'>
+                <div className='navLinkListResponsive' onClick={collapse}>
                     <div >
                         <Link to="/" className='navLinkResponsive'>
                             Inicio

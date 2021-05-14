@@ -10,26 +10,15 @@ import Logo from '../../images/logo/AT-Logo-Complete-Black.svg'
 
 class Navbar extends React.Component{
 
-    // componentDidMount(){
-    //     let isActive = false
-    // }
-    
-    // toggleHamburger = () => {
-            
-    //     isActive = !isActive
-
-    //     const hamburgerMenu = document.getElementById('hamburgerMenu')
-
-    //     if(true){
-    //         console.log(isActive)
-    //         hamburgerMenu.innerHTML = '<i className="bx bx-menu-alt-right bx-md"/>'
-    //     }
-
-    //     hamburgerMenu.innerHTML = '<i className="bx bx-x bx-md"/>'
-        
-    // }
-
     render(){
+
+        const show = () =>{
+            document.querySelector('.mainNavResponsive').style.height = '100vh'
+        }
+        
+        const collapse = () =>{
+            document.querySelector('.mainNavResponsive').style.height = '0vh'
+        }
 
         return(
             <nav className='mainNav'>
@@ -43,13 +32,15 @@ class Navbar extends React.Component{
                 </div> */}
                 <div id="hamburgerMenu">
                     <NavbarResponsive/>
-                    <Hamburger onToggle={toggled => {
+                    <Hamburger hideOutline={false} rounded size={20} onToggle={toggled => {
                         if (toggled) {
-                            document.querySelector('.mainNavResponsive').style.height = '85vh'
+                            show()
+                            console.log(toggled);
                         } else {
-                            document.querySelector('.mainNavResponsive').style.height = '0vh'
+                            collapse()
+                            console.log(toggled);
                         }
-                        }} />
+                    }} />
                 </div>
                 <div className='navLinkList'>
                     <div >
