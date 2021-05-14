@@ -29,9 +29,9 @@ class NavbarResponsive extends React.Component{
                         </Link>
                     </div>   
                     <div>
-                        <Link to="/productos/" className='navLinkResponsive'>
+                        <a href="#productos" className='navLinkResponsive'>
                             Productos
-                        </Link>
+                        </a>
                     </div>   
                     <div>
                         <Link to="/contacto/" className='navLinkBtnResponsive'>

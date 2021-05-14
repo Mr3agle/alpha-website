@@ -8,6 +8,7 @@ html {
     font: 1rem $rubik;
     box-sizing: border-box;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -20,6 +21,7 @@ body {
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
+    
 }
 
 p{
@@ -112,6 +114,7 @@ p{
     // padding: 5rem 0;
     // background-color: rgb(238, 71, 71);
     margin: auto;
+    // margin-bottom: 5rem;
 }
 .fullWSection{
     width: 100%;
@@ -124,6 +127,7 @@ p{
     // padding: 5rem 0;
     // background-color: rgb(238, 71, 71);
     margin: auto;
+    // margin-bottom: 5rem;
 }
 
 .sectionWrapper{
@@ -188,13 +192,48 @@ p{
 
 .sectionTitle{
     font: 700 3rem $poppins;
-    margin: 3rem 0;
+    margin: 7rem 0 3rem 0;
     text-align: center;
     width: 100%;
     max-width: 1200px;
     // background-color: violet;
 }
+.sectionIcons{
+    margin: 4rem 0 0 0;
+    // background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.sIcon{
+    flex: 1 0 100px;
+    // background-color: violet;
+    // width: 15%;
+    text-align: center;
+    margin: 1rem 1rem;
+    border-radius: 7px;
+    transition: all ease-in-out .3s;
+    // height: 80px;
+    img{
+        max-width: 100px;
+        width: 40%;
+        padding: 5px;
+        margin: 1rem 0 0 0;
+    }
+    h3{
+        font: 500 1.1rem $rubik;
+        margin: 1rem 0;
+    }
 
+    &:hover{
+        background-color: $a-blue-pale;
+    }
+
+}
+.rounded{
+    border-radius: 50%;
+}
 @keyframes floating {
 	0% { transform: translate(0, 0px); }
 	50% { transform: translate(0, 7px); }
@@ -256,4 +295,34 @@ p{
     }
 
     
+}
+
+.toTopBtn{
+    position: fixed;
+    opacity: 1;
+    // display: block;
+    // padding: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 35px;
+    right: 35px;
+    z-index: 1000;
+    background-color: $a-blue;
+    text-align: center;
+    transition: all .7s cubic-bezier(.71,0,.33,1.56) 0ms ;
+    transform: translateY(0px);
+    i{
+        color: $a-white;
+        font-size: 3rem;
+    }
+    &:hover{
+        background-color: $a-blue-hover;
+        box-shadow: $btn-shadow-blue;
+    }
+}
+
+.hideToTopBtn{
+    transform: translateY(300px);
+    opacity: 0;
 }

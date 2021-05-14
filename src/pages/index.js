@@ -15,31 +15,22 @@ import shieldIcon from "../images/web-browser.svg"
 // import passIcon from "../images/password.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
+import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
+import gsSecure from "../images/globalsign-icons/secure.svg"
+import gsCheck from "../images/globalsign-icons/check.svg"
+import gsCode from "../images/globalsign-icons/code.svg"
+import gsContract from "../images/globalsign-icons/contract.svg"
+import gsUser from "../images/globalsign-icons/user-images.svg"
 // import WorldVideo from '../videos/technology-world-green.mp4'
 // import WorldVideo from '../videos/Technology-geen-1.mp4'
 // import WorldVideo from '../videos/World-Blue-bg.mp4'
 
 class IndexPage extends React.Component {
-  // componentDidMount(){
-  //   window.addEventListener("scroll", this.handleScroll)
-  // }
-  // componentWillUnmount(){
-  //   window.addEventListener("scroll", this.handleScroll)
-  // }
-
-  // handleScroll = () => {
-  //   if (window.scrollY > 150) {
-  //     const start = useCountUp({duration: 5})
-  //     // document.querySelector('upCounter').classList.add('scrolledNav')
-  //   }
-  // }
-
   render() {
-    // const start = useCountUp({duration: 5})
-
     return (
       <Layout>
         <Seo title="Inicio" />
+        <div id="headerTop"></div>
         <section className="indexHero">
           <div className="heroContent">
             <div className="heroContentText">
@@ -76,7 +67,7 @@ class IndexPage extends React.Component {
         <section className="simpleSection">
           <div className="sectionWrapper">
             <div className="sectionContent">
-              <i className="bx bx-lock bx-md" />
+              <i className="bx bx-lock bx-md" style={{ marginTop: "5rem" }} />
               <h1>
                 Protección, <br /> Seguridad y Confianza
               </h1>
@@ -89,6 +80,44 @@ class IndexPage extends React.Component {
             </div>
             <div className="sectionImg">
               <img src={Globalsign} alt="Globalsign Logo" />
+            </div>
+            <div className="sectionIcons">
+              <div className="sIcon">
+                <img src={gsSSL} alt="Certificado SSL" />
+                <h3>
+                  SSL/TLS
+                </h3>
+              </div>
+              <div className="sIcon">
+                <img src={gsContract} alt="Certificado SSL" />
+                <h3>
+                  Firma Digital
+                </h3>
+              </div>
+              <div className="sIcon">
+                <img src={gsSecure} alt="Certificado SSL" />
+                <h3>
+                  Email Seguro
+                </h3>
+              </div>
+              <div className="sIcon">
+                <img src={gsCode} alt="Certificado SSL" />
+                <h3>
+                  Code Signing
+                </h3>
+              </div>
+              <div className="sIcon">
+                <img src={gsUser} alt="Certificado SSL" />
+                <h3>
+                  Autenticación
+                </h3>
+              </div>
+              <div className="sIcon">
+                <img src={gsCheck} alt="Certificado SSL" />
+                <h3>
+                  Seguridad Móvil
+                </h3>
+              </div>
             </div>
           </div>
         </section>
@@ -119,8 +148,6 @@ class IndexPage extends React.Component {
           </div>
         </section>
 
-        
-        
         <section className="simpleSection">
           <div className="cardH toeft">
             <div className="cardHImg">
@@ -129,7 +156,10 @@ class IndexPage extends React.Component {
             <div className="cardHDescription">
               <h1>Navegación segura</h1>
               <p>
-              Controla la navegación y optimiza tus recursos. Solución corporativa para administrar los recursos de navegación junto con un filtro de contenido inteligente, se integra a las necesidades de toda corporación.
+                Controla la navegación y optimiza tus recursos. Solución
+                corporativa para administrar los recursos de navegación junto
+                con un filtro de contenido inteligente, se integra a las
+                necesidades de toda corporación.
               </p>
               <Link to="/"> Saber más</Link>
             </div>
@@ -138,7 +168,10 @@ class IndexPage extends React.Component {
             <div className="cardHDescription">
               <h1>Protección máxima</h1>
               <p>
-              Evita los ataques externos. Brindamos una solución integral de seguridad perimetral. Bajo el análisis de nuestros expertos, aplicarán políticas correctas para la prevención de ataques a sus sistemas.
+                Evita los ataques externos. Brindamos una solución integral de
+                seguridad perimetral. Bajo el análisis de nuestros expertos,
+                aplicarán políticas correctas para la prevención de ataques a
+                sus sistemas.
               </p>
               <Link to="/"> Saber más</Link>
             </div>
@@ -153,14 +186,17 @@ class IndexPage extends React.Component {
             <div className="cardHDescription">
               <h1>No más spam</h1>
               <p>
-              Controla y filtra grandes cantidades de correo basura. Usa técnicas automáticas avanzadas en la filtración de correo y su administración es sencilla. Es compatible con cualquier servidor de correo Exchange, Lotus, Zimbra, etc.
+                Controla y filtra grandes cantidades de correo basura. Usa
+                técnicas automáticas avanzadas en la filtración de correo y su
+                administración es sencilla. Es compatible con cualquier servidor
+                de correo Exchange, Lotus, Zimbra, etc.
               </p>
               <Link to="/"> Saber más</Link>
             </div>
           </div>
         </section>
 
-        <section className="simpleSection">
+        <sectio id="productos" className="simpleSection">
           <h1 className="sectionTitle">Conoce nuestras soluciones</h1>
           <div className="productCards">
             <div to="/productos/" className="productCard">
@@ -236,7 +272,7 @@ class IndexPage extends React.Component {
               <Link to="/">Ver más</Link>
             </div>
           </div>
-        </section>
+        </sectio>
 
         {/* <StaticImage
           src="../images/gatsby-astronaut.png"

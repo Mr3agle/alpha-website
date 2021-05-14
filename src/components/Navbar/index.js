@@ -59,9 +59,9 @@ class Navbar extends React.Component{
                         </Link>
                     </div>   
                     <div>
-                        <Link to="/productos/" className='navLink'>
+                        <a href="#productos" className='navLink'>
                             Productos
-                        </Link>
+                        </a>
                     </div>   
                     <div>
                         <Link to="/certificados-ssl/" className='navLinkBtn'>
