@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <Seo title="Inicio" />
-        <div id="headerTop"></div>
+        <div id="inicio"></div>
         <section className="indexHero">
           <div className="heroContent">
             <div className="heroContentText">
@@ -41,9 +41,9 @@ class IndexPage extends React.Component {
               </h2>
               <div className="heroContentFooter">
                 <div className="hfButtons">
-                  <Link className="primaryBtn" to="/">
+                  <a className="primaryBtn" href="#productos">
                     Explorar Soluciones
-                  </Link>
+                  </a>
                   <Link
                     className="simpleBtn btnSSL"
                     style={{ marginLeft: "1rem" }}

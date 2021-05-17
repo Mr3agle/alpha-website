@@ -243,9 +243,7 @@ p{
 
 .toTopBtn{
     position: fixed;
-    opacity: 1;
-    // display: block;
-    // padding: 1rem;
+    visibility: hidden;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -255,7 +253,6 @@ p{
     background-color: $a-blue;
     text-align: center;
     transition: all .7s cubic-bezier(.71,0,.33,1.56) 0ms ;
-    transform: translateY(0px);
     i{
         color: $a-white;
         font-size: 3rem;
@@ -266,6 +263,11 @@ p{
     }
 }
 
+.showToTopBtn{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
 .hideToTopBtn{
     transform: translateY(300px);
     opacity: 0;
@@ -335,6 +337,27 @@ p{
         position: relative;
         transform: none;
     }
-
+    .toTopBtn{
+        position: fixed;
+        // visibility: hidden;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1000;
+        background-color: $a-blue;
+        text-align: center;
+        transition: all .7s cubic-bezier(.71,0,.33,1.56) 0ms ;
+        i{
+            color: $a-white;
+            font-size: 2.5rem;
+            margin-top: .2rem;
+        }
+        &:hover{
+            background-color: $a-blue-hover;
+            box-shadow: $btn-shadow-blue;
+        }
+    }
     
 }

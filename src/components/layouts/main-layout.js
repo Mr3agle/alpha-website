@@ -24,10 +24,11 @@ class Layout extends React.Component {
   }
 
   handleScroll = () => {
-    if (window.scrollY <= 100) {
+    if (window.scrollY <= 150) {
       document.querySelector('.toTopBtn').classList.add('hideToTopBtn')
     }else{
       document.querySelector('.toTopBtn').classList.remove('hideToTopBtn')
+      document.querySelector('.toTopBtn').classList.add('showToTopBtn')
     }
   }
 
@@ -35,7 +36,7 @@ class Layout extends React.Component {
     return (
       <>
         <Header/>
-        <a href="#headerTop" className="toTopBtn">
+        <a href="#inicio" className="toTopBtn">
           <i className="bx bxs-chevron-up"/>
         </a>
         <div>

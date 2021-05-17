@@ -69,6 +69,70 @@
 #hamburgerMenu{
     display: none;
 }
+.mainNavResponsive{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    // left: -50%;
+    // bottom: -50%;
+    // transform: translate(50%,50%);
+    transition: all ease-in-out .3s;
+    top: 100%; left: 0; bottom: 0; right: 0;
+    height: 0vh;
+    z-index: 1000;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0px 1.3rem 2rem -1rem rgba($a-black, $alpha: .2);
+
+}
+
+.navLinkListResponsive{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    div:first-child{
+        margin-top: 6rem;
+    }
+    div:not(:first-child){
+        margin-top: 2rem;
+    }
+
+    div:last-child{
+        margin-top: 3rem;
+        // position: absolute;
+        // bottom: -30%;
+        // right: 0;
+    }
+
+    div{
+        // width: 60%;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+.navLinkResponsive{
+    // background-color: paleturquoise;
+    font: 600 2.5rem $rubik;
+    // letter-spacing: 2px;
+    color: $a-black;
+    text-decoration: none;
+}
+
+.navLinkBtnResponsive{
+    padding: .7rem 3rem;
+    font: 600 2.2rem $rubik;
+    color: $a-white;
+    text-decoration: none;
+    background-color: $a-blue;
+    border-radius: 7px;
+    box-shadow: 0 12px 2rem -1rem rgba($a-blue, $alpha: 1.0);
+}
+
 
 @media only screen and (max-width: 420px) {
 
@@ -91,6 +155,17 @@
         transition: all ease-in-out .2s;
         margin-top: 10px;
         width: 150px;
+    }
+    .mainNavResponsive{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        z-index: 999;
+        height: 0vh;
+        background-color: $a-white; 
+    }
+    .mainNavResponsiveActive{
+        height: 100vh;
     }
     
 }
