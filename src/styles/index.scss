@@ -230,5 +230,35 @@
             border: 2px solid $a-blue-hover;
         }
     }
+    .counters{
+        // background-color: blue;
+        border-top: none;
+        border-bottom: none;
+        max-width: 1200px;
+        min-height: 20vh !important;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill,minmax(100%, 1fr));
+    }
+    
+    .upCounter{
+        align-self: stretch;
+        // background-color: green;
+        padding: 1rem 0;
+        margin: .5rem .3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        span{
+            font: bold 4rem $poppins !important;
+        }
+        p{
+            width: 100%;
+            margin: 0 !important;
+            font: 200 1.2rem $rubik !important;
+            line-height: 1.1;
+        }
+    }
 }
 

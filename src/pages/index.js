@@ -196,7 +196,7 @@ class IndexPage extends React.Component {
           </div>
         </section>
 
-        <sectio id="productos" className="simpleSection">
+        <section id="productos" className="simpleSection">
           <h1 className="sectionTitle">Conoce nuestras soluciones</h1>
           <div className="productCards">
             <div to="/productos/" className="productCard">
@@ -272,7 +272,7 @@ class IndexPage extends React.Component {
               <Link to="/">Ver más</Link>
             </div>
           </div>
-        </sectio>
+        </section>
 
         {/* <StaticImage
           src="../images/gatsby-astronaut.png"

@@ -240,62 +240,6 @@ p{
 	100% { transform: translate(0, -0px); }	
 }
 
-@media only screen and (max-width: 420px) {
-
-
-    .simpleSection{
-        width: 100%;
-        max-width: 2000px;
-        min-height: 50vh;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5rem 0;
-        // background-color: rosybrown;
-    }
-
-    .sectionWrapper{
-        width: 80%;
-        min-height: 50vh;
-        margin: 2rem 0;
-        padding: 1rem;
-        text-align: center;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        // border-bottom: 2px solid $a-blue-pale;
-        margin-bottom: 4rem;
-        text-align: left;
-        h1{
-            font: 700 2.5rem $poppins;
-            line-height: 1.2;
-            margin: 2rem 0 2rem 0;
-        }
-        p{
-            font: 400 1.4rem $rubik;
-            line-height: 2;
-            margin: 2rem 0 2rem 0;
-        }
-    }
-    .sectionImg{
-        margin: 2rem 0 1rem 0;
-        img{
-            width: 100%;
-        }
-    }
-
-    .floating {
-        animation-name: none;
-    }
-    .toLeft-sm, .toLeft, .toLeft-lg, .toRight-sm, .toRight, .toRight-lg{
-        position: relative;
-        transform: none;
-    }
-
-    
-}
 
 .toTopBtn{
     position: fixed;
@@ -325,4 +269,72 @@ p{
 .hideToTopBtn{
     transform: translateY(300px);
     opacity: 0;
+}
+
+@media only screen and (max-width: 420px) {
+
+
+    .simpleSection{
+        width: 100%;
+        max-width: 1500px;
+        min-height: 50vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        // background-color: rosybrown;
+    }
+
+    .sectionWrapper{
+        width: 80%;
+        min-height: 50vh;
+        margin: 2rem 0;
+        padding: 0rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        // border-bottom: 2px solid $a-blue-pale;
+        margin-bottom: 4rem;
+        text-align: left;
+        h1{
+            font: 700 2.5rem $poppins;
+            line-height: 1.2;
+            margin: 2rem 0 2rem 0;
+        }
+        p{
+            font: 400 1.4rem $rubik;
+            line-height: 2;
+            margin: 2rem 0 2rem 0;
+        }
+    }
+
+    .sectionTitle{
+        font: 700 3rem $poppins;
+        margin: 0;
+        width: 85%;
+        max-width: 1200px;
+        text-align: left;
+        // padding: 0 1rem !important;
+        // background-color: violet;
+    }
+
+    .sectionImg{
+        margin: 2rem 0 1rem 0;
+        img{
+            width: 100%;
+        }
+    }
+
+    .floating {
+        animation-name: none;
+    }
+    .toLeft-sm, .toLeft, .toLeft-lg, .toRight-sm, .toRight, .toRight-lg{
+        position: relative;
+        transform: none;
+    }
+
+    
 }

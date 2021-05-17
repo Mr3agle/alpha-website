@@ -8,7 +8,6 @@ import ATSignV from "../../images/FirmaDigital02-300x88.svg"
 const Footer = () => (
   <footer>
     <div className="footerContent">
-      <div className="flex jcBetween aiCenter">
         <div className="footerColumn ATSign">
           <h1>Nosotros</h1>
           <p>
@@ -17,7 +16,6 @@ const Footer = () => (
             seguridad web y medios digitales. Nuestros productos y servicios son
             parte del día a día del trabajo de importantes entidades bancarias.
           </p>
-          {/* <img width="75px" src={SgsSign} alt="Firma SGS" /> */}
           <img width="250px" src={ATSignV} alt="Firma AT" />
         </div>
         <div className="footerColumn">
@@ -109,7 +107,6 @@ const Footer = () => (
             </li>
           </ul>
         </div>
-      </div>
     </div>
     <div className="footerMap">
 

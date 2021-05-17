@@ -7,14 +7,15 @@ footer{
     margin-top: 5rem;
     
     .footerContent{
-        // background-color: turquoise;
+        // background-color: turquoise;box-sizing: border-box;
+
         width: 90%;
         max-width: 1200px;
         margin: 3rem 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
         // justify-content: center;
         .ATSign{
             p{
@@ -47,12 +48,9 @@ footer{
             font: 400 1rem $gothic;
             padding: 1rem 0;
         }
-        // .footerColumn:not(:first-child):not(:last-child){
-        //     border-right: 2px solid lighten($a-gray, 80);
-        //     border-left: 2px solid lighten($a-gray, 80);
-        // }
         .footerColumn{
             align-self: stretch;
+            box-sizing: border-box; 
             flex: 1 0 25%;
             // background-color: #d7ff96;
             // flex-basis: 30%;
@@ -100,5 +98,80 @@ footer{
             }
         }
     }
+    
+}
+
+@media only screen and (max-width: 420px){
+    footer{
+        overflow: hidden;
+    }
+    .footerColumn:first-child{
+        order: 3;
+    }
+    .footerColumn{
+        margin-top: 2rem;
+    }
+    // .ATSign{
+    //     p{
+    //         width: 95% !important;
+    //         margin: 0;
+    //     }
+    // }
+    // footer{
+    //     margin-top: 5rem;
+    //     width: 100%;
+    //     height: auto;
+    //     background-color: palegreen;
+    
+    //     .copyRight{
+    //         text-align: center;
+    //         color: $a-gray;
+    //         width: 100%;
+    //         background-color: lighten($color: #000000, $amount: 90);
+    //         font: 400 .9rem $rubik;
+    //         padding: 1rem 0;
+    //     }
+    
+    //     .socialList{
+    //         ul{
+    //             li{
+    //                 display: inline-block;
+    //                 a{
+    //                     i{
+    //                         font-size: 1.5rem;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+        
+    // }
+    // .footerContent{
+    //     background-color: turquoise;
+    //     width: 100%;
+    //     margin: 3rem 0;  
+    // }
+    // .footerColumn{
+    //     flex: 1 1 100%;
+    //     padding: 0 1.5rem;
+    //     ul{
+    //         list-style: none;
+    //         li{
+    //             padding: .5rem 0;
+    //             i{
+    //                 margin-right: 1rem;
+    //             }
+    //             a{
+    //                 font: 400 1.1rem $poppins;
+    //                 text-decoration: none;
+    //                 color: $a-text;
+    //                 transition: all ease-in-out .3s;
+    //                 &:hover{
+    //                     color: $a-blue;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     
 }

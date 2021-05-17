@@ -83,6 +83,7 @@
 
     &:hover{
         box-shadow: 0 1.5rem 2rem -.5rem rgba($a-black, $alpha: .12);
+        border-color: transparent;
     }
     img{
         width: 100%;
@@ -183,5 +184,61 @@
         }
     }
     
+    .productCards{
+        display: flex;
+        flex-wrap: wrap !important;
+        width: 90%;
+    }
     
+    .productCard{
+        flex: 1 0 300px;
+        box-sizing: border-box;
+        border: solid 2px $a-blue-pale;
+        padding: 1.2rem;
+        max-width: 350px;
+        border-radius: 15px;
+        margin: 1rem;
+        transition: all ease-in-out .3s;
+    
+        &:hover{
+            box-shadow: 0 1.5rem 2rem -.5rem rgba($a-black, $alpha: .12);
+            border-color: transparent;
+        }
+        img{
+            width: 100%;
+            border-radius: 12px;
+        }
+        h2{
+            padding: 0 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: .5rem;
+            font: 800 1.7rem $poppins;
+        }
+        p{
+            padding: 0 1rem;
+            font: 300 1.1rem $rubik;
+            line-height: 1.5;
+        }
+        a{
+            text-align: center;
+            display: block;
+            min-width: 25%;
+            width: 60%;
+            font: 400 1.2rem $rubik;
+            text-decoration: none;
+            color: $a-black;
+            border: solid 1px $a-black;
+            background-color: transparent;
+            padding: .7rem 2rem;
+            border-radius: 7px;
+            margin: 1.5rem 0 .2rem 1rem;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background-color: $a-blue-hover;
+                box-shadow: $btn-shadow-blue;
+                border-color: $a-blue-hover;
+                color: $a-white;
+            }
+        }
+    }
 }
