@@ -35,16 +35,16 @@ function IndexPage() {
     tl.from('h2', {x: -100, opacity:0}, "-=.9")
     tl.from('.hfButtons', {y: 100, opacity:0}, "-=.9")
     tl.from('.simpleSection', {y:150, opacity: 0}, "-=0.9")
-    gsap.gsap.from('.simpleSection',{
-      y:100,
-      opacity: 0,
-      scrollTrigger:{
-        trigger: '.simpleSection',
-        start: 'top 90%',
-        end: 'bottom 60%',
-        toggleActions: 'restar complete reverse'
-      }
-    })
+    // gsap.gsap.from('.simpleSection',{
+    //   y:100,
+    //   opacity: 0,
+    //   scrollTrigger:{
+    //     trigger: '.simpleSection',
+    //     // start: 'top 90%',
+    //     // end: 'bottom 60%',
+    //     // toggleActions: 'restar complete reverse'
+    //   }
+    // })
   },[])
 
   return (
