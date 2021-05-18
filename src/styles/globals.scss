@@ -28,8 +28,10 @@ p{
     color: $a-text;
 }
 
+
 @import './index.scss';
 @import './cards.scss';
+@import './productPages.scss';
 
 .flex{
     display: flex;

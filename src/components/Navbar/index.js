@@ -7,12 +7,20 @@ import "boxicons/css/boxicons.min.css"
 import Hamburger from "hamburger-react"
 // import NavbarResponsive from "../NavbarResponsive"
 import Logo from "../../images/logo/AT-Logo-Complete-Black.svg"
+import * as gsap from "gsap"
 
 function Navbar() {
 
 
     const [menuActive, setMenuActive] = React.useState(false)
     const show = () => setMenuActive(!menuActive)
+
+    let tl = new gsap.gsap.timeline({delay: 0.3})
+
+    React.useEffect(()=>{
+      tl.from('.logoContainer', {x: -100, opacity:0, ease: gsap.Power1.easeOut, duration: 0.7})
+      tl.from('.navLinkList', {x: 100, opacity:0, ease: gsap.Power1.easeOut, duration: 0.7}, "-=0.5")
+    }, [])
     
     return (
       <nav className="mainNav">
