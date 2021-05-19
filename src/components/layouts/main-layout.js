@@ -35,7 +35,7 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <Header/>
+        <Header isDark={this.props.isDark}/>
         <a href="#inicio" className="toTopBtn">
           <i className="bx bxs-chevron-up"/>
         </a>

@@ -3,20 +3,18 @@ import "./footer.scss"
 import { Link } from "gatsby"
 // import ATSign from "../../images/FirmaDigital02-300x88.png"
 import ATSignV from "../../images/FirmaDigital02-300x88.svg"
+import GlobalSign from "../../images/Globalsign.svg"
+// import SgsSign from "../../images/sgs-sign.png"
 // import SgsSign from "../../images/sgs-sign.png"
 
 const Footer = () => (
   <footer>
     <div className="footerContent">
         <div className="footerColumn ATSign">
-          <h1>Nosotros</h1>
-          <p>
-            Somos una empresa ecuatoriana de seguridad informática establecida
-            en Quito en el año 2001, especializada en la seguridad de datos,
-            seguridad web y medios digitales. Nuestros productos y servicios son
-            parte del día a día del trabajo de importantes entidades bancarias.
-          </p>
-          <img width="250px" src={ATSignV} alt="Firma AT" />
+         <h1>Signed by</h1>
+         <img width="250px" src={ATSignV} alt="At Sign" />
+         <img width="250px" src={GlobalSign} alt="Global Sign" />
+         {/*<img width="150px" src={SgsSign} alt="SGS Sign" />*/}
         </div>
         <div className="footerColumn">
           <h1>Servicios</h1>

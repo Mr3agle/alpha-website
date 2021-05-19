@@ -30,8 +30,10 @@ p{
 
 
 @import './index.scss';
+@import './nosotros.scss';
 @import './cards.scss';
 @import './productPages.scss';
+@import './errorPages.scss';
 
 .flex{
     display: flex;
@@ -92,7 +94,6 @@ p{
 .mr-4{
     margin-right: 4rem;
 }
-
 .hAuto{
     height: auto !important;
 }
@@ -104,6 +105,11 @@ p{
 }
 .bgGreen{
     background-color: palegreen;
+}
+.navSpacer{
+    width: 100%;
+    height: 100px;
+    // background-color: blueviolet;
 }
 .simpleSection{
     width: 100%;

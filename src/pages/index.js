@@ -1,20 +1,23 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import * as gsap from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+// import * as gsap from 'gsap'
+// import {ScrollTrigger} from 'gsap/ScrollTrigger'
 // import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
 // import CountUp, {useCountUp} from 'react-countup'
+
+
 import aSecurity from "../animations/isometric-tech-animation.json"
+
+
 import "boxicons/css/boxicons.min.css"
 
+// import aboutVideo from "../videos/alpha_tech_video.mp4"
 import Globalsign from "../images/Globalsign.svg"
-
 import shieldIcon from "../images/web-browser.svg"
-// import passIcon from "../images/password.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
 import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
@@ -26,29 +29,26 @@ import gsUser from "../images/globalsign-icons/user-images.svg"
 
 function IndexPage() {
 
-  gsap.gsap.registerPlugin(ScrollTrigger);
+  
+  // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
+  
+  // React.useEffect(()=>{
 
-  let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1})
+  //   gsap.gsap.registerPlugin(ScrollTrigger);
 
-  React.useEffect(()=>{
-    tl.from('h1', {x: -100, opacity:0})
-    tl.from('h2', {x: -100, opacity:0}, "-=.9")
-    tl.from('.hfButtons', {y: 100, opacity:0}, "-=.9")
-    tl.from('.simpleSection', {y:150, opacity: 0}, "-=0.9")
-    // gsap.gsap.from('.simpleSection',{
-    //   y:100,
-    //   opacity: 0,
-    //   scrollTrigger:{
-    //     trigger: '.simpleSection',
-    //     // start: 'top 90%',
-    //     // end: 'bottom 60%',
-    //     // toggleActions: 'restar complete reverse'
-    //   }
-    // })
-  },[])
+  //   tl.from('h1', {x: -100, opacity:0})
+  //   tl.from('h2', {x: -100, opacity:0}, "-=.9")
+  //   tl.from('.hfButtons', {y: 100, opacity:0}, "-=.9")
+  //   gsap.gsap.from('#simpleSection', {
+  //     ScrollTrigger: '#simpleSection',
+  //     y: 100, 
+  //     opacity:0,
+  //     duration: 1
+  //   })
+  // },[])
 
   return (
-    <Layout>
+    <Layout isDark>
       <Seo title="Inicio" />
       {/* <div id="inicio"></div> */}
       <section className="indexHero">
@@ -77,15 +77,15 @@ function IndexPage() {
             </div>
           </div>
           <div className="heroAnimation lottieDesktop">
-            <Lottie path={aSecurity} width={800} loop={true} />
+            <Lottie src={aSecurity} width={800} loop={true} />
           </div>
           <div className="heroAnimation lottieMobile">
-            <Lottie path={aSecurity} width={500} loop={true} />
+            <Lottie src={aSecurity} width={500} loop={true} />
           </div>
         </div>
       </section>
 
-      <section className="simpleSection">
+      <section className="simpleSection" id="animateUp">
         <div className="sectionWrapper">
           <div className="sectionContent">
             <i className="bx bx-lock bx-md" style={{ marginTop: "5rem" }} />
@@ -230,7 +230,7 @@ function IndexPage() {
               Evita los ataques externos con una solución integral de
               seguridad perimetral.
             </p>
-            <Link to="/productos/atfirewall">Ver más</Link>
+            <Link to="/soluciones/at-firewall/">Ver más</Link>
           </div>
           <div className="productCard">
             <img
@@ -242,7 +242,7 @@ function IndexPage() {
               Controla y filtra grandes cantidades de correo basura de forma
               sencilla.
             </p>
-            <Link to="/">Ver más</Link>
+            <Link to="/soluciones/at-inspector">Ver más</Link>
           </div>
           <div className="productCard">
             <img
@@ -254,7 +254,7 @@ function IndexPage() {
               Controla la navegación con un filtro de contenido inteligente y
               optimiza tus recursos.
             </p>
-            <Link to="/">Ver más</Link>
+            <Link to="/soluciones/at-proxy">Ver más</Link>
           </div>
           <div className="productCard">
             <img
@@ -266,7 +266,7 @@ function IndexPage() {
               Envía más de <b>1.000.000</b> de correos diarios sin caer en
               listas negras.
             </p>
-            <Link to="/">Ver más</Link>
+            <Link to="/soluciones/at-mailing">Ver más</Link>
           </div>
           <div className="productCard">
             <img
@@ -278,7 +278,7 @@ function IndexPage() {
               Tickets de navegación para clientes e invitados en una zona
               segura de acceso inalámbrico.
             </p>
-            <Link to="/">Ver más</Link>
+            <Link to="/soluciones/at-hotspot">Ver más</Link>
           </div>
           <div className="productCard">
             <img
@@ -290,7 +290,7 @@ function IndexPage() {
               La solución óptima para el balanceo de carga, alto rendimiento y
               alta disponibilidad.
             </p>
-            <Link to="/">Ver más</Link>
+            <Link to="/soluciones/at-logic">Ver más</Link>
           </div>
         </div>
       </section>

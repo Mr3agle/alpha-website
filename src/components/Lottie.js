@@ -1,12 +1,12 @@
 import * as React from 'react'
 import Lottie from 'react-lottie'
 
-function LottieAnim({path, width, height, loop}) {
+function LottieAnim({src, width, height, loop}) {
     
     const defaultOptions = {
         loop: loop,
         autoplay: true, 
-        animationData: path,
+        animationData: src,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         }
