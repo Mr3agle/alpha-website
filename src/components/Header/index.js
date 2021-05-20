@@ -21,10 +21,10 @@ class Header extends React.Component{
     }
   }
 
-  render(isDark){
+  render(){
     return(
       <header className='navHeader'>
-        <Navbar isDark={isDark}/>
+        <Navbar darkLogo={this.props.isDark}/>
       </header>
     )
   }

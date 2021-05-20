@@ -48,7 +48,7 @@ function IndexPage() {
   // },[])
 
   return (
-    <Layout isDark>
+    <Layout>
       <Seo title="Inicio" />
       {/* <div id="inicio"></div> */}
       <section className="indexHero">

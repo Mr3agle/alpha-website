@@ -6,6 +6,7 @@ export const NavbarData = [
     name: "Inicio",
     path: "/",
     className: "navLink",
+    classNameDark: "navLink navBgIsDark",
     classNameResponsive: "navLinkResponsive"
   },
   {
@@ -13,6 +14,7 @@ export const NavbarData = [
     name: "Nosotros",
     path: "/nosotros",
     className: "navLink",
+    classNameDark: "navLink navBgIsDark",
     classNameResponsive: "navLinkResponsive"
   },
   {
@@ -20,6 +22,7 @@ export const NavbarData = [
     name: "SSL",
     path: "/certificados-ssl",
     className: "navLink",
+    classNameDark: "navLink navBgIsDark",
     classNameResponsive: "navLinkResponsive"
   },
   {
@@ -27,6 +30,7 @@ export const NavbarData = [
     name: "Soluciones",
     path: "/soluciones",
     className: "navLink",
+    classNameDark: "navLink navBgIsDark",
     classNameResponsive: "navLinkResponsive"
   },
   {
@@ -34,6 +38,7 @@ export const NavbarData = [
     name: "Contacto",
     path: "/contacto",
     className: "navLinkBtn",
-    classNameResponsive: "navLinkResponsiveBtn",
+    classNameDark: "navLinkBtn",
+    classNameResponsive: "navLinkBtnResponsive",
   },
 ]

@@ -1,7 +1,8 @@
 .heroSection{
  position: relative;
- height: 80vh;
- // background-color: yellow;
+ height: 85vh;
+ background-color: $a-black;
+ z-index: -2;
  video{
   // text-align: center;
    display: block;
@@ -18,7 +19,7 @@
    content: "";
    width: 100%;
    height: 100%;
-   background-color: rgba($a-blue, 0.5);
+   background-color: rgba($a-blue, 0.2);
    position: absolute;
    top: 0;
    left: 0;
@@ -41,7 +42,7 @@
  flex-direction: column;
 
   h1{
-   font: 700 6rem $poppins;
+   font: 700 5rem $poppins;
    width: 70%;
    line-height: 1;
    margin-bottom: 2rem;
@@ -66,6 +67,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .clientLogo{
@@ -84,6 +86,92 @@
   }
 }
 
-// .clientLogo:nth-child(odd){
-//   background-color: paleturquoise;
-// }
+@media only screen and (max-width: 420px){
+  .heroSection{
+    overflow: hidden;
+    height: 100vh;
+    video{
+     // text-align: center;
+      display: block;
+      background-color: black;
+      width: auto;
+      height: 80%;
+      transform: translate(-100px, 50px);
+      position: relative;
+      outline: none;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+     }
+     &::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba($a-blue, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+     }
+   }
+   
+.overlayContent{
+  position: absolute;
+  top:0; left: 0; bottom: 0; right: 0;
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  top: 50%;
+  left: 50%;
+  // background-color: yellow;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ 
+   h1{
+    font: 700 3rem $poppins;
+    width: 100%;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+   }
+   h3{
+    font: 300 1.5rem $rubik;
+    // font-style: italic;
+   }
+   p{
+    color: white;
+    width: 100%;
+    font: normal 1rem $rubik;
+    line-height: 1.8;
+   }
+ }
+ 
+ .clientsShow{
+   width: 100%;
+   max-width: 1500px;
+   // background-color: palegreen;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0 0 1rem 0;
+ }
+ 
+ .clientLogo{
+   margin: .5rem 1rem;
+   padding: 1rem;
+   flex-basis: 30%;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   img{
+     width: 100%;
+     transition: all ease-in-out .3s;
+     &:hover{
+       filter: grayscale(1);
+     }
+   }
+ }
+}

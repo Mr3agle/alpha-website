@@ -13,6 +13,7 @@ import oSeguros from "../images/clients/OrienteSeguros_Logo.svg"
 import salud from "../images/clients/SaludSa_Logo.svg"
 import sercop from "../images/clients/Sercop_Logo.svg"
 import tventas from "../images/clients/Tventas_Logo.svg"
+import gsap from "gsap"
 
 function NosotrosPage() {
 
@@ -54,9 +55,15 @@ function NosotrosPage() {
       path: tventas
     }
   ]
+  React.useEffect(()=>{
+    gsap.from('#alphaTechVideo',{
+      opacity: 0,
+      duration: 3
+    })
+  })
 
   return (
-    <Layout>
+    <Layout bgDark={true}>
       <Seo title="Nosotros" />
 
       <section className="heroSection">
@@ -68,13 +75,14 @@ function NosotrosPage() {
           loop
           disablePictureInPicture
           className="headerVideo"
+          id="alphaTechVideo"
         >
           <track none kind="captions"/>
           <source src={aboutVideo} type="video/mp4" />
         </video>
         <div className="overlayContent">
           <h3>Alpha Technologies</h3>
-          <h1>Tu tranquilida es nuestro objetivo.</h1>
+          <h1>Tu seguridad es nuestro objetivo.</h1>
           <p>
           Somos una empresa ecuatoriana de seguridad informática establecida en Quito en el año 2001, especializada en la seguridad de datos, seguridad web y medios digitales. Nuestros productos y servicios son parte del día a día de grandes empresas en todo el mundo.
           </p>
@@ -84,7 +92,7 @@ function NosotrosPage() {
       <section className="simpleSection">
         <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
 
-        <div className="clientsShow mt-3">
+        <div className="clientsShow">
           {
             clients.map((item,index) => {
               return(

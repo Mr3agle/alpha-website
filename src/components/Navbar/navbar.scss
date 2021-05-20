@@ -14,6 +14,8 @@
     transition: all ease-in-out .2s;
     margin-top: 10px;
     width: 200px;
+    fill: $a-black;
+    transition: all ease-in-out .3s;
 }
 
 .navLinkList{
@@ -131,6 +133,11 @@
     background-color: $a-blue;
     border-radius: 7px;
     box-shadow: 0 12px 2rem -1rem rgba($a-blue, $alpha: 1.0);
+}
+
+.navBgIsDark{
+    color: white;
+    fill: white;
 }
 
 

@@ -11,6 +11,12 @@
     &:hover{
         background-color: white;
         box-shadow: 0 12px 2rem -1rem rgba($color: #000000, $alpha: .15);
+        .navLink{
+            color: $a-black !important;
+        }
+        .logo{
+            fill: $a-black !important;
+        }
     }
 }
 .scrolledNav{
@@ -19,7 +25,12 @@
     box-shadow: 0 12px 2rem -1rem rgba($color: #000000, $alpha: .15);
     backdrop-filter: saturate(180%) blur(20px);
     height: 70px;
-
+    .navLink{
+        color: $a-black !important;
+    }
+    .logo{
+        fill: $a-black !important;
+    }
     // .logo{
     //     width: 150px;
     // }

@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 // import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
 import notFound from "../animations/error-not-found.json"
-
+import "boxicons/css/boxicons.min.css"
 
 const NotFoundPage = () => (
   <>
@@ -14,7 +14,7 @@ const NotFoundPage = () => (
         <span className="rbigHeading">404</span>
         <p>¡Vaya! No pudimos encontrar lo que buscabas <span role="img" aria-label="sad-emoji">😓</span></p>
         <Lottie src={notFound} width={500} loop={true} />
-        <Link to="/"> Volver a Alpha </Link>
+        <Link to="/" className="primaryBtn"> <i className="bx-fw bx bx-left-arrow-alt" /> &nbsp; Volver a Alpha </Link>
       </div>
     </div>
   </>

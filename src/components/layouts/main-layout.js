@@ -17,27 +17,30 @@ class Layout extends React.Component {
   //     }
   //   }
   // `)
-  componentDidMount(){
-    window.addEventListener("scroll", this.handleScroll)
-  }
-  componentWillUnmount(){
-    window.addEventListener("scroll", this.handleScroll)
-  }
+  // componentDidMount(){
+  //   window.addEventListener("scroll", this.handleScroll)
+  // }
+  // componentWillUnmount(){
+  //   window.addEventListener("scroll", this.handleScroll)
+  // }
 
-  handleScroll = () => {
-    if (window.scrollY <= 150) {
-      document.querySelector('.toTopBtn').classList.add('hideToTopBtn')
-    }else{
-      document.querySelector('.toTopBtn').classList.remove('hideToTopBtn')
-      document.querySelector('.toTopBtn').classList.add('showToTopBtn')
-    }
+  // handleScroll = () => {
+  //   if (window.scrollY <= 150) {
+  //     document.querySelector('.toTopBtn').classList.add('hideToTopBtn')
+  //   }else{
+  //     document.querySelector('.toTopBtn').classList.remove('hideToTopBtn')
+  //     document.querySelector('.toTopBtn').classList.add('showToTopBtn')
+  //   }
+  // }
+  static defaultProps = {
+    bgDark: false
   }
 
   render() {
     return (
       <>
         <ToTopBtn/>
-        <Header/>
+        <Header isDark={this.props.bgDark }/>
         <div>
           <main>
             {/* {children} */}
