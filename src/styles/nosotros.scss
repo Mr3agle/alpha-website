@@ -57,3 +57,33 @@
    line-height: 1.5;
   }
 }
+
+.clientsShow{
+  width: 100%;
+  max-width: 1500px;
+  // background-color: palegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.clientLogo{
+  margin: .5rem 1rem;
+  padding: 1rem;
+  flex-basis: 12%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  img{
+    width: 100%;
+    transition: all ease-in-out .3s;
+    &:hover{
+      filter: grayscale(1);
+    }
+  }
+}
+
+// .clientLogo:nth-child(odd){
+//   background-color: paleturquoise;
+// }

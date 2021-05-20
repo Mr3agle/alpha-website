@@ -4,7 +4,57 @@ import Seo from "../components/seo"
 
 import aboutVideo from "../videos/alpha_tech_video.mp4"
 
+import produbanco from "../images/clients/Produbanco_Logo.svg"
+import cdComercio from "../images/clients/CamaraDeComercio_Logo.svg"
+import casabaca from "../images/clients/Casabaca_Logo.svg"
+import cnt from "../images/clients/Cnt_Logo.svg"
+import cFavorita from "../images/clients/CorporacionFavorita_Logo.svg"
+import oSeguros from "../images/clients/OrienteSeguros_Logo.svg"
+import salud from "../images/clients/SaludSa_Logo.svg"
+import sercop from "../images/clients/Sercop_Logo.svg"
+import tventas from "../images/clients/Tventas_Logo.svg"
+
 function NosotrosPage() {
+
+  const clients = [
+    {
+      name: 'Produbanco',
+      path: produbanco
+    },
+    {
+      name: 'Cámara de Comercio de Quito',
+      path: cdComercio
+    },
+    {
+      name: 'Casabaca',
+      path: casabaca
+    },
+    {
+      name: 'CNT',
+      path: cnt
+    },
+    {
+      name: 'Corporación Favorita',
+      path: cFavorita
+    },
+    {
+      name: 'Oriente Seguros',
+      path: oSeguros
+    },
+    {
+      name: 'Salud S.A',
+      path: salud
+    },
+    {
+      name: 'SERCOP',
+      path: sercop
+    },
+    {
+      name: 'TVENTAS',
+      path: tventas
+    }
+  ]
+
   return (
     <Layout>
       <Seo title="Nosotros" />
@@ -24,16 +74,27 @@ function NosotrosPage() {
         </video>
         <div className="overlayContent">
           <h3>Alpha Technologies</h3>
-          <h1>La gente confía en nosotros.</h1>
+          <h1>Tu tranquilida es nuestro objetivo.</h1>
           <p>
-          Somos una empresa ecuatoriana de seguridad informática establecida en Quito en el año 2001, especializada en la seguridad de datos, seguridad web y medios digitales. Nuestros productos y servicios son parte del día a día del trabajo de importantes entidades bancarias.
+          Somos una empresa ecuatoriana de seguridad informática establecida en Quito en el año 2001, especializada en la seguridad de datos, seguridad web y medios digitales. Nuestros productos y servicios son parte del día a día de grandes empresas en todo el mundo.
           </p>
         </div>
       </section>
 
       <section className="simpleSection">
-        <div className="simpleWrapper">
-          <h1>Esta es la página nosotros</h1>
+        <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
+
+        <div className="clientsShow mt-3">
+          {
+            clients.map((item,index) => {
+              return(
+                <div className="clientLogo" key={index}>
+                  <img src={item.path} alt={item.name} />
+                </div>
+              )
+            })
+            
+          }
         </div>
       </section>
     </Layout>

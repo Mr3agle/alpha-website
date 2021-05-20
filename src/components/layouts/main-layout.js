@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 
 import Header from "../Header"
 import Footer from "../Footer"
+import ToTopBtn from "../ToTopBtn"
 // import "./main-layout.scss"
 
 class Layout extends React.Component {
@@ -35,10 +36,8 @@ class Layout extends React.Component {
   render() {
     return (
       <>
-        <Header isDark={this.props.isDark}/>
-        <a href="#inicio" className="toTopBtn">
-          <i className="bx bxs-chevron-up"/>
-        </a>
+        <ToTopBtn/>
+        <Header/>
         <div>
           <main>
             {/* {children} */}

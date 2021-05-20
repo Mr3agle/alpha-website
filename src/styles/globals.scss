@@ -94,6 +94,30 @@ p{
 .mr-4{
     margin-right: 4rem;
 }
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
 .hAuto{
     height: auto !important;
 }
@@ -119,6 +143,8 @@ p{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
+    // background-color: palegreen;
     // padding: 5rem 0;
     // background-color: rgb(238, 71, 71);
     margin: auto;
@@ -200,12 +226,29 @@ p{
 
 .sectionTitle{
     font: 700 3rem $poppins;
-    margin: 7rem 0 3rem 0;
+    margin: 7rem 0 0 0;
     text-align: center;
     width: 100%;
     max-width: 1200px;
     // background-color: violet;
 }
+
+.text-right{
+    text-align: right !important;
+}
+.text-left{
+    text-align: left !important;
+}
+
+.sectionSubTitle{
+    margin-top: 2rem;
+    font: 400 1.5rem $rubik;
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    color: $a-text;
+}
+
 .sectionIcons{
     margin: 4rem 0 0 0;
     // background-color: wheat;
@@ -261,6 +304,7 @@ p{
     background-color: $a-blue;
     text-align: center;
     transition: all .7s cubic-bezier(.71,0,.33,1.56) 0ms ;
+    cursor: pointer;
     i{
         color: $a-white;
         font-size: 3rem;
@@ -329,6 +373,13 @@ p{
         text-align: left;
         // padding: 0 1rem !important;
         // background-color: violet;
+    }
+
+    .sectionSubTitle{
+        font: 400 1.5rem $rubik;
+        width: 85%;
+        text-align: left;
+        max-width: 1200px;
     }
 
     .sectionImg{

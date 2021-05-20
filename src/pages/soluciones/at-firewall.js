@@ -6,11 +6,11 @@ function atfirewall() {
     return (
         <Layout>
             <Seo title="AT Firewall" />
-            <div className="simpleSection">
+            <section className="simpleSection">
                 <div className="sectionWrapper">
                     <h1>Esta es la página del AT Firewall</h1>
                 </div>
-            </div>
+            </section>
         </Layout>
     )
 }

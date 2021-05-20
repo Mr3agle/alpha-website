@@ -170,6 +170,9 @@ function IndexPage() {
       </section>
 
       <section className="simpleSection">
+      <h1 className="sectionTitle">¿Seguridad Integral para tu compañía?
+      </h1>
+        <h2 className="sectionSubTitle mb-3">Deja que nos encarguemos de eso</h2>
         <div className="cardH toeft">
           <div className="cardHImg">
             <img className="floating" src={lockIcon} alt="Protección" />
@@ -187,7 +190,7 @@ function IndexPage() {
         </div>
         <div className="cardH">
           <div className="cardHDescription">
-            <h1>Protección máxima</h1>
+            <h1>Máxima protección</h1>
             <p>
               Evita los ataques externos. Brindamos una solución integral de
               seguridad perimetral. Bajo el análisis de nuestros expertos,
@@ -205,7 +208,7 @@ function IndexPage() {
             <img className="floating" src={spamIcon} alt="Protección" />
           </div>
           <div className="cardHDescription">
-            <h1>No más spam</h1>
+            <h1>Adiós al spam</h1>
             <p>
               Controla y filtra grandes cantidades de correo basura. Usa
               técnicas automáticas avanzadas en la filtración de correo y su
@@ -218,7 +221,8 @@ function IndexPage() {
       </section>
 
       <section id="productos" className="simpleSection">
-        <h1 className="sectionTitle">Conoce nuestras soluciones</h1>
+        <h1 className="sectionTitle mb-3">Conoce nuestras soluciones</h1>
+        <span className="mb-3"></span>
         <div className="productCards">
           <div className="productCard">
             <img
