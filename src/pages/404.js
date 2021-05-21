@@ -7,17 +7,21 @@ import notFound from "../animations/error-not-found.json"
 import "boxicons/css/boxicons.min.css"
 
 const NotFoundPage = () => (
-  <>
-    <div className="navSpacer"/>
-    <div class="simpleSection">
-      <div class="sectionWrapper">
+
+    <div class="errorFullScreen">
+        {/* <Lottie className="lottieDesktop" src={notFound} width={500} loop={true} />
+        <Lottie className="lottieMobile" src={notFound} width={300} loop={true} /> */}
+        <div className="lottieDesktop">
+            <Lottie src={notFound} width={500} loop={true} />
+          </div>
+          <div className="lottieMobile">
+            <Lottie src={notFound} width={300} loop={true} />
+          </div>
         <span className="rbigHeading">404</span>
         <p>¡Vaya! No pudimos encontrar lo que buscabas <span role="img" aria-label="sad-emoji">😓</span></p>
-        <Lottie src={notFound} width={500} loop={true} />
-        <Link to="/" className="primaryBtn"> <i className="bx-fw bx bx-left-arrow-alt" /> &nbsp; Volver a Alpha </Link>
-      </div>
+        <Link to="/" className="primaryBtn"> Volver a Alpha </Link>
+
     </div>
-  </>
 )
 
 export default NotFoundPage

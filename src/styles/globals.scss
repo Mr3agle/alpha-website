@@ -118,11 +118,16 @@ p{
 .mt-4{
     margin-top: 4rem;
 }
+
+.vh100{
+    height: 100vh !important;
+}
+
 .hAuto{
     height: auto !important;
 }
 .bgBlue{
-    background-color: paleturquoise;
+    background-color: $a-blue;
 }
 .bgRed{
     background-color: palevioletred;
@@ -167,6 +172,7 @@ p{
 .sectionWrapper{
     width: 100%;
     min-height: 50vh;
+    max-width: 1200px;
     margin: 2rem 0;
     padding: 1rem;
     text-align: center;
@@ -179,7 +185,7 @@ p{
     margin-bottom: 4rem;
     h1{
         font: 700 4rem $poppins;
-        line-height: 1;
+        line-height: 1.1;
         margin: 2rem 0 2rem 0;
     }
     p{
@@ -226,7 +232,7 @@ p{
 
 .sectionTitle{
     font: 700 3rem $poppins;
-    margin: 7rem 0 0 0;
+    margin: 2rem 0 0 0;
     text-align: center;
     width: 100%;
     max-width: 1200px;
@@ -249,6 +255,19 @@ p{
     color: $a-text;
 }
 
+.blackText{
+    color: $a-black !important;
+}
+.whiteText{
+    color: $a-white !important;
+}
+
+.overlapUp{
+
+    // transform: translateY(-300px) !important;
+    margin-top: -200px;
+}
+
 .sectionIcons{
     margin: 4rem 0 0 0;
     // background-color: wheat;
@@ -256,6 +275,10 @@ p{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 .sIcon{
     flex: 1 0 100px;
@@ -263,8 +286,9 @@ p{
     // width: 15%;
     text-align: center;
     margin: 1rem 1rem;
-    border-radius: 7px;
+    border-radius: 12px;
     transition: all ease-in-out .3s;
+    box-shadow: 0px .7rem 1.5rem -.5rem  rgba($a-blue, 0.2);
     // height: 80px;
     img{
         max-width: 100px;
@@ -275,10 +299,6 @@ p{
     h3{
         font: 500 1.1rem $rubik;
         margin: 1rem 0;
-    }
-
-    &:hover{
-        background-color: $a-blue-pale;
     }
 
 }

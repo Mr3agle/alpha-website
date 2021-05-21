@@ -13,16 +13,16 @@
     position: relative;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1450px;
     // background-color: royalblue;
     padding: 1rem;
     .heroContentText{
         // background-color: salmon;
         position: relative;
         z-index: 2;
-        width: 70%;
+        width: 60%;
         h1{
             font: 700 5rem $poppins;
             line-height: 1;
@@ -56,7 +56,7 @@
     }
     .heroAnimation{
         position: absolute;
-        right: -500px;
+        right: -350px;
         // background-color: sandybrown;
     }
 }
@@ -103,8 +103,8 @@
 }
 .counters{
     // background-color: blue;
-    border-top: solid 1px #c7cbcf;
-    border-bottom: solid 1px #c7cbcf;
+    // border-top: solid 1px #c7cbcf;
+    // border-bottom: solid 1px #c7cbcf;
     max-width: 1200px;
     min-height: 20vh !important;
     display: grid !important;
@@ -173,16 +173,16 @@
             }
             h2{
                 margin-top: 1.8rem;
-                font: 400 1.3rem $rubik;
-                line-height: 1.6;
+                font: 400 1rem $rubik;
+                line-height: 1.8;
             }
-            .certifications{
-                margin-top: 3rem;
-                width: 80%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
+            // .certifications{
+            //     margin-top: 3rem;
+            //     width: 80%;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: space-between;
+            // }
             .heroContentFooter{
                 width: 100%;
                 // background-color: sandybrown;

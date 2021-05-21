@@ -56,7 +56,7 @@ function NosotrosPage() {
     }
   ]
   React.useEffect(()=>{
-    gsap.from('#alphaTechVideo',{
+    gsap.from('.headerVideo',{
       opacity: 0,
       duration: 3
     })
@@ -74,6 +74,7 @@ function NosotrosPage() {
           playsInline
           loop
           disablePictureInPicture
+          muted="true"
           className="headerVideo"
           id="alphaTechVideo"
         >
@@ -82,7 +83,7 @@ function NosotrosPage() {
         </video>
         <div className="overlayContent">
           <h3>Alpha Technologies</h3>
-          <h1>Tu seguridad es nuestro objetivo.</h1>
+          <h1>Cyberseguridad al siguiente nivel.</h1>
           <p>
           Somos una empresa ecuatoriana de seguridad informática establecida en Quito en el año 2001, especializada en la seguridad de datos, seguridad web y medios digitales. Nuestros productos y servicios son parte del día a día de grandes empresas en todo el mundo.
           </p>
@@ -104,6 +105,10 @@ function NosotrosPage() {
             
           }
         </div>
+      </section>
+
+      <section className="sectionBG">
+
       </section>
     </Layout>
   )

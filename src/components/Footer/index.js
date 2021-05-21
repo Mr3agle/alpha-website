@@ -12,8 +12,9 @@ const Footer = () => (
     <div className="footerContent">
         <div className="footerColumn ATSign">
          <h1>Signed by</h1>
-         <img width="250px" src={ATSignV} alt="At Sign" />
-         <img width="250px" src={GlobalSign} alt="Global Sign" />
+         <img width="200px" src={GlobalSign} alt="Global Sign" />
+         <div className="mt-1" />
+         <img width="200px" src={ATSignV} alt="At Sign" />
          {/*<img width="150px" src={SgsSign} alt="SGS Sign" />*/}
         </div>
         <div className="footerColumn">
@@ -26,7 +27,7 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/soluciones/at-drone">
                 <i className="bx bx-loader"></i>
                 AT Drone
               </Link>

@@ -63,13 +63,14 @@
 
 .productCards{
     display: flex;
-    // justify-content: flex-start;
-    // align-items: center;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap !important;
     max-width: 100%;
 }
 
 .productCard{
+    align-self: stretch;
     flex: 1 0 350px;
     box-sizing: border-box;
     border: solid 2px $a-blue-pale;

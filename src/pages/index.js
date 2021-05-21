@@ -9,9 +9,7 @@ import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
 // import CountUp, {useCountUp} from 'react-countup'
 
-
 import aSecurity from "../animations/isometric-tech-animation.json"
-
 
 import "boxicons/css/boxicons.min.css"
 
@@ -20,18 +18,16 @@ import Globalsign from "../images/Globalsign.svg"
 import shieldIcon from "../images/web-browser.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
-import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
-import gsSecure from "../images/globalsign-icons/secure.svg"
-import gsCheck from "../images/globalsign-icons/check.svg"
-import gsCode from "../images/globalsign-icons/code.svg"
-import gsContract from "../images/globalsign-icons/contract.svg"
-import gsUser from "../images/globalsign-icons/user-images.svg"
+// import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
+// import gsSecure from "../images/globalsign-icons/secure.svg"
+// import gsCheck from "../images/globalsign-icons/check.svg"
+// import gsCode from "../images/globalsign-icons/code.svg"
+// import gsContract from "../images/globalsign-icons/contract.svg"
+// import gsUser from "../images/globalsign-icons/user-images.svg"
 
 function IndexPage() {
-
-  
   // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
-  
+
   // React.useEffect(()=>{
 
   //   gsap.gsap.registerPlugin(ScrollTrigger);
@@ -41,7 +37,7 @@ function IndexPage() {
   //   tl.from('.hfButtons', {y: 100, opacity:0}, "-=.9")
   //   gsap.gsap.from('#simpleSection', {
   //     ScrollTrigger: '#simpleSection',
-  //     y: 100, 
+  //     y: 100,
   //     opacity:0,
   //     duration: 1
   //   })
@@ -54,25 +50,25 @@ function IndexPage() {
       <section className="indexHero">
         <div className="heroContent">
           <div className="heroContentText">
-            <h1>Innovación es nuestro segundo nombre.</h1>
+            <h1>La innovación es nuestro segundo nombre.</h1>
+            {/* <h1>Innovación es nuestro segundo nombre.</h1> */}
             <h2>
-              Soluciones integrales de Seguridad Informática sustentados en
-              las tecnologías de la información y la comunicación.
+              Soluciones integrales de Seguridad Informática sustentados en las
+              tecnologías de la información y la comunicación.
             </h2>
             <div className="heroContentFooter">
               <div className="hfButtons">
-                
-                  <a className="primaryBtn" href="#productos">
-                    Explorar Soluciones
-                  </a>
-                  <Link
-                    className="simpleBtn btnSSL"
-                    style={{ marginLeft: "1rem" }}
-                    to="/"
-                    >
-                    <i className="bx bx-fw bx-check-shield bx-md" />
-                    Certificados SSL
-                  </Link>
+                <a className="primaryBtn" href="#productos">
+                  Explorar Soluciones
+                </a>
+                <Link
+                  className="simpleBtn btnSSL"
+                  style={{ marginLeft: "1rem" }}
+                  to="/"
+                >
+                  <i className="bx bx-fw bx-check-shield bx-md" />
+                  Certificados SSL
+                </Link>
               </div>
             </div>
           </div>
@@ -93,16 +89,16 @@ function IndexPage() {
               Protección, <br /> Seguridad y Confianza
             </h1>
             <p>
-              Por seis años consecutivos somos distribuidores de GlobalSign,
-              que es el proveedor líder a nivel mundial de soluciones de
-              Seguridad e Identidad Segura y a la fecha somos representantes
-              exclusivos para Ecuador de este socio de negocios.
+              Por seis años consecutivos somos distribuidores de GlobalSign, que
+              es el proveedor líder a nivel mundial de soluciones de Seguridad e
+              Identidad Segura y a la fecha somos representantes exclusivos para
+              Ecuador de este socio de negocios.
             </p>
           </div>
           <div className="sectionImg">
             <img src={Globalsign} alt="Globalsign Logo" />
           </div>
-          <div className="sectionIcons">
+          {/* <div className="sectionIcons">
             <div className="sIcon">
               <img src={gsSSL} alt="Certificado SSL" />
               <h3>
@@ -139,7 +135,7 @@ function IndexPage() {
                 Seguridad Móvil
               </h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -155,9 +151,7 @@ function IndexPage() {
           </div>
           <div className="upCounter">
             <span>5M +</span>
-            <p>
-              Identificaciones digitales emitidas a sitios web y máquinas.
-            </p>
+            <p>Identificaciones digitales emitidas a sitios web y máquinas.</p>
           </div>
           <div className="upCounter">
             <span>200B +</span>
@@ -169,11 +163,21 @@ function IndexPage() {
         </div>
       </section>
 
-      <section className="simpleSection">
-      <h1 className="sectionTitle">¿Seguridad Integral para tu compañía?
-      </h1>
-        <h2 className="sectionSubTitle mb-3">Deja que nos encarguemos de eso</h2>
-        <div className="cardH toeft">
+      <div className="fullWSection vh100 bgBlue">
+        <div className="sectionContent">
+          <div className="sectionWrapper">
+            <h2 className="sectionSubTitle whiteText">
+              ¿Intranquilo porque no sabes si tus datos están protegidos?
+            </h2>
+            <h1 className="sectionTitle mt-4 whiteText">
+              Nos encargamos de <br/> devolverte la tranquilidad.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <section className="simpleSection overlapUp">
+        <div className="cardH">
           <div className="cardHImg">
             <img className="floating" src={lockIcon} alt="Protección" />
           </div>
@@ -181,9 +185,9 @@ function IndexPage() {
             <h1>Navegación segura</h1>
             <p>
               Controla la navegación y optimiza tus recursos. Solución
-              corporativa para administrar los recursos de navegación junto
-              con un filtro de contenido inteligente, se integra a las
-              necesidades de toda corporación.
+              corporativa para administrar los recursos de navegación junto con
+              un filtro de contenido inteligente, se integra a las necesidades
+              de toda corporación.
             </p>
             <Link to="/"> Saber más</Link>
           </div>
@@ -194,8 +198,8 @@ function IndexPage() {
             <p>
               Evita los ataques externos. Brindamos una solución integral de
               seguridad perimetral. Bajo el análisis de nuestros expertos,
-              aplicarán políticas correctas para la prevención de ataques a
-              sus sistemas.
+              aplicarán políticas correctas para la prevención de ataques a sus
+              sistemas.
             </p>
             <Link to="/"> Saber más</Link>
           </div>
@@ -231,8 +235,8 @@ function IndexPage() {
             />
             <h2>AT Firewall</h2>
             <p>
-              Evita los ataques externos con una solución integral de
-              seguridad perimetral.
+              Evita los ataques externos con una solución integral de seguridad
+              perimetral.
             </p>
             <Link to="/soluciones/at-firewall/">Ver más</Link>
           </div>
@@ -279,8 +283,8 @@ function IndexPage() {
             />
             <h2>AT Hot Spot</h2>
             <p>
-              Tickets de navegación para clientes e invitados en una zona
-              segura de acceso inalámbrico.
+              Tickets de navegación para clientes e invitados en una zona segura
+              de acceso inalámbrico.
             </p>
             <Link to="/soluciones/at-hotspot">Ver más</Link>
           </div>
@@ -308,7 +312,6 @@ function IndexPage() {
       /> */}
     </Layout>
   )
-  
 }
 
 export default IndexPage

@@ -1,4 +1,37 @@
+.errorFullScreen{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+    overflow: hidden;
+    text-align: center;
+    
+    p{
+        padding: 0 1rem;
+        font: 400 1.3rem $poppins;
+        margin: 0 0 2rem 0;
+    }
+}
 .rbigHeading{
-    font: 700 10rem $poppins !important;
-    color: $a-black;
+    font: 700 35rem $poppins;
+    color: darken($a-blue-pale, 3);
+    // background-color: rebeccapurple;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-120px);
+
+}
+@media only screen and (max-width: 420px) {
+
+    .rbigHeading{
+        font-size: 15rem;
+    }
+    .errorFullScreen{
+
+    }
+    
 }

@@ -1,17 +1,19 @@
 .mainNav{
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
+    max-width: 1500px;
     color: $a-black; 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // background-color: yellowgreen;
 }
 .logoContainer{
     width: 18%;
+    // background-color: rebeccapurple;
+    margin-left: 1rem;
 }
 
 .logo{
-    transition: all ease-in-out .2s;
     margin-top: 10px;
     width: 200px;
     fill: $a-black;
