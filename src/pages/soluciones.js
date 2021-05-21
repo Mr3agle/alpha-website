@@ -10,6 +10,9 @@ function SolucionesPage() {
       <div className="navSpacer"/>
       <section id="productos" className="simpleSection">
         <h1 className="sectionTitle mb-3">Conoce nuestras soluciones</h1>
+        <h2 className="sectionSubTitle">
+          Desarrolladas para el mañana listas para implementar hoy.
+        </h2>
         <span className="mb-3"></span>
         <div className="productCards">
           <div className="productCard">
@@ -83,6 +86,17 @@ function SolucionesPage() {
               alta disponibilidad.
             </p>
             <Link to="/soluciones/at-logic">Ver más</Link>
+          </div>
+          <div className="productCard">
+            <img
+              src="https://www.alphaside.com/wp-content/uploads/2020/02/dron2-1024x630-1.jpg"
+              alt="AT-Logic"
+            />
+            <h2>AT Drone</h2>
+            <p>
+              Drones de alto rendimiento pensados para todo tipo de proyecto táctico o multimedia.
+            </p>
+            <Link to="/soluciones/at-drone">Ver más</Link>
           </div>
         </div>
       </section>

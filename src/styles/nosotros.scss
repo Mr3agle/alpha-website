@@ -96,7 +96,16 @@
     }
 }
 
-@media only screen and(max-width: 420px) {
+.sectionBg{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: $a-blue;
+}
+
+@media only screen and(max-width: 640px) {
     .heroSection {
         overflow: hidden;
         height: 100vh;

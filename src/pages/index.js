@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
+import {clients} from "../data/clientsData"
 // import CountUp, {useCountUp} from 'react-countup'
 
 import aSecurity from "../animations/isometric-tech-animation.json"
@@ -15,7 +16,7 @@ import "boxicons/css/boxicons.min.css"
 
 // import aboutVideo from "../videos/alpha_tech_video.mp4"
 import Globalsign from "../images/Globalsign.svg"
-import bgImg1 from "../images/bg_img2.jpg"
+// import bgImg1 from "../images/bg_img2.jpg"
 import shieldIcon from "../images/web-browser.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
@@ -59,13 +60,13 @@ function IndexPage() {
             </h2>
             <div className="heroContentFooter">
               <div className="hfButtons">
-                <a className="primaryBtn" href="#productos">
+                <Link className="primaryBtn" to="/soluciones">
                   Explorar Soluciones
-                </a>
+                </Link>
                 <Link
                   className="simpleBtn btnSSL"
                   style={{ marginLeft: "1rem" }}
-                  to="/"
+                  to="/certificados-ssl"
                 >
                   <i className="bx bx-fw bx-check-shield bx-md" />
                   Certificados SSL
@@ -164,21 +165,14 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="fullWSection bgBlue simpleOverlay" style={{
-        backgroundImage: `url(${bgImg1})`,
-        backgroundPosition: "center center",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        zIndex: "-2"
-      }}>
+      <div className="fullWSection bgBlue" >
         <div className="sectionContent">
           <div className="sectionWrapper">
             <h2 className="sectionSubTitle whiteText">
               ¿Intranquilo porque no sabes si tus datos están protegidos?
             </h2>
             <h1 className="sectionTitle mt-4 whiteText">
-              Nos encargamos de <br/> devolverte la tranquilidad.
+              Podemos devolverte la tranquilidad.
             </h1>
           </div>
         </div>
@@ -229,6 +223,20 @@ function IndexPage() {
             </p>
             <Link to="/"> Saber más</Link>
           </div>
+        </div>
+      </section>
+
+      <section className="simpleSection">
+        <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
+
+        <div className="clientsShow">
+          {clients.map((item, index) => {
+            return (
+              <div className="clientLogo" key={index}>
+                <img src={item.path} alt={item.name} />
+              </div>
+            )
+          })}
         </div>
       </section>
 

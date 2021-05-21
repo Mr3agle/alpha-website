@@ -4,70 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper.min.css"
 import "swiper/components/pagination/pagination.min.css"
 
-import SwiperCore, { Pagination } from "swiper/core"
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core"
 
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 
 import aboutVideo from "../videos/alpha_tech_video.mp4"
+import {clients} from '../data/clientsData'
 
-import produbanco from "../images/clients/Produbanco_Logo.svg"
-import cdComercio from "../images/clients/CamaraDeComercio_Logo.svg"
-import casabaca from "../images/clients/Casabaca_Logo.svg"
-import cnt from "../images/clients/Cnt_Logo.svg"
-import cFavorita from "../images/clients/CorporacionFavorita_Logo.svg"
-import oSeguros from "../images/clients/OrienteSeguros_Logo.svg"
-import salud from "../images/clients/SaludSa_Logo.svg"
-import sercop from "../images/clients/Sercop_Logo.svg"
-import tventas from "../images/clients/Tventas_Logo.svg"
+import commentsBg from "../images/bg_comments2.jpg"
 import gsap from "gsap"
 
+SwiperCore.use([Autoplay, Pagination, Navigation])
+
 function NosotrosPage() {
-  const clients = [
-    {
-      name: "Produbanco",
-      path: produbanco,
-    },
-    {
-      name: "Cámara de Comercio de Quito",
-      path: cdComercio,
-    },
-    {
-      name: "Casabaca",
-      path: casabaca,
-    },
-    {
-      name: "CNT",
-      path: cnt,
-    },
-    {
-      name: "Corporación Favorita",
-      path: cFavorita,
-    },
-    {
-      name: "Oriente Seguros",
-      path: oSeguros,
-    },
-    {
-      name: "Salud S.A",
-      path: salud,
-    },
-    {
-      name: "SERCOP",
-      path: sercop,
-    },
-    {
-      name: "TVENTAS",
-      path: tventas,
-    },
-  ]
+  
   React.useEffect(() => {
     gsap.from(".headerVideo", {
       opacity: 0,
       duration: 3,
     })
   })
-  SwiperCore.use([Pagination])
 
   return (
     <Layout bgDark={true}>
@@ -90,7 +47,7 @@ function NosotrosPage() {
         </video>
         <div className="overlayContent">
           <h3>Alpha Technologies</h3>
-          <h1>Cyberseguridad al siguiente nivel.</h1>
+          <h1>Tu seguridad es nuestro objetivo.</h1>
           <p>
             Somos una empresa ecuatoriana de seguridad informática establecida
             en Quito en el año 2001, especializada en la seguridad de datos,
@@ -100,39 +57,83 @@ function NosotrosPage() {
         </div>
       </section>
 
-      <section className="simpleSection">
-        <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
+      <section className="simpleSection" id="animateUp">
+        <div className="sectionWrapper">
+          <div className="sectionContent">
+            <div className="navSpacer"/>
+            <h2 className="sectionSubTitle">
+            En esta era digital necesitas estar alerta de posibles amenazas 
+            </h2>
+            <h1>
+            Con 19 años de trayecotria <br/> lo haremos por ti
+              
+            </h1>
+            
+            {/* <div className="sectionImg">
+              <img src={Globalsign} alt="Globalsign Logo" />
+            </div> */}
+            <p>
+             Nuestro equipo especializado en seguridad de datos, seguridad web y medios digitales puede asegurar las áreas más vulnerables de todo tu flujo de trabajo mientras estás conectado.
 
-        <div className="clientsShow">
-          {clients.map((item, index) => {
-            return (
-              <div className="clientLogo" key={index}>
-                <img src={item.path} alt={item.name} />
-              </div>
-            )
-          })}
+             Brindamos soluciones integrales de Seguridad Informática sustentados en las tecnologías de la información y la comunicación con colaboradores profesionalmente capacitados y comprometidos con la calidad de nuestros servicios para alcanzar la satisfacción de los clientes y la mejora continua de nuestros procesos.
+             
+            </p>
+
+          </div>
+         
         </div>
       </section>
 
-      <section className="sectionBG vh100 bgBlue">
+      <section
+        className="sectionBg fullWSection simpleOverlay"
+        style={{
+          backgroundImage: `url(${commentsBg})`,
+          backgroundColor: "#000"
+        }}
+      >
+        <h1 className="sectionTitle whiteText mt-4">
+        Las corporaciones más grandes <br/> del país ya cofían en nosotros.
+        </h1>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={20}
           centeredSlides={true}
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          autoplay={{
+            "delay": 2500,
+            "disableOnInteraction": true
+          }}
           className="mySwiper"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+
+          {
+            clients.map((item,index)=>{
+              return(item.comment &&
+                <SwiperSlide key={index}>
+                  <img src={item.path} alt={item.name} />
+                  <p>"{item.comment}"</p>
+                  <small>&#8213; {item.product}</small>
+                </SwiperSlide>
+              )
+            })
+          }
+
         </Swiper>
       </section>
     </Layout>

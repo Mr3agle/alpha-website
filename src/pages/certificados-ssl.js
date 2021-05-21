@@ -36,9 +36,9 @@ function CertificadosSSLPage() {
           <source src={sslVideo} type="video/mp4" />
         </video>
         <div className="overlayContent">
-          <h1>Tu seguridad es nuestro objetivo.</h1>
+          <h1>Los certificados digitales más confiables.</h1>
           <p>
-          Las herramientas, los servicios y los productos SSL que necesitas para proteger los servidores públicos e internos y combatir amenazas.
+          Herramientas, servicios y productos SSL/TLS que necesarios para proteger tus servidores públicos e internos y combatir amenazas con tecnología de útima generación.
           </p>
         </div>
       </section>
@@ -53,7 +53,7 @@ function CertificadosSSLPage() {
               <img src={Globalsign} alt="Globalsign Logo" />
             </div> */}
             <p>
-            Necesitas el mayor nivel de cifrado y recursos de valor agregado para asegurar tu sitio web, aplicación o tienda online.
+            El mayor nivel de cifrado y recursos de valor agregado para asegurar tu sitio web, aplicación o tienda online.
             Estarás protegidos y al día con las necesidades actuales de confianza. Clientes y visitantes sabrán que la navegación en tu sitio es segura y que los detalles de pago e informaciones personales están protegidos y fuertemente encriptados.
             </p>
           </div>

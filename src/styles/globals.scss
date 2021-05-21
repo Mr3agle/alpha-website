@@ -34,6 +34,7 @@ p{
 @import './cards.scss';
 @import './productPages.scss';
 @import './errorPages.scss';
+@import './swiper.scss';
 
 .flex{
     display: flex;
@@ -94,29 +95,32 @@ p{
 .mr-4{
     margin-right: 4rem;
 }
+.m-0{
+    margin: 0 !important;
+}
 .mb-1{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 .mb-2{
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 }
 .mb-3{
-    margin-bottom: 3rem;
+    margin-bottom: 3rem !important;
 }
 .mb-4{
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
 }
 .mt-1{
-    margin-top: 1rem;
+    margin-top: 1rem !important;
 }
 .mt-2{
-    margin-top: 2rem;
+    margin-top: 2rem !important;
 }
 .mt-3{
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 .mt-4{
-    margin-top: 4rem;
+    margin-top: 4rem !important;
 }
 
 .vh100{
@@ -127,7 +131,8 @@ p{
     height: auto !important;
 }
 .bgBlue{
-    background-color: $a-blue;
+    background: rgb(0,17,36);
+    background: linear-gradient(333deg, rgba(0,17,36,1) 0%, rgba(11,48,112,1) 38%, rgba(0,63,158,1) 100%);
 }
 .bgRed{
     background-color: palevioletred;
@@ -269,13 +274,13 @@ p{
 .simpleOverlay{
     position: relative;
     &::after{
+        z-index: -1;
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         right: 0;
-        z-index: -1;
         background-color: rgba($a-black, .6);
     }
 }
@@ -300,7 +305,7 @@ p{
     margin: 1rem 1rem;
     border-radius: 12px;
     transition: all ease-in-out .3s;
-    box-shadow: 0px .7rem 1.5rem -.5rem  rgba($a-blue, 0.2);
+    box-shadow: 0px .9rem 1rem -.5rem  rgba($a-black, 0.1);
     // height: 80px;
     img{
         max-width: 100px;
@@ -357,7 +362,7 @@ p{
     opacity: 0;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 640px) {
 
 
     .simpleSection{
@@ -373,7 +378,7 @@ p{
     }
 
     .sectionWrapper{
-        width: 80%;
+        width: 85%;
         min-height: 50vh;
         margin: 2rem 0;
         padding: 0rem 1rem;
@@ -386,7 +391,7 @@ p{
         margin-bottom: 4rem;
         text-align: left;
         h1{
-            font: 700 2.5rem $poppins;
+            font: 700 2.2rem $poppins;
             line-height: 1.2;
             margin: 2rem 0 2rem 0;
         }
@@ -397,8 +402,12 @@ p{
         }
     }
 
+    // .overlapUp{
+    //     margin-top: -70px;
+    // }
+
     .sectionTitle{
-        font: 700 3rem $poppins;
+        font: 700 2.2rem $poppins;
         margin: 0;
         width: 85%;
         max-width: 1200px;
@@ -410,7 +419,7 @@ p{
     }
 
     .sectionSubTitle{
-        font: 400 1.5rem $rubik;
+        font: 400 1.2rem $rubik;
         width: 85%;
         text-align: left;
         max-width: 1200px;
@@ -451,6 +460,10 @@ p{
             background-color: $a-blue-hover;
             box-shadow: $btn-shadow-blue;
         }
+    }
+
+    .navSpacer{
+        height: 20px;
     }
     
 }
