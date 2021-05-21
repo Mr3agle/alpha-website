@@ -46,13 +46,13 @@ function CertificadosSSLPage() {
         <div className="sectionWrapper">
           <div className="sectionContent">
             <div className="navSpacer"/>
-            <h1>
+            <h1 className="titleUnderLine">
               Soluciones para cada Endpoint 
             </h1>
             {/* <div className="sectionImg">
               <img src={Globalsign} alt="Globalsign Logo" />
             </div> */}
-            <p>
+            <p className="mt-4">
             El mayor nivel de cifrado y recursos de valor agregado para asegurar tu sitio web, aplicación o tienda online.
             Estarás protegidos y al día con las necesidades actuales de confianza. Clientes y visitantes sabrán que la navegación en tu sitio es segura y que los detalles de pago e informaciones personales están protegidos y fuertemente encriptados.
             </p>

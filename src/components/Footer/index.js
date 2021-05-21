@@ -33,25 +33,25 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <a href="https://www.globalsign.com/es/managed-ssl" target="_blank" rel="noreferrer">
                 <i className="bx bx-certification"></i>
                 SSL Global Sign
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/contacto">
                 <i className="bx bx-user-circle"></i>
                 Consultorías
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/contacto">
                 <i className="bx bx-bug"></i>
                 Análisis de Vulnerabilidad
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/contacto">
                 <i className="bx bx-code-alt"></i>
                 Seguridad informática
               </Link>

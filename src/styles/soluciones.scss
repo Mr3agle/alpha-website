@@ -1,0 +1,14 @@
+.titleUnderLine {
+    position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: $a-blue;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+  }
+}

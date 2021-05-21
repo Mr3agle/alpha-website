@@ -7,10 +7,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
-import {clients} from "../data/clientsData"
+import { clients } from "../data/clientsData"
 // import CountUp, {useCountUp} from 'react-countup'
 
 import aSecurity from "../animations/isometric-tech-animation.json"
+import aContact from "../animations/computer-contact.json"
 
 import "boxicons/css/boxicons.min.css"
 
@@ -87,10 +88,10 @@ function IndexPage() {
         <div className="sectionWrapper">
           <div className="sectionContent">
             <i className="bx bx-lock bx-md" style={{ marginTop: "5rem" }} />
-            <h1>
+            <h1 className="titleUnderLine">
               Protección, <br /> Seguridad y Confianza
             </h1>
-            <p>
+            <p className="mt-4">
               Por seis años consecutivos somos distribuidores de GlobalSign, que
               es el proveedor líder a nivel mundial de soluciones de Seguridad e
               Identidad Segura y a la fecha somos representantes exclusivos para
@@ -100,44 +101,6 @@ function IndexPage() {
           <div className="sectionImg">
             <img src={Globalsign} alt="Globalsign Logo" />
           </div>
-          {/* <div className="sectionIcons">
-            <div className="sIcon">
-              <img src={gsSSL} alt="Certificado SSL" />
-              <h3>
-                SSL/TLS
-              </h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsContract} alt="Certificado SSL" />
-              <h3>
-                Firma Digital
-              </h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsSecure} alt="Certificado SSL" />
-              <h3>
-                Email Seguro
-              </h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsCode} alt="Certificado SSL" />
-              <h3>
-                Code Signing
-              </h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsUser} alt="Certificado SSL" />
-              <h3>
-                Autenticación
-              </h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsCheck} alt="Certificado SSL" />
-              <h3>
-                Seguridad Móvil
-              </h3>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -165,7 +128,7 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="fullWSection bgBlue" >
+      <div className="fullWSection bgBlue">
         <div className="sectionContent">
           <div className="sectionWrapper">
             <h2 className="sectionSubTitle whiteText">
@@ -191,10 +154,10 @@ function IndexPage() {
               un filtro de contenido inteligente, se integra a las necesidades
               de toda corporación.
             </p>
-            <Link to="/"> Saber más</Link>
+            <Link to="/servicios/at-proxy"> Saber más</Link>
           </div>
         </div>
-        <div className="cardH">
+        <div className="cardH toLeft">
           <div className="cardHDescription">
             <h1>Máxima protección</h1>
             <p>
@@ -203,13 +166,13 @@ function IndexPage() {
               aplicarán políticas correctas para la prevención de ataques a sus
               sistemas.
             </p>
-            <Link to="/"> Saber más</Link>
+            <Link to="/servicios/at-firewall"> Saber más</Link>
           </div>
           <div className="cardHImg">
             <img className="floating" src={shieldIcon} alt="Protección" />
           </div>
         </div>
-        <div className="cardH">
+        <div className="cardH toRight">
           <div className="cardHImg">
             <img className="floating" src={spamIcon} alt="Protección" />
           </div>
@@ -221,12 +184,12 @@ function IndexPage() {
               administración es sencilla. Es compatible con cualquier servidor
               de correo Exchange, Lotus, Zimbra, etc.
             </p>
-            <Link to="/"> Saber más</Link>
+            <Link to="/servicios/at-inspector"> Saber más</Link>
           </div>
         </div>
       </section>
 
-      <section className="simpleSection">
+      <section className="simpleSection mt-4">
         <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
 
         <div className="clientsShow">
@@ -239,6 +202,25 @@ function IndexPage() {
           })}
         </div>
       </section>
+
+      <div className="containerFull">
+        <div className="helpCTA">
+          <div>
+            <h1>
+              ¿Necesitas ayuda para escoger un servicio?
+            </h1>
+            <Link className="primaryBtn" to="/contacto">
+              Ponte en contacto
+            </Link>
+          </div>
+          <div className="lottieDesktop">
+            <Lottie src={aContact} width={800} loop={true} />
+          </div>
+          <div className="lottieMobile">
+            <Lottie src={aContact} width={600} loop={true} />
+          </div>
+        </div>
+      </div>
 
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"

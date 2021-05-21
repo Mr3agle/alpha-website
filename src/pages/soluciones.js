@@ -8,12 +8,14 @@ function SolucionesPage() {
     <Layout>
       <Seo title="Soluciones y Servicios" />
       <div className="navSpacer"/>
-      <section id="productos" className="simpleSection">
-        <h1 className="sectionTitle mb-3">Conoce nuestras soluciones</h1>
-        <h2 className="sectionSubTitle">
-          Desarrolladas para el mañana listas para implementar hoy.
-        </h2>
-        <span className="mb-3"></span>
+      <section id="productos" className="simpleSection mb-4">
+        <div className="sectionWrapper">
+          <h2 className="sectionSubTitle">
+            Desarrolladas para el mañana listas para implementar hoy
+          </h2>
+          <h1 className="sectionTitle mb-3 titleUnderLine">Conoce nuestras soluciones</h1>
+        </div>
+        
         <div className="productCards">
           <div className="productCard">
             <img

@@ -64,7 +64,7 @@ function NosotrosPage() {
             <h2 className="sectionSubTitle">
             En esta era digital necesitas estar alerta de posibles amenazas 
             </h2>
-            <h1>
+            <h1 className="titleUnderLine">
             Con 19 años de trayecotria <br/> lo haremos por ti
               
             </h1>
@@ -72,7 +72,7 @@ function NosotrosPage() {
             {/* <div className="sectionImg">
               <img src={Globalsign} alt="Globalsign Logo" />
             </div> */}
-            <p>
+            <p className="mt-4">
              Nuestro equipo especializado en seguridad de datos, seguridad web y medios digitales puede asegurar las áreas más vulnerables de todo tu flujo de trabajo mientras estás conectado.
 
              Brindamos soluciones integrales de Seguridad Informática sustentados en las tecnologías de la información y la comunicación con colaboradores profesionalmente capacitados y comprometidos con la calidad de nuestros servicios para alcanzar la satisfacción de los clientes y la mejora continua de nuestros procesos.
