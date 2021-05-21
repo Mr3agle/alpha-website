@@ -6,13 +6,8 @@ import Seo from "../components/seo"
 function SolucionesPage() {
   return (
     <Layout>
-      <Seo title="Soluciones" />
-      <section className="simpleSection">
-        <div className="simpleWrapper">
-          <h1>Esta es la página de productos</h1>
-        </div>
-      </section>
-
+      <Seo title="Soluciones y Servicios" />
+      <div className="navSpacer"/>
       <section id="productos" className="simpleSection">
         <h1 className="sectionTitle mb-3">Conoce nuestras soluciones</h1>
         <span className="mb-3"></span>

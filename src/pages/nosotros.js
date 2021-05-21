@@ -1,4 +1,11 @@
 import * as React from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+
+import "swiper/swiper.min.css"
+import "swiper/components/pagination/pagination.min.css"
+
+import SwiperCore, { Pagination } from "swiper/core"
+
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 
@@ -16,51 +23,51 @@ import tventas from "../images/clients/Tventas_Logo.svg"
 import gsap from "gsap"
 
 function NosotrosPage() {
-
   const clients = [
     {
-      name: 'Produbanco',
-      path: produbanco
+      name: "Produbanco",
+      path: produbanco,
     },
     {
-      name: 'Cámara de Comercio de Quito',
-      path: cdComercio
+      name: "Cámara de Comercio de Quito",
+      path: cdComercio,
     },
     {
-      name: 'Casabaca',
-      path: casabaca
+      name: "Casabaca",
+      path: casabaca,
     },
     {
-      name: 'CNT',
-      path: cnt
+      name: "CNT",
+      path: cnt,
     },
     {
-      name: 'Corporación Favorita',
-      path: cFavorita
+      name: "Corporación Favorita",
+      path: cFavorita,
     },
     {
-      name: 'Oriente Seguros',
-      path: oSeguros
+      name: "Oriente Seguros",
+      path: oSeguros,
     },
     {
-      name: 'Salud S.A',
-      path: salud
+      name: "Salud S.A",
+      path: salud,
     },
     {
-      name: 'SERCOP',
-      path: sercop
+      name: "SERCOP",
+      path: sercop,
     },
     {
-      name: 'TVENTAS',
-      path: tventas
-    }
+      name: "TVENTAS",
+      path: tventas,
+    },
   ]
-  React.useEffect(()=>{
-    gsap.from('.headerVideo',{
+  React.useEffect(() => {
+    gsap.from(".headerVideo", {
       opacity: 0,
-      duration: 3
+      duration: 3,
     })
   })
+  SwiperCore.use([Pagination])
 
   return (
     <Layout bgDark={true}>
@@ -78,14 +85,17 @@ function NosotrosPage() {
           className="headerVideo"
           id="alphaTechVideo"
         >
-          <track none kind="captions"/>
+          <track none kind="captions" />
           <source src={aboutVideo} type="video/mp4" />
         </video>
         <div className="overlayContent">
           <h3>Alpha Technologies</h3>
           <h1>Cyberseguridad al siguiente nivel.</h1>
           <p>
-          Somos una empresa ecuatoriana de seguridad informática establecida en Quito en el año 2001, especializada en la seguridad de datos, seguridad web y medios digitales. Nuestros productos y servicios son parte del día a día de grandes empresas en todo el mundo.
+            Somos una empresa ecuatoriana de seguridad informática establecida
+            en Quito en el año 2001, especializada en la seguridad de datos,
+            seguridad web y medios digitales. Nuestros productos y servicios son
+            parte del día a día de grandes empresas en todo el mundo.
           </p>
         </div>
       </section>
@@ -94,21 +104,36 @@ function NosotrosPage() {
         <h1 className="sectionTitle">Los más grandes confían en nosotros</h1>
 
         <div className="clientsShow">
-          {
-            clients.map((item,index) => {
-              return(
-                <div className="clientLogo" key={index}>
-                  <img src={item.path} alt={item.name} />
-                </div>
-              )
-            })
-            
-          }
+          {clients.map((item, index) => {
+            return (
+              <div className="clientLogo" key={index}>
+                <img src={item.path} alt={item.name} />
+              </div>
+            )
+          })}
         </div>
       </section>
 
-      <section className="sectionBG">
-
+      <section className="sectionBG vh100 bgBlue">
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          className="mySwiper"
+        >
+          <SwiperSlide>Slide 1</SwiperSlide>
+          <SwiperSlide>Slide 2</SwiperSlide>
+          <SwiperSlide>Slide 3</SwiperSlide>
+          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>Slide 6</SwiperSlide>
+          <SwiperSlide>Slide 7</SwiperSlide>
+          <SwiperSlide>Slide 8</SwiperSlide>
+          <SwiperSlide>Slide 9</SwiperSlide>
+        </Swiper>
       </section>
     </Layout>
   )
