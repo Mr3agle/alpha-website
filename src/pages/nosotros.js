@@ -62,11 +62,10 @@ function NosotrosPage() {
           <div className="sectionContent">
             <div className="navSpacer"/>
             <h2 className="sectionSubTitle">
-            En esta era digital necesitas estar alerta de posibles amenazas 
+            Innovation on your side
             </h2>
             <h1 className="titleUnderLine">
-            Con 19 años de trayecotria <br/> lo haremos por ti
-              
+              19 años de trayecotria
             </h1>
             
             {/* <div className="sectionImg">
@@ -91,8 +90,10 @@ function NosotrosPage() {
           backgroundColor: "#000"
         }}
       >
-        <h1 className="sectionTitle whiteText mt-4">
-        Las corporaciones más grandes <br/> del país ya cofían en nosotros.
+        <h1 className="sectionTitle whiteText mt-4" style={{
+          textShadow: "0 3px 3px #000"
+        }}>
+        Las corporaciones más grandes <br/> del país cofían en nosotros.
         </h1>
         <Swiper
           slidesPerView={1}
@@ -135,6 +136,7 @@ function NosotrosPage() {
           }
 
         </Swiper>
+        <div className="navSpacer"/>
       </section>
     </Layout>
   )
