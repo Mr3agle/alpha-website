@@ -103,6 +103,61 @@
     }
 }
 
+.atProductHero{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        // max-width: 1200px;
+        margin: auto;
+        background-color: $a-blue-pale;
+        z-index: -2;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.heroWrapper{
+    width: 80%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: pink;
+}
+
+.atProductInfo{
+    // background-color: greenyellow;
+    // flex-basis: 60%;
+    h1 {
+        font: 700 5rem $poppins;
+        width: 100%;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+    }
+    h3 {
+        font: 300 2rem $rubik;
+        // font-style: italic;
+    }
+    p {
+        color: white;
+        width: 80%;
+        font: normal 1.3rem $rubik;
+        line-height: 1.5;
+    }
+}
+.atProductImage{
+    flex-basis: 35%;
+    position: relative;
+    background-color: hotpink;
+    img{
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media only screen and (max-width: 640px) {
     .atDrone{
         margin: 1rem auto;

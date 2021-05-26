@@ -27,7 +27,7 @@
     }
 }
 .heroLight {
-    background-color: transparent !important;
+    background-color: $a-blue-pale !important;
     &::after {
         background-color: rgba($a-white, 0);
     }
@@ -67,6 +67,7 @@
         font: normal 1.3rem $rubik;
         line-height: 1.5;
     }
+
 }
 
 .clientsShow {
