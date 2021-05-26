@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/layouts/main-layout"
 import Seo from "../../components/seo"
 import atDroneVideo from "../../videos/alpha_drone_video.mp4"
-import atDroneImg from "../../images/AT_Dron2.png"
+import atDroneImg from "../../images/ATdron2.png"
 import atDroneBuild from "../../images/at-drone.jpg"
 import "boxicons/css/boxicons.min.css"
 
