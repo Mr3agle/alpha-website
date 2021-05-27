@@ -65,7 +65,7 @@ function NosotrosPage() {
             Innovation on your side
             </h2>
             <h1 className="titleUnderLine">
-              19 años de trayecotria
+              20 años de trayecotria
             </h1>
             
             {/* <div className="sectionImg">

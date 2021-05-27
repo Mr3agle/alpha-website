@@ -2,9 +2,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  min-height: 100vh;
-  padding-top: 5rem;
-  background-color: $a-blue-pale;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-attachment: fixed;
+  // min-height: 100vh;
+  padding: 5rem 0;
+  // background-color: $a-blue-pale;
   border-radius: 24px;
   // width: 100%;
   // width: 50%;
@@ -17,8 +21,10 @@
 .contactInfo{
  // width: 50%;
  // background-color: burlywood;
- 
- margin-top: 2rem;
+ h1{
+  margin-top: .5rem;
+   font: 700 3rem $poppins;
+ }
  p{
   font: 400 1rem $poppins;
  }
@@ -26,26 +32,51 @@
 .iconsGridContact{
  display: flex;
  flex-direction: column;
- // flex-wrap: wrap;
+//  flex-wrap: wrap;
  justify-content: center;
- align-items: center;
+//  align-items: center;
  flex-basis: 100%;
+//  background-color: greenyellow;
 }
 .iconRowContact{
+  flex: 1 0 50%;
   display: flex;
+  margin-top: 1rem;
+  // align-self: center;
+  align-items: center;
   // flex-basis: 100%;
-  background-color: gold;
+  // background-color: gold;
   div:first-child{
    // width: 100px;
-   background-color: $a-blue;
-   // height: 100px;
+  //  background-color: $a-blue;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-basis: 10%;
+   
+  //  border-radius: 50%;
+   i{
+    color: $a-blue;
+    font-size: 1.8rem;
+   }
   }
-  i{
-   color: white;
-   // font-size: 3rem;
-  }
+  
   div:last-child{
-   width: 80%;
-  }
+    // background-color: hotpink;
+    flex-basis: 100%;
+  
+     width: 100%;
+     font: 400 1rem $poppins;
+   
+   a{
+     text-decoration: none;
+     color: $a-black;
+     font: 600 1rem $poppins;
+     transition: all ease-in-out .3s;
+     &:hover{
+       color: $a-blue;
+     }
+   }
 }
 
+}

@@ -8,25 +8,15 @@ import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
 import { clients } from "../data/clientsData"
-// import CountUp, {useCountUp} from 'react-countup'
 
 import aSecurity from "../animations/isometric-tech-animation.json"
 import aContact from "../animations/computer-contact.json"
 
 import "boxicons/css/boxicons.min.css"
-
-// import aboutVideo from "../videos/alpha_tech_video.mp4"
 import Globalsign from "../images/Globalsign.svg"
-// import bgImg1 from "../images/bg_img2.jpg"
 import shieldIcon from "../images/web-browser.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
-// import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
-// import gsSecure from "../images/globalsign-icons/secure.svg"
-// import gsCheck from "../images/globalsign-icons/check.svg"
-// import gsCode from "../images/globalsign-icons/code.svg"
-// import gsContract from "../images/globalsign-icons/contract.svg"
-// import gsUser from "../images/globalsign-icons/user-images.svg"
 
 function IndexPage() {
   // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
