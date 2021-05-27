@@ -12,7 +12,7 @@
     box-shadow: 0 2rem 3rem -0.8rem rgba($a-black, 0.10);
   }
   small {
-    color: #acacac;
+    color: #747474;
   }
   span {
     color: $a-red;
@@ -50,7 +50,7 @@ form {
   label {
     position: absolute;
     font: 400 1rem $rubik;
-    color: #acacac;
+    color: #757575;
     transition: all ease-in-out 0.3s;
     pointer-events: none;
     touch-action: manipulation;
@@ -60,7 +60,7 @@ form {
 
   input,
   textarea {
-    border: solid 1px darken($a-blue-pale, 2);
+    border: solid 1px darken($a-blue-pale, 7);
     // border: none;
     outline: none;
     border-radius: 7px;

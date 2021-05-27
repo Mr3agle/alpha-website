@@ -17,8 +17,8 @@ const Footer = () => (
         <img width="200px" src={GlobalSign} alt="Global Sign" />
         <div className="mt-1" />
         <img width="200px" src={ATSignV} alt="At Sign" />
-        <img width="200px" src={Zimbra} alt="At Sign" />
-        <img width="200px" src={Mcafee} alt="At Sign" />
+        <img width="150px" src={Zimbra} alt="At Sign" />
+        <img width="100px" src={Mcafee} alt="At Sign" />
       </div>
       <div className="footerColumn">
         <h1>Servicios</h1>

@@ -39,8 +39,8 @@ function Navbar(props) {
               
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M16.5 48H0L27 0H43.5L47.5 23.5C55.5 22.3333 75.5 21.7 91.5 28.5C71.5 24.3333 28.5 22.4 16.5 48ZM25 28.5C26.6667 27.8333 30.9 26.4 34.5 26L33.5 13L25 28.5Z"
               
             />

@@ -16,14 +16,13 @@ function ContactoPage() {
       }}>
           <ContactForm />
           <div className="contactData">
-            <div class="contactMap">
+            <div className="contactMap">
               <iframe
                 title="Alpha Technologies Map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.615389616588!2d-78.479404!3d-0.132232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5855ec83d3ce1%3A0x9b470ac3cb9f0ca2!2sAraujo%20%26%20Jose%20Maria%20Batodano%2C%20Quito%20170138!5e0!3m2!1ses-419!2sec!4v1622132408089!5m2!1ses-419!2sec"
                 width="500"
                 height="350"
                 style={{ border: "0", borderRadius: "12px" }}
-                allowfullscreen=""
                 loading="lazy"
               ></iframe>
             </div>
@@ -40,7 +39,7 @@ function ContactoPage() {
                 
                 <div className="iconRowContact">
                   <div>
-                    <i class=" bx bx-envelope" />
+                    <i className=" bx bx-envelope" />
                   </div>
                   <div>
                   <a href="mailto:contacto@alphaside.com">contacto@alphaside.com</a>
@@ -48,7 +47,7 @@ function ContactoPage() {
                 </div>
                 <div className="iconRowContact">
                   <div>
-                    <i class=" bx bxs-phone" />
+                    <i className=" bx bxs-phone" />
                   </div>
                   <div>
                   <a href="tel:+593 2 281 4291">(+593) 2 281 4291</a>
@@ -58,7 +57,7 @@ function ContactoPage() {
                 </div>
                 <div className="iconRowContact">
                   <div>
-                    <i class=" bx bxs-map-pin" />
+                    <i className=" bx bxs-map-pin" />
                   </div>
                   <div>
                     Gabriel Araujo E6-136 <br/> y José María Batodano. 
@@ -68,7 +67,7 @@ function ContactoPage() {
                 </div>
                 <div className="iconRowContact">
                   <div>
-                    <i class=" bx bxs-calendar-check" />
+                    <i className=" bx bxs-calendar-check" />
                   </div>
                   <div>
                   Lun – Vie : 9h00 - 18h00
