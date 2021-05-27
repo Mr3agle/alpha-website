@@ -1,0 +1,51 @@
+.contactWrapper{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  padding-top: 5rem;
+  background-color: $a-blue-pale;
+  border-radius: 24px;
+  // width: 100%;
+  // width: 50%;
+  // background-color: rgb(120, 120, 245);
+  div{
+   flex-basis: 40%;
+  }
+}
+
+.contactInfo{
+ // width: 50%;
+ // background-color: burlywood;
+ 
+ margin-top: 2rem;
+ p{
+  font: 400 1rem $poppins;
+ }
+}
+.iconsGridContact{
+ display: flex;
+ flex-direction: column;
+ // flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ flex-basis: 100%;
+}
+.iconRowContact{
+  display: flex;
+  // flex-basis: 100%;
+  background-color: gold;
+  div:first-child{
+   // width: 100px;
+   background-color: $a-blue;
+   // height: 100px;
+  }
+  i{
+   color: white;
+   // font-size: 3rem;
+  }
+  div:last-child{
+   width: 80%;
+  }
+}
+
