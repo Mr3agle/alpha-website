@@ -47,7 +47,7 @@ const ContactForm = () => {
      ¿Cómo podemos ayudarte?
     </h1>
     <small>Los campos marcados con <span>*</span> son obligatorios. </small>
-      <form name="Alpha Contact Form" onSubmit={handleSubmit} id="contactoAlpha" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <form name="Alpha Contact Form" id="contactoAlpha" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
         <div className="field">
           <input type="text" id="name" placeholder="Nombre" name="Nombre" required />
           <label htmlFor="name">Nombre <span>*</span></label>
