@@ -1,71 +1,103 @@
 .contactForm {
- background-color: $a-white;
- box-shadow: 0 1rem 2rem -0.7rem rgba($a-black, 0.12);
- border: 1px solid $a-blue-pale;
- padding: 2rem;
- border-radius: 12px;
- h1 {
-  font: 600 2rem $poppins;
-  margin-bottom: 1rem;
- }
+  background-color: $a-white;
+  border: 2px solid $a-blue-pale;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all ease-in-out 0.2s;
+  h1 {
+    font: 700 2rem $poppins;
+    margin-bottom: 1rem;
+  }
+  &:hover {
+    box-shadow: 0 2rem 4rem -0.8rem rgba($a-black, 0.12);
+  }
+  small {
+    color: #acacac;
+  }
+  span {
+    color: $a-red;
+  }
 }
 
 form {
- display: inline-block;
+  // display: inline-block;
 
- div {
+  button {
+    margin: 2rem 0 0;
+    font: 600 1rem $poppins;
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+    border: none;
+    color: $a-white;
+    background-color: $a-blue;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: $a-blue-hover;
+      box-shadow: $btn-shadow-blue;
+    }
+  }
+}
+
+.field {
   position: relative;
   display: flex;
   flex-direction: column;
- }
- 
- input {
-  border: solid 1px darken($a-blue-pale, .1);
-  outline: none;
-  border-radius: 7px;
-  min-height: 50px;
-  padding: 0 1rem;
-  box-shadow: 0 0.2rem 0.7rem -0.3rem rgba($a-black, 0.12);
+  // background-color: greenyellow;
+  margin: 2rem 0;
+  width: 100%;
 
-  margin-top: 2rem;
- }
-
- input:focus{
-  border: solid 1px darken($a-blue-pale, 5);
-  
-  & + label{
-   transform: translate(2px, -5px);
+  label {
+    position: absolute;
+    font: 400 1rem $rubik;
+    color: #acacac;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+    touch-action: manipulation;
+    transform: translate(20px, 15px);
+    z-index: 2;
   }
 
-}
+  input,
+  textarea {
+    border: solid 1px darken($a-blue-pale, 2);
+    // border: none;
+    outline: none;
+    border-radius: 7px;
+    min-height: 50px;
+    font: 400 1rem $poppins;
+    padding: 0 1rem;
+    // box-shadow: 0 0.5rem 1.3rem -.4rem rgba($a-blue, 0.12);
+    touch-action: manipulation;
+    &::placeholder {
+      color: transparent;
+      pointer-events: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    &:focus,
+    &:not(:placeholder-shown) {
+      border: solid 1px darken($a-blue-pale, 10);
+      box-shadow: none;
+      & + label {
+        transform: translate(10px, -10px);
+        background-color: $a-white;
+        padding: 0.1rem 0.5rem;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        color: $a-blue;
+      }
+    }
 
- label {
-  margin-bottom: 1rem;
-  position: absolute;
-  transform: translate(20px, 45px);
-  font: 400 1rem $rubik;
-  color: #acacac;
-  transition: all ease-in-out 0.3s;
-  pointer-events: none;
-
- }
- 
- textarea {
-  padding: 1rem;
- }
- button {
-  margin: 2rem 0 0;
-  font: 600 1rem $poppins;
-  padding: 0.5rem 2rem;
-  border-radius: 7px;
-  border: none;
-  color: $a-white;
-  background-color: $a-blue;
-  transition: all ease-in-out 0.3s;
-  cursor: pointer;
-  &:hover {
-   background-color: $a-blue-hover;
-   box-shadow: $btn-shadow-blue;
+    // margin-top: 2rem;
   }
- }
+
+  textarea {
+    padding: 1rem;
+    resize: vertical;
+  }
 }

@@ -7,12 +7,13 @@ function ContactoPage() {
   return (
     <Layout>
       <Seo title="Contacto" />
+      <div className="navSpacer"/>
       <div className="simpleSection">
         <div className="simpleWrapper">
-          <h1>Esta es la página contacto</h1>
           <ContactForm/>
         </div>
       </div>
+      <div className="navSpacer"/>
     </Layout>
   )
 }

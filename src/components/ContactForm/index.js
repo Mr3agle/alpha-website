@@ -28,29 +28,32 @@ const ContactForm = () => {
   return (
     <div class="contactForm">
     <h1>
-    Contáctate con nosotros
+     ¿Cómo podemos ayudarte?
     </h1>
+    <small>Los campos marcados<span>*</span> son obligatorios. </small>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Nombre</label>
-          <input type="text" id="name" required />
+        <div className="field">
+          <input type="text" id="name" placeholder="Nombre" required />
+          <label htmlFor="name">Nombre <span>*</span></label>
         </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" required />
+        <div className="field">
+          <input type="email" id="email" placeholder="Email" required />
+          <label htmlFor="email">Email <span>*</span></label>
         </div>
-        <div>
+        <div className="field">
+          <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Teléfono" required />
           <label htmlFor="phone">Teléfono</label>
-          <input type="text" id="phone" required />
         </div>
-        <div>
+        <div className="field">
+          <input type="text" id="subject" placeholder="Asunto" required />
           <label htmlFor="subject">Asunto</label>
-          <input type="text" id="subject" required />
         </div>
-        <div>
-          <label htmlFor="message">Mensaje</label>
-          <textarea id="message" required />
+        <div className="field">
+          <textarea id="message" placeholder="Mensaje..." required />
+          <label htmlFor="message">Mensaje <span>*</span></label>
         </div>
+
+        
         <button type="submit">{status}</button>
       </form>
     </div>
