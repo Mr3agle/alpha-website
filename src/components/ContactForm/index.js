@@ -5,20 +5,22 @@ import ReCAPTCHA from "react-google-recaptcha"
 import { navigate } from "gatsby"
 
 const ContactForm = () => {
+
   const recaptcha = React.useRef(null)
 
   const [serverState, setServerState] = useState({
     submitting: false,
-    status: null,
+    status: null
   })
 
+  const [captchaValid, setCaptchaValid] = useState(null)
+
   let captchaKey = null
-  let captchaValid = true
 
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
-      status: { ok, msg },
+      status: { ok, msg }
     })
     if (ok) {
       navigate("/eventos/gracias")
@@ -30,18 +32,21 @@ const ContactForm = () => {
     captchaKey = recaptcha.current.getValue()
     document.getElementById("captchaResponse").value = captchaKey
     console.log(captchaKey)
-    captchaValid = true
+    if(captchaKey){
+      setCaptchaValid(true)
+    }
   }
 
   const handleSubmit = e => {
     e.preventDefault()
 
     const form = e.target
+
     setServerState({
-      submitting: true,
+      submitting: true
     })
 
-    if (captchaKey) {
+    if (captchaValid) {
       axios({
         method: "POST",
         url: "https://getform.io/f/5d1bf561-ef89-489c-98eb-52765277279f",
@@ -55,9 +60,9 @@ const ContactForm = () => {
         })
     } else {
       setServerState({
-        submitting: false,
+        submitting: false
       })
-      captchaValid = false
+      setCaptchaValid(false)
       captchaKey = null
     }
   }
@@ -135,7 +140,7 @@ const ContactForm = () => {
             sitekey="6LfKxvgaAAAAACSe-rBsFQzkx93OEP4I0ovZYNSU"
             onChange={isRobotCheck}
           />
-          {!captchaValid &&
+          {captchaValid === false &&
             <small className="errorMessage">No se validó el reCaptcha</small>
           }
         </div>
