@@ -8,14 +8,10 @@ import { NavbarData } from "./navbarData"
 
 function Navbar(props) {
   const [menuActive, setMenuActive] = React.useState(false)
-  const show = () => setMenuActive(!menuActive)
 
-  // let tl = new gsap.gsap.timeline({delay: 0.3})
-
-  // React.useEffect(()=>{
-  //   tl.from('.logoContainer', {x: -100, opacity:0, ease: gsap.Power1.easeOut, duration: 0.7})
-  //   tl.from('.navLinkList', {x: 100, opacity:0, ease: gsap.Power1.easeOut, duration: 0.7}, "-=0.5")
-  // }, [])
+  const show = () => {
+    setMenuActive(!menuActive)
+  }
 
   return (
     <nav className="mainNav">

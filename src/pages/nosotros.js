@@ -38,11 +38,11 @@ function NosotrosPage() {
           playsInline
           loop
           disablePictureInPicture
-          muted="true"
+          muted={true}
           className="headerVideo"
           id="alphaTechVideo"
         >
-          <track none kind="captions" />
+          <track kind="captions" />
           <source src={aboutVideo} type="video/mp4" />
         </video>
         <div className="overlayContent">

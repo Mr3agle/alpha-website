@@ -26,13 +26,13 @@ function CertificadosSSLPage() {
           playsInline
           loop
           disablePictureInPicture
-          muted="true"
+          muted={true}
           className="headerVideo"
           style={{
             opacity: "0.2"
           }}
         >
-          <track none kind="captions"/>
+          <track kind="captions"/>
           <source src={sslVideo} type="video/mp4" />
         </video>
         <div className="overlayContent">

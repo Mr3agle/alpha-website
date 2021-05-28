@@ -1,49 +1,50 @@
 import * as React from "react"
 
-export default class ScrollToTop extends React.Component {
+const ScrollToTop = () => {
 
-  componentDidMount(){
-    window.addEventListener("scroll", this.toggleVisibility)
-  }
-  componentWillUnmount(){
-    window.addEventListener("scroll", this.toggleVisibility)
-  }
+  const [show, setShow] = React.useState(false)
 
-  toggleVisibility() {
+  const toggleVisibility = () => {
 
     if (window.scrollY <= 500) {
-
-      document.querySelector(".toTopBtn").classList.add("hideToTopBtn")
+      setShow(false)
 
     } else {
-
-      document.querySelector(".toTopBtn").classList.remove("hideToTopBtn")
-      document.querySelector(".toTopBtn").classList.add("showToTopBtn")
-
+      setShow(true)
     }
 
   }
 
-  scrollToTop() {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     })
   }
 
-  render() {
-    return (
-      <div className="toTopBtn">
-        <div
-          onClick={() => this.scrollToTop()}
-          role="button"
-          aria-label="toTopBtn"
-          tabIndex="-1"
-          onKeyPress={() => this.scrollToTop()}
-        >
-          <i className="bx bxs-chevron-up" />
-        </div>
+  React.useEffect(() => {
+    // const abortController = new AbortController()
+    window.addEventListener("scroll", toggleVisibility)
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility)
+    }
+  })
+
+  return (
+    <div className={show ? 'toTopBtn showTotopBtn' : 'toTopBtn hideToTopBtn'}>
+      <div
+        onClick={() => scrollToTop()}
+        role="button"
+        aria-label="toTopBtn"
+        tabIndex="-1"
+        onKeyPress={() => scrollToTop()}
+      >
+        <i className="bx bxs-chevron-up" />
       </div>
-    )
-  }
+    </div>
+  )
+
 }
+
+export default ScrollToTop

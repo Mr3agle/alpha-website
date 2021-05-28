@@ -20,9 +20,9 @@ function atdrone() {
           disablePictureInPicture
           className="headerVideo"
           id="alphaTechVideo"
-          muted="true"
+          muted={true}
         >
-          <track none kind="captions" />
+          <track kind="captions" />
           <source src={atDroneVideo} type="video/mp4" />
         </video>
         <div className="overlayContent blackText">
