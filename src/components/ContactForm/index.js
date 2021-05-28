@@ -10,15 +10,15 @@ const ContactForm = () => {
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
-    captchaError: null
   })
 
   let captchaKey = null
+  let captchaValid = true
 
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
-      status: { ok, msg }
+      status: { ok, msg },
     })
     if (ok) {
       navigate("/eventos/gracias")
@@ -28,10 +28,9 @@ const ContactForm = () => {
 
   const isRobotCheck = () => {
     captchaKey = recaptcha.current.getValue()
-    setServerState({
-      captchaError: false
-    })
     document.getElementById("captchaResponse").value = captchaKey
+    console.log(captchaKey)
+    captchaValid = true
   }
 
   const handleSubmit = e => {
@@ -57,11 +56,9 @@ const ContactForm = () => {
     } else {
       setServerState({
         submitting: false,
-        captchaError: true
       })
-
-      // errors.captchaError = "No se validó el reCaptcha"
-      // console.log(errors);
+      captchaValid = false
+      captchaKey = null
     }
   }
 
@@ -138,10 +135,8 @@ const ContactForm = () => {
             sitekey="6LfKxvgaAAAAACSe-rBsFQzkx93OEP4I0ovZYNSU"
             onChange={isRobotCheck}
           />
-          {serverState.captchaError && 
-            <small className="errorMessage">
-              No se validó el reCaptcha
-            </small> 
+          {!captchaValid &&
+            <small className="errorMessage">No se validó el reCaptcha</small>
           }
         </div>
         <input type="hidden" id="captchaResponse" name="recaptchaKey" />
