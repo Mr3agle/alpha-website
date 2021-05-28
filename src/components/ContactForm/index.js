@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
+    captchaError: null
   })
 
   let captchaKey = null
@@ -17,7 +18,7 @@ const ContactForm = () => {
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
-      status: { ok, msg },
+      status: { ok, msg }
     })
     if (ok) {
       navigate("/eventos/gracias")
@@ -27,6 +28,9 @@ const ContactForm = () => {
 
   const isRobotCheck = () => {
     captchaKey = recaptcha.current.getValue()
+    setServerState({
+      captchaError: false
+    })
     document.getElementById("captchaResponse").value = captchaKey
   }
 
@@ -51,10 +55,13 @@ const ContactForm = () => {
           handleServerResponse(false, result.response.data.error, form)
         })
     } else {
-      alert("Recaptcha Error")
       setServerState({
         submitting: false,
+        captchaError: true
       })
+
+      // errors.captchaError = "No se validó el reCaptcha"
+      // console.log(errors);
     }
   }
 
@@ -98,7 +105,6 @@ const ContactForm = () => {
           <input
             type="tel"
             id="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
             placeholder="Teléfono"
             name="Teléfono"
             required
@@ -132,13 +138,13 @@ const ContactForm = () => {
             sitekey="6LfKxvgaAAAAACSe-rBsFQzkx93OEP4I0ovZYNSU"
             onChange={isRobotCheck}
           />
-          {/* {isRobot && <small>No olvides marcar la casilla</small>} */}
+          {serverState.captchaError && 
+            <small className="errorMessage">
+              No se validó el reCaptcha
+            </small> 
+          }
         </div>
-        <input
-            type="hidden"
-            id="captchaResponse"
-            name="g-recaptcha-response"
-          />
+        <input type="hidden" id="captchaResponse" name="recaptchaKey" />
         <button type="submit">
           {serverState.submitting ? "Enviando..." : "Enviar"}
         </button>
