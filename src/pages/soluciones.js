@@ -98,7 +98,7 @@ function SolucionesPage() {
             <p>
               Drones de alto rendimiento pensados para todo tipo de proyecto táctico o multimedia.
             </p>
-            <Link to="/soluciones/at-drone">Ver más</Link>
+            <Link to="/atdrone">Ver más</Link>
           </div>
         </div>
       </section>

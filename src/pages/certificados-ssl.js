@@ -14,7 +14,18 @@ import gsCode from "../images/globalsign-icons/code.svg"
 import gsContract from "../images/globalsign-icons/contract.svg"
 import gsUser from "../images/globalsign-icons/user-images.svg"
 
+import gsap from "gsap"
+
+
 function CertificadosSSLPage() {
+
+  React.useEffect(() => {
+    gsap.from(".headerVideo", {
+      opacity: 0,
+      duration: 3,
+    })
+  })
+
   return (
     <Layout bgDark={true}>
       <Seo title="GlobalSign Ecuador" />

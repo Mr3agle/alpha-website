@@ -17,7 +17,7 @@ const Footer = () => (
         <img width="200px" src={GlobalSign} alt="Global Sign" />
         <div className="mt-1" />
         <img width="200px" src={ATSignV} alt="At Sign" />
-        <img width="150px" src={Zimbra} alt="At Sign" />
+        <img width="160px" src={Zimbra} alt="At Sign" />
         <img width="100px" src={Mcafee} alt="At Sign" />
       </div>
       <div className="footerColumn">
@@ -30,7 +30,7 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <Link to="/soluciones/at-drone">
+            <Link to="/atdrone">
               <i className="bx bx-loader"></i>
               AT Drone
             </Link>
