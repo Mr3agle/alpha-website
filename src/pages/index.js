@@ -19,6 +19,13 @@ import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
 import calmBg from "../images/calmbg.jpg"
 
+import atlogicPortada from "../images/ATlogic-Portada.png"
+import atmailingPortada from "../images/ATmailing-Portada.png"
+import atproxyPortada from "../images/ATproxy-Portada.png"
+import athotspotPortada from "../images/AThotspot-Portada.png"
+import atfirewallPortada from "../images/ATfirewall-Portada.png"
+import atinspectorPortada from "../images/ATinspector-Portada.png"
+
 function IndexPage() {
   // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
 
@@ -206,7 +213,7 @@ function IndexPage() {
         <div className="productCards">
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/atfirewall.png"
+              src={atfirewallPortada}
               alt="AT-Firewall"
             />
             <h2>AT Firewall</h2>
@@ -218,7 +225,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/MailInspector.jpg"
+              src={atinspectorPortada}
               alt="AT-MailInspector"
             />
             <h2>AT Mail Inspector</h2>
@@ -230,7 +237,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/AT-PROXY.png"
+              src={atproxyPortada}
               alt="AT-Proxy"
             />
             <h2>AT Proxy</h2>
@@ -242,7 +249,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/Atmailing-jpg.jpg"
+              src={atmailingPortada}
               alt="AT-Mailing"
             />
             <h2>AT Mailing</h2>
@@ -254,7 +261,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/athotspot.png"
+              src={athotspotPortada}
               alt="AT-Hot Spot"
             />
             <h2>AT Hot Spot</h2>
@@ -266,7 +273,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/Atlogic-jpg.jpg"
+              src={atlogicPortada}
               alt="AT-Logic"
             />
             <h2>AT Logic</h2>
