@@ -17,6 +17,7 @@ import Globalsign from "../images/Globalsign.svg"
 import shieldIcon from "../images/web-browser.svg"
 import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/internet.svg"
+import calmBg from "../images/calmbg.jpg"
 
 function IndexPage() {
   // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
@@ -118,7 +119,9 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="fullWSection bgBlue">
+      <div className="fullWSection bgImg" style={{
+        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${calmBg})`,
+      }}>
         <div className="sectionContent">
           <div className="sectionWrapper">
             <h2 className="sectionSubTitle whiteText">
@@ -147,7 +150,7 @@ function IndexPage() {
             <Link to="/servicios/at-proxy"> Saber más</Link>
           </div>
         </div>
-        <div className="cardH toLeft">
+        <div className="cardH">
           <div className="cardHDescription">
             <h1>Máxima protección</h1>
             <p>
@@ -162,7 +165,7 @@ function IndexPage() {
             <img className="floating" src={shieldIcon} alt="Protección" />
           </div>
         </div>
-        <div className="cardH toRight">
+        <div className="cardH">
           <div className="cardHImg">
             <img className="floating" src={spamIcon} alt="Protección" />
           </div>
@@ -193,7 +196,7 @@ function IndexPage() {
         </div>
       </section>
       <section id="productos" className="simpleSection mb-4">
-        <div className="sectionWrapper">
+        <div className="simpleWrapper mb-4 mt-4">
           <h2 className="sectionSubTitle">
             Desarrolladas para el mañana listas para implementar hoy
           </h2>
@@ -272,17 +275,6 @@ function IndexPage() {
               alta disponibilidad.
             </p>
             <Link to="/soluciones/at-logic">Ver más</Link>
-          </div>
-          <div className="productCard">
-            <img
-              src="https://www.alphaside.com/wp-content/uploads/2020/02/dron2-1024x630-1.jpg"
-              alt="AT-Logic"
-            />
-            <h2>AT Drone</h2>
-            <p>
-              Drones de alto rendimiento pensados para todo tipo de proyecto táctico o multimedia.
-            </p>
-            <Link to="/atdrone">Ver más</Link>
           </div>
         </div>
       </section>

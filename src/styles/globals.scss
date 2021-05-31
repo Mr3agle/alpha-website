@@ -132,9 +132,16 @@ p{
 .hAuto{
     height: auto !important;
 }
+.bgImg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .bgBlue{
-    background: rgb(0,17,36);
-    background: linear-gradient(333deg, rgba(0,17,36,1) 0%, rgba(11,48,112,1) 38%, rgba(0,63,158,1) 100%);
+    // background: rgb(0,17,36);
+    // background: linear-gradient(333deg, rgba(0,17,36,1) 0%, rgba(11,48,112,1) 38%, rgba(0,63,158,1) 100%);
+    background: $a-blue ;
 }
 .bgRed{
     background-color: palevioletred;
@@ -147,6 +154,11 @@ p{
     height: 100px;
     // background-color: blueviolet;
 }
+.productSpacer{
+    width: 100%;
+    height: 0;
+    margin-top: 0;
+}
 
 .helpCTA{
     background-color: #f0f8ff;
@@ -158,6 +170,7 @@ p{
     // margin: auto;
     border-radius: 12px;
     overflow: hidden;
+    margin-bottom: 10rem;
     div{
         width: 40%;
         h1{
@@ -176,7 +189,7 @@ p{
 }
 
 .containerFull{
-    height: 100vh;
+    // height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -400,6 +413,66 @@ p{
     opacity: 0;
 }
 
+.tabsWrapper{
+    width: 100%;
+    max-width: 1500px;
+}
+
+.react-tabs__tab {
+    font: 700 1.3rem $poppins;
+    color: #838383;
+    // transition: all ease-in-out .3s;
+}
+.react-tabs__tab--selected{
+    border: solid 2px $a-blue !important;
+    border-radius: 7px !important;
+}
+.react-tabs__tab-panel{
+//  p{
+//     font: 1.5rem 400 $rubik !important;
+//  }
+font-size: 1.1rem;
+ line-height: 2;
+//  text-align: justify;
+ background-color: $a-white;
+ border-radius: 12px;
+ box-shadow: 0 1rem 2rem -.2rem rgba($a-black, .12);
+ padding: 1.5rem;
+} 
+
+.react-tabs__tab-list{
+    border: none !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.atLink{
+    color: $a-blue;
+    transition: all ease-in-out .3s;
+    text-decoration: none;
+    &:hover{
+        color: $a-blue-hover
+    }
+}
+
+.informationSection{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    margin-bottom: 3rem;
+    h1,h2{
+        font-family: $poppins;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+    p,ul,li{
+        line-height: 2 !important;
+        font: 400 1.2rem $rubik;
+    }
+}
+
 @media only screen and (max-width: 640px) {
 
 
@@ -503,6 +576,11 @@ p{
     .navSpacer{
         height: 20px;
     }
+    .productSpacer{
+        margin-top: 3rem;
+        height: 10rem;
+        // background-color: royalblue;
+    }
     
     .containerFull{
         overflow: hidden;
@@ -537,5 +615,24 @@ p{
         }
     
     }
+    .tabsWrapper{
+        width: 90%;
+        overflow: hidden;
+    }
+    .informationSection{
+        width: 85%;
+        h1,h2{
+            font-family: $poppins;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+        p,ul,li{
+            line-height: 2 !important;
+            font: 400 1.2rem $rubik;
+        }
+    }    
     
 }
