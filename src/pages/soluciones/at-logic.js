@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layouts/main-layout'
 import Seo from '../../components/seo'
+// import atLogic from "../../images/ATLogic-pkg.png"
 import atLogic from "../../images/ATLogic-pkg.png"
 
 function atlogic() {
