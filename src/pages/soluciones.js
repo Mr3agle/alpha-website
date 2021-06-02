@@ -9,7 +9,7 @@ import atproxyPortada from "../images/ATproxy-Portada.png"
 import athotspotPortada from "../images/AThotspot-Portada.png"
 import atfirewallPortada from "../images/ATfirewall-Portada.png"
 import atinspectorPortada from "../images/ATinspector-Portada.png"
-import atdronePortada from "../images/ATdrone-Portada.jpg"
+import atdronePortada from "../images/atdrone-Portada.jpg"
 
 function SolucionesPage() {
   return (
