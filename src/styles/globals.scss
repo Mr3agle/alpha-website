@@ -353,10 +353,11 @@ p{
     // background-color: violet;
     // width: 15%;
     text-align: center;
-    margin: 1rem 1rem;
+    // margin: 1rem 1rem;
     border-radius: 12px;
     transition: all ease-in-out .3s;
     box-shadow: 0px .9rem 1rem -.5rem  rgba($a-black, 0.1);
+    padding: .5rem 1.3rem;
     // height: 80px;
     img{
         max-width: 100px;
@@ -420,12 +421,22 @@ p{
 
 .react-tabs__tab {
     font: 700 1.3rem $poppins;
-    color: #838383;
+    color: #a8a8a8;
+    img{
+        filter: opacity(.5) !important;
+    }
     // transition: all ease-in-out .3s;
 }
 .react-tabs__tab--selected{
-    border: solid 2px $a-blue !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    // border: solid 2px $a-blue !important;
     border-radius: 7px !important;
+    color: $a-blue !important;
+    img{
+        filter: opacity(1) !important;
+    }
 }
 .react-tabs__tab-panel{
 //  p{
