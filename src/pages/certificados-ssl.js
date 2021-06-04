@@ -18,6 +18,9 @@ import checkBp from "../images/check-bp.svg"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 import "react-tabs/style/react-tabs.css"
 
+import Lottie from "../components/Lottie"
+import aContact from "../animations/call-center.json"
+
 import gsap from "gsap"
 
 function CertificadosSSLPage() {
@@ -156,9 +159,9 @@ function CertificadosSSLPage() {
                 Ofrecemos una gama de opciones de seguridad <b>SSL/TLS</b> que
                 garantizan que sus servidores y sitios públicos estén en línea
                 con <b>las mejores prácticas de la industria</b>, pero también
-                ofrecemos opciones rentables para{" "}
+                ofrecemos opciones rentables para
                 <b>servidores internos y casos de uso especiales</b>. Todos los
-                dominios se revisan previamente para que los certificados{" "}
+                dominios se revisan previamente para que los certificados
                 <b>se emitan de inmediato</b> y estén disponibles para su
                 instalación.
                 <br />
@@ -229,7 +232,7 @@ function CertificadosSSLPage() {
               <h1>Firmas digitales que respaldan tus operaciones</h1>
               <p>
                 Una firma digital es similar a la combinación de una firma
-                electrónica y una ID digital de confianza. Se trata de{" "}
+                electrónica y una ID digital de confianza. Se trata de
                 <b>la mejor forma de firmar documentos importantes</b>, como
                 contratos y facturas, sin tener que ir de acá para allá con el
                 documento físico.
@@ -247,51 +250,73 @@ function CertificadosSSLPage() {
               <br />
               <ul>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-cloud-snow bx-md"></i>{" "}
-                  <b>Desarrollado para la nube:</b> El Servicio de Firma Digital
-                  (DSS) de GlobalSign es una solución de firma remota totalmente
-                  gestionada que no requiere conocimientos expertos en PKI ni
-                  gestión de equipos{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-cloud-snow bx-md"></i>
+                    Desarrollado para la nube:
+                  </h3>
+                  <p className="mb-2">
+                    El Servicio de Firma Digital (DSS) de GlobalSign es una
+                    solución de firma remota totalmente gestionada que no
+                    requiere conocimientos expertos en PKI ni gestión de equipos
+                  </p>
                 </li>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-sitemap bx-md"></i>{" "}
-                  <b>Opciones de integración flexibles:</b> La API REST le ayuda
-                  a generar de forma rápida y segura sellos digitales desde su
-                  software y servicios existentes.{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-sitemap bx-md"></i>
+                    Opciones de integración flexibles:
+                  </h3>
+                  <p className="mb-2">
+                    La API REST le ayuda a generar de forma rápida y segura
+                    sellos digitales desde su software y servicios existentes.
+                  </p>
                 </li>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-check-shield bx-md"></i>{" "}
-                  <b>Funciones de confianza:</b> Verifique la identidad del
-                  firmante, añada un sellado de tiempo de confianza a los
-                  documentos que implican plazos importantes y proteja el
-                  contenido de sus documentos con cada una de las firmas
-                  aplicadas.{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-check-shield bx-md"></i>
+                    Funciones de confianza:
+                  </h3>
+                  <p className="mb-2">
+                    Verifique la identidad del firmante, añada un sellado de
+                    tiempo de confianza a los documentos que implican plazos
+                    importantes y proteja el contenido de sus documentos con
+                    cada una de las firmas aplicadas.
+                  </p>
                 </li>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-user-check bx-md"></i>{" "}
-                  <b>Aprobación por parte del usuario final:</b> GlobalSign
-                  colabora con las principales plataformas de firma de
-                  documentos del mundo, como Adobe Sign, DocuSign o HelloSign,
-                  lo que le permite añadir firmas digitales de confianza a sus
-                  flujos de trabajo existentes de forma rápida.{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-user-check bx-md"></i>
+                    Aprobación por parte del usuario final:
+                  </h3>
+
+                  <p className="mb-2">
+                    GlobalSign colabora con las principales plataformas de firma
+                    de documentos del mundo, como Adobe Sign, DocuSign o
+                    HelloSign, lo que le permite añadir firmas digitales de
+                    confianza a sus flujos de trabajo existentes de forma
+                    rápida.
+                  </p>
                 </li>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-slider-alt bx-md"></i>{" "}
-                  <b>Identidad adaptable del firmante:</b> Los usuarios pueden
-                  firmar de forma personal o en nombre de su departamento u
-                  organización{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-slider-alt bx-md"></i>
+                    Identidad adaptable del firmante:
+                  </h3>
+                  <p className="mb-2">
+                    Los usuarios pueden firmar de forma personal o en nombre de
+                    su departamento u organización
+                  </p>
                 </li>
                 <li style={bpStyles2}>
-                  {" "}
-                  <i className="bx-fw bx bx-stopwatch bx-md"></i>{" "}
-                  <b>Validez a largo plazo:</b> El servicio es compatible con la
-                  Validez a Largo Plazo (LTV) de AATL, por lo que se adapta a
-                  los requisitos de archivado de documentos.{" "}
+                  <h3>
+                    <i className="bx-fw bx bx-stopwatch bx-md"></i>
+                    Validez a largo plazo:
+                  </h3>
+
+                  <p className="mb-2">
+                    El servicio es compatible con la Validez a Largo Plazo (LTV)
+                    de AATL, por lo que se adapta a los requisitos de archivado
+                    de documentos.
+                  </p>
                 </li>
               </ul>
             </TabPanel>
@@ -376,12 +401,12 @@ function CertificadosSSLPage() {
               </p>
               <br />
               <p>
-                GlobalSign permite instalar{" "}
+                GlobalSign permite instalar
                 <b>certificados de firma de código estándar</b> y EV en los HSM
-                del cliente o en Azure Key Vault.{" "}
+                del cliente o en Azure Key Vault.
                 <Link to="/contacto" className="atLink">
                   Ponte en contacto con nosotros
-                </Link>{" "}
+                </Link>
                 para obtener más información sobre estas opciones de
                 implantación.
                 <b>Nota:</b> Dispositivo USB no incluido en las implantaciones
@@ -390,139 +415,330 @@ function CertificadosSSLPage() {
               <br />
               <h1>Compatibilidad con múltiples plataformas</h1>
               <p>
-              Los certificados de firma de código de GlobalSign son compatibles con múltiples plataformas usando el mismo certificado.
+                Los certificados de firma de código de GlobalSign son
+                compatibles con múltiples plataformas usando el mismo
+                certificado.
               </p>
-              <br />
-              <ul className="ml-2">
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/microsoft-authenticode/" target="_blank" rel="noreferrer" className="atLink">Ms Authenticode</a>
-                </li>
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/apple/" target="_blank" rel="noreferrer" className="atLink">Adobe Air</a>
-                </li>
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/apple/" target="_blank" rel="noreferrer" className="atLink">Apple</a>
-                </li>
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/mozilla/" target="_blank" rel="noreferrer" className="atLink">Objetos de Mozilla y Netscape</a>
-                </li>
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/macro-vba/" target="_blank" rel="noreferrer" className="atLink">Macros y VBA</a>
-                </li>
-                <li style={bpStyles}>
-                  <a href="https://www.globalsign.com/es/code-signing-certificate/java/" target="_blank" rel="noreferrer" className="atLink">Java</a>
-                </li>
-              </ul>
-              <br />
-              <h1>Firma de código para distribuidores de software y organizaciones</h1>
-              <p>
-              Los desarrolladores de todas las plataformas recurren a los certificados de firma de códigode GlobalSign para firmar digitalmente las aplicaciones y el software que distribuyen a través de Internet. En esencia, la firma de código ofrece la misma garantía que el envoltorio sellado de un CD, ya que el código firmado incluye el nombre del editor y verifica que el código no ha sido manipulado después de su publicación. Cualquiera que descargue software desde Internet puede decidir si confiar o no en la descarga.
-              </p>
-              <p>
-              Los certificados de firma de código emplean un hash de cifrado único para vincular la identidad del editor con el software. Las advertencias de seguridad que se muestran cuando el código no está firmado se sustituyen por notificaciones con información sobre el desarrollador del software, lo que evita que los usuarios abandonen la instalación y aumenta las tasas de descarga. La firma de código añade un nivel esencial de confianza al proceso de instalación.
-              </p>
-              <p>Al firmar digitalmente el código, se demuestra que el software firmado es legítimo, procede de un distribuidor de software conocido y garantiza que el código no ha sido manipulado después de su publicación. La firma de código evita que los usuarios abandonen la instalación de una aplicación por distintos motivos, como los mensajes de advertencia de seguridad, las alternaciones del código legítimo o el robo de identidad de un autor distribuidor.</p>
-
-              <br />
-              <h1>Certificados de firma de código estándar o con validación ampliada (EV)</h1>
-              <p>
-              Los certificados de firma de código EV incorporan todas las ventajas de los certificados de firma de código estándar y ofrecen un nivel de seguridad superior que garantiza que la identidad del editor es auténtica y ha sido verificada.
-              </p>
-              <br />
 
               <ul className="ml-2">
                 <li style={bpStyles}>
-                El estricto proceso de inspección garantiza a los usuarios finales que la identidad del editor ha sido verificada.
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/microsoft-authenticode/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Ms Authenticode
+                  </a>
                 </li>
                 <li style={bpStyles}>
-                El reconocimiento inmediato por parte del filtro SmartScreen de Microsoft elimina los alarmantes mensajes de advertencia que informan a los usuarios finales de que la aplicación podría ser fraudulenta.
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/apple/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Adobe Air
+                  </a>
                 </li>
-                
+                <li style={bpStyles}>
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/apple/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Apple
+                  </a>
+                </li>
+                <li style={bpStyles}>
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/mozilla/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Objetos de Mozilla y Netscape
+                  </a>
+                </li>
+                <li style={bpStyles}>
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/macro-vba/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Macros y VBA
+                  </a>
+                </li>
+                <li style={bpStyles}>
+                  <a
+                    href="https://www.globalsign.com/es/code-signing-certificate/java/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="atLink"
+                  >
+                    Java
+                  </a>
+                </li>
               </ul>
-            </TabPanel>
-            <TabPanel>
-              <b>
-                Gestión de registros y alertas según criterios comunes y
-                personalizables.
-              </b>
+              <br />
+              <h1>
+                Firma de código para distribuidores de software y organizaciones
+              </h1>
+              <p>
+                Los desarrolladores de todas las plataformas recurren a los
+                certificados de firma de códigode GlobalSign para firmar
+                digitalmente las aplicaciones y el software que distribuyen a
+                través de Internet. En esencia, la firma de código ofrece la
+                misma garantía que el envoltorio sellado de un CD, ya que el
+                código firmado incluye el nombre del editor y verifica que el
+                código no ha sido manipulado después de su publicación.
+                Cualquiera que descargue software desde Internet puede decidir
+                si confiar o no en la descarga.
+              </p>
+              <p>
+                Los certificados de firma de código emplean un hash de cifrado
+                único para vincular la identidad del editor con el software. Las
+                advertencias de seguridad que se muestran cuando el código no
+                está firmado se sustituyen por notificaciones con información
+                sobre el desarrollador del software, lo que evita que los
+                usuarios abandonen la instalación y aumenta las tasas de
+                descarga. La firma de código añade un nivel esencial de
+                confianza al proceso de instalación.
+              </p>
+              <p>
+                Al firmar digitalmente el código, se demuestra que el software
+                firmado es legítimo, procede de un distribuidor de software
+                conocido y garantiza que el código no ha sido manipulado después
+                de su publicación. La firma de código evita que los usuarios
+                abandonen la instalación de una aplicación por distintos
+                motivos, como los mensajes de advertencia de seguridad, las
+                alternaciones del código legítimo o el robo de identidad de un
+                autor distribuidor.
+              </p>
+
+              <br />
+              <h1>
+                Certificados de firma de código estándar o con validación
+                ampliada (EV)
+              </h1>
+              <p>
+                Los certificados de firma de código EV incorporan todas las
+                ventajas de los certificados de firma de código estándar y
+                ofrecen un nivel de seguridad superior que garantiza que la
+                identidad del editor es auténtica y ha sido verificada.
+              </p>
+              <br />
+
               <ul className="ml-2">
                 <li style={bpStyles}>
-                  El sistema cuenta con un registro histórico que permite la
-                  búsqueda rápida dentro de un período de tiempo, permite
-                  filtrar por rango de fechas, origen, destino, asunto, estado
-                  de envío, contenido adjunto, tamaño, estado de envío, razón de
-                  bloqueo. Generación de reportes en formato de Microsoft Excel
-                  (*.xlsx).
+                  El estricto proceso de inspección garantiza a los usuarios
+                  finales que la identidad del editor ha sido verificada.
                 </li>
                 <li style={bpStyles}>
-                  Estadísticas de la información de correos enviados analizados
-                  y limpios, bloqueados, clasificados como spam, potencialmente
-                  peligrosos, neutralizados, con adjuntos neutralizados, con
-                  adjuntos eliminados, eliminados.
+                  El reconocimiento inmediato por parte del filtro SmartScreen
+                  de Microsoft elimina los alarmantes mensajes de advertencia
+                  que informan a los usuarios finales de que la aplicación
+                  podría ser fraudulenta.
                 </li>
-                <li style={bpStyles}>
-                  Generación de informes de estado y eventos de: detecciones,
-                  bloqueos, actualizaciones etc.
-                </li>
-                <li style={bpStyles}>
-                  Reporte sobre cantidad de recursos empleados (CPU, memoria
-                  RAM).
-                </li>
-                <li style={bpStyles}>
-                  El sistema Antispam se integra con servidores de correo como:
-                  Zimbra, Exchange entre otros. Integración con sistemas syslog.
-                  Completo visor de registros.
-                </li>
-                <li style={bpStyles}> Reportes personalizados.</li>
-                <li style={bpStyles}>Integración con sistemas syslog.</li>
-                <li style={bpStyles}>Completo visor de registros.</li>
-                <li style={bpStyles}>
-                  Reporte de la red y amenaza de los ataques de intrusos.
-                </li>
-                <li style={bpStyles}>Reporte de VPNs.</li>
               </ul>
             </TabPanel>
             <TabPanel>
               <h1>
-              Autenticación de Dispositivos Móviles
+                Controla las personas y dispositivos que tienen acceso a sus
+                redes y recursos
               </h1>
               <p>
-              En muchos aspectos, los dispositivos móviles no son distintos de un PC remoto, en cuanto a que también exigen contar con una fuerte autenticación que permita autenticar a los usuarios de forma segura antes de acceder a las redes corporativas (como Wi-Fi o VPN). La autenticación basada en certificados a través de la plataforma PKI Gestionada de GlobalSign proporciona una solución sencilla y económica que permite a las organizaciones balancear la necesidad de los empleados de acceder al correo electrónico y los datos corporativos desde cualquier ubicación y la necesidad de evitar accesos no autorizados a las aplicaciones fundamentales para la organización.
+                La proliferación de robos de identidad y datos aprovechando
+                contraseñas débiles parece indicar que los métodos de
+                autenticación de factor único (por ejemplo, nombre de
+                usuario/contraseña) ya no constituyen un control de seguridad
+                suficiente. En la actualidad, la autenticación de doble factor
+                resulta esencial para proteger los datos sensibles de las
+                organizaciones.
+              </p>
+              <br />
+              <h1>Soluciones de autenticación de doble factor de GlobalSign</h1>
+              <br />
+              <ul className="ml-2">
+                <li style={bpStyles}>
+                  <h3>
+                    Certificados para computadoras y servidores de controlador
+                    de dominio
+                  </h3>
+                </li>
+                <li style={bpStyles}>
+                  <h3>Dispositivos móviles</h3>
+                </li>
+                <li style={bpStyles}>
+                  <h3>Acceso con tarjetas inteligentes</h3>
+                </li>
+                <li style={bpStyles}>
+                  <h3>Servicios en la nube</h3>
+                </li>
+                <li style={bpStyles}>
+                  <h3>Dispositivos USB Tokens</h3>
+                </li>
+                <li style={bpStyles}>
+                  <h3>VPN, Portales y Redes Wi-Fi</h3>
+                </li>
+              </ul>
+              <br />
+              <h1>Gestión Simple de Certificados con la PKI gestionada</h1>
+              <br />
+              <p>
+                La plataforma de gestión basada en la nube PKI Gestionada (MPKI)
+                de GlobalSign simplifica la implementación y gestión de los
+                certificados digitales empleados para la autenticación de doble
+                factor.
+                <br />
+                La PKI Gestionada ofrece un ahorro en los costos, fácil gestión
+                y la auditoria de identidades para tanto usuarios como para
+                dispositivos, permitiendo un control granular sobre quién o qué
+                entra a sus servicios, informaciones y recursos digitales.
+                <br />
+                Pensada para las empresas, la PKI Gestionada también proporciona
+                funciones ampliadas perfectamente adaptadas a grandes
+                organizaciones que operan entornos Windows que permiten
+                aprovechar el Directorio Activo para inscripción automática e
+                instalaciones silenciosas de los certificados.
+              </p>
+              <br />
+              <h3>
+                Más información sobre cómo simplificar la gestión de
+                certificados con la{" "}
+                <a
+                  href="https://www.globalsign.com/es/managed-pki"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="atLink"
+                >
+                  PKI Gestionada.
+                </a>
+              </h3>
+            </TabPanel>
+            <TabPanel>
+              <h1>Autenticación de Dispositivos Móviles</h1>
+              <p>
+                En muchos aspectos, los dispositivos móviles no son distintos de
+                un PC remoto, en cuanto a que también exigen contar con una
+                fuerte autenticación que permita autenticar a los usuarios de
+                forma segura antes de acceder a las redes corporativas (como
+                Wi-Fi o VPN). La autenticación basada en certificados a través
+                de la plataforma PKI Gestionada de GlobalSign proporciona una
+                solución sencilla y económica que permite a las organizaciones
+                balancear la necesidad de los empleados de acceder al correo
+                electrónico y los datos corporativos desde cualquier ubicación y
+                la necesidad de evitar accesos no autorizados a las aplicaciones
+                fundamentales para la organización.
               </p>
               <br />
               <h1>Mejora la Seguridad para Dispositivos Móviles con PKI</h1>
               <p>
-                Listaaa
+                PKI es una tecnología de seguridad completamente confiable
+                empleada por las organizaciones desde hace décadas para
+                autenticar usuarios, máquinas y servidores dentro de la propia
+                organización. La ampliación de la PKI a los dispositivos
+                proporciona una solución de gestión de identidades fácil de
+                implementar y económica.
+                <br />
+                <br />
+                <b>
+                  Los certificados digitales pueden utilizarse en dispositivos
+                  móviles para:
+                </b>
               </p>
-              <br /><br />
-              <h2>Ventajas del uso de certificados digitales para la autenticación de dispositivos móviles</h2>
+              <br />
               <ul className="ml-2">
                 <li style={bpStyles}>
-                Únicamente los usuarios verificados tienen acceso a los recursos corporativos
+                  <h3>Cifrar y firmar Correos Electrónicos:</h3>
+                  <p>
+                    Cifrar y firmar digitalmente las comunicaciones a través del
+                    correo electrónico enviadas desde dispositivos para
+                    garantizar la privacidad de la información sensible y
+                    demostrar la autoría/el origen del mensaje.
+                  </p>
                 </li>
                 <li style={bpStyles}>
-                La configuración prácticamente no requiere asistencia del departamento de TI
+                  <h3>Autenticación de Correos Electrónicos</h3>
+                  <p>
+                    Habilite la autenticación de correo electrónico para el
+                    acceso de correo electrónico 24 x 7 sin dejar solo cuentas
+                    de correo electrónico vulnerables a intrusos. Solo los
+                    dispositivos autorizados podrán acceder a sus servidores de
+                    correo electrónico corporativos.
+                  </p>
                 </li>
                 <li style={bpStyles}>
-                La configuración no resulta intrusiva y es de facil manejo para el usuario final
+                  <h3>Autenticar Redes VPN y Wi-Fi</h3>
+                  <p>
+                    Sustituir los nombres de usuario y contraseñas débiles y
+                    vulnerables por un método de autenticación de factor
+                    múltiple para las conexiones Wi-Fi y VPN corporativas y
+                    permitir el acceso a sus conexiones empresariales únicamente
+                    a los dispositivos autorizados.
+                  </p>
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h1>
+                Ventajas del uso de certificados digitales para la autenticación
+                de dispositivos móviles
+              </h1>
+              <ul className="ml-2">
+                <li style={bpStyles}>
+                  Únicamente los usuarios verificados tienen acceso a los
+                  recursos corporativos
                 </li>
                 <li style={bpStyles}>
-                Su implementación es rápida y económica
+                  La configuración prácticamente no requiere asistencia del
+                  departamento de TI
                 </li>
                 <li style={bpStyles}>
-                Los certificados se gestionan cómodamente desde la plataforma gestionada de GlobalSign: emisión, renovación y revocación desde un único portal
+                  La configuración no resulta intrusiva y es de facil manejo
+                  para el usuario final
                 </li>
                 <li style={bpStyles}>
-                Es posible su integración con las plataformas MDM/EMM más populares en la actualidad, como Microsoft Intune, AirWatch y MobileIron Cloud o Core
+                  Su implementación es rápida y económica
                 </li>
                 <li style={bpStyles}>
-                Permite a los empleados BYOD (traer sus propios dispositivos) o usar dispositivos de la empresa para acceder de forma segura las aplicaciones de la empresa
+                  Los certificados se gestionan cómodamente desde la plataforma
+                  gestionada de GlobalSign: emisión, renovación y revocación
+                  desde un único portal
                 </li>
-                
+                <li style={bpStyles}>
+                  Es posible su integración con las plataformas MDM/EMM más
+                  populares en la actualidad, como Microsoft Intune, AirWatch y
+                  MobileIron Cloud o Core
+                </li>
+                <li style={bpStyles}>
+                  Permite a los empleados BYOD (traer sus propios dispositivos)
+                  o usar dispositivos de la empresa para acceder de forma segura
+                  las aplicaciones de la empresa
+                </li>
               </ul>
             </TabPanel>
-            
           </Tabs>
+        </div>
+      </div>
+      <div className="containerFull">
+        <div className="helpCTA bgRed">
+          <div>
+            <h1>
+              ¿Todavía tienes dudas?
+            </h1>
+            <Link className="primaryBtn" to="/contacto">
+              Déjanos un mensaje
+            </Link>
+          </div>
+          <div className="lottieDesktop">
+            <Lottie src={aContact} width={500} loop={true} />
+          </div>
+          <div className="lottieMobile">
+            <Lottie src={aContact} width={500} loop={true} />
+          </div>
         </div>
       </div>
     </Layout>

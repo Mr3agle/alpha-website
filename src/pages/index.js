@@ -26,6 +26,13 @@ import athotspotPortada from "../images/AThotspot-Portada.png"
 import atfirewallPortada from "../images/ATfirewall-Portada.png"
 import atinspectorPortada from "../images/ATinspector-Portada.png"
 
+import gsSSL from "../images/globalsign-icons/ssl-certificate.svg"
+import gsSecure from "../images/globalsign-icons/secure.svg"
+import gsCheck from "../images/globalsign-icons/check.svg"
+import gsCode from "../images/globalsign-icons/code.svg"
+import gsContract from "../images/globalsign-icons/contract.svg"
+import gsUser from "../images/globalsign-icons/user-images.svg"
+
 function IndexPage() {
   // let tl = new gsap.gsap.timeline({delay: 0.3, ease: gsap.Power1.easeOut, duration: 1}, 'Sart')
 
@@ -101,6 +108,33 @@ function IndexPage() {
           </div>
         </div>
       </section>
+
+      <div className="sectionIcons">
+            <div className="sIcon">
+              <img src={gsSSL} alt="Certificado SSL" />
+              <h3>SSL/TLS</h3>
+            </div>
+            <div className="sIcon">
+              <img src={gsContract} alt="Certificado SSL" />
+              <h3>Firma Digital</h3>
+            </div>
+            <div className="sIcon">
+              <img src={gsSecure} alt="Certificado SSL" />
+              <h3>Email Seguro</h3>
+            </div>
+            <div className="sIcon">
+              <img src={gsCode} alt="Certificado SSL" />
+              <h3>Code Signing</h3>
+            </div>
+            <div className="sIcon">
+              <img src={gsUser} alt="Certificado SSL" />
+              <h3>Autenticación</h3>
+            </div>
+            <div className="sIcon">
+              <img src={gsCheck} alt="Certificado SSL" />
+              <h3>Seguridad Móvil</h3>
+            </div>
+          </div>
 
       <section className="fullWSection">
         <div className="sectionWrapper counters">
@@ -287,7 +321,7 @@ function IndexPage() {
       </section>
 
       <div className="containerFull">
-        <div className="helpCTA">
+        <div className="helpCTA bgBlue">
           <div>
             <h1>
               ¿Necesitas ayuda para escoger un servicio?
