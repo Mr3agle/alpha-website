@@ -237,13 +237,11 @@ function IndexPage() {
         </div>
       </section>
       <section id="productos" className="simpleSection mb-4">
-        <div className="simpleWrapper mb-4 mt-4">
-          <h2 className="sectionSubTitle">
-            Desarrolladas para el mañana listas para implementar hoy
-          </h2>
-          <h1 className="sectionTitle mb-3 titleUnderLine">Conoce nuestras soluciones</h1>
-        </div>
         
+          <h1 className="sectionTitle mt-3 titleUnderLine">Soluciones con tecnología de punta</h1>
+
+        <div className="navSpacer"/>
+
         <div className="productCards">
           <div className="productCard">
             <img

@@ -522,7 +522,7 @@ p {
   .sectionWrapper {
     width: 85%;
     min-height: 50vh;
-    margin: 2rem 0;
+    margin: 2rem auto;
     padding: 0rem 1rem;
     text-align: center;
     display: flex;
@@ -724,5 +724,12 @@ p {
   .react-tabs__tab-list {
     border: none !important;
     padding-bottom: 1.5rem !important;
+  }
+  
+  .bgImg {
+    background-position: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
