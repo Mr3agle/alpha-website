@@ -12,7 +12,8 @@ function atmailing() {
           <div className="atProductInfo blackText">
             <h1>Correos masivos sin riesgos.</h1>
             <p className="blackText">
-            Envía correos a grandes bases de datos sin caer en listas negras.Arquitectura de envío de correo masivo con capacidad de más de <b>UN MILLÓN</b> de correos diarios.
+            Envía correos a grandes bases de datos sin caer en listas negras. <br/>
+            Arquitectura de envío de correo masivo con capacidad de más de <b>UN MILLÓN</b> de correos diarios.
             </p>
           </div>
           <div className="atProductImage">

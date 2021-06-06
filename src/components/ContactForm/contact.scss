@@ -106,3 +106,10 @@ form {
   color: #e90000 !important;
   
 }
+
+@media only screen and (max-width: 640px){
+  .contactForm{
+    padding: .5rem;
+    border:none;
+  }
+}

@@ -14,17 +14,18 @@ function ContactoPage() {
         <div className="contactWrapper" style={{
         backgroundImage: `url(${contactBg})`
       }}>
-          <ContactForm />
+          
           <div className="contactData">
             <div className="contactMap">
               <iframe
+              className="mapDesktop"
                 title="Alpha Technologies Map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.615389616588!2d-78.479404!3d-0.132232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5855ec83d3ce1%3A0x9b470ac3cb9f0ca2!2sAraujo%20%26%20Jose%20Maria%20Batodano%2C%20Quito%20170138!5e0!3m2!1ses-419!2sec!4v1622132408089!5m2!1ses-419!2sec"
                 width="500"
                 height="350"
                 style={{ border: "0", borderRadius: "12px" }}
                 loading="lazy"
-              ></iframe>
+              />
             </div>
             <div className="contactInfo">
             <h1>Contáctanos</h1>
@@ -76,9 +77,19 @@ function ContactoPage() {
                 </div>
               </div>
             </div>
+            <iframe
+              className="mapMobile"
+                title="Alpha Technologies Map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.615389616588!2d-78.479404!3d-0.132232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5855ec83d3ce1%3A0x9b470ac3cb9f0ca2!2sAraujo%20%26%20Jose%20Maria%20Batodano%2C%20Quito%20170138!5e0!3m2!1ses-419!2sec!4v1622132408089!5m2!1ses-419!2sec"
+                width="100%"
+                height="350"
+                style={{ border: "0", borderRadius: "12px", margin: "2rem auto" }}
+                loading="lazy"
+              />
           </div>
+        <ContactForm />
         </div>
-
+        
         {/* <div className="clientsShow">
           {clients.map((item, index) => {
             return (

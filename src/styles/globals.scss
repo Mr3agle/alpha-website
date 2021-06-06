@@ -343,7 +343,7 @@ p {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  box-shadow: 0 1rem 2rem -0.7rem rgba($a-black, 0.15);
+  box-shadow: 0 1rem 2rem -0.7rem rgba($a-black, 0.12);
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -424,8 +424,10 @@ p {
   max-width: 1500px;
 }
 
-.react-tabs__tab-list{
-    text-align: center;
+.react-tabs__tab-list {
+  border: none !important;
+  padding-bottom: 1.5rem !important;
+  text-align: center;
 }
 
 .react-tabs__tab {
@@ -470,9 +472,50 @@ p {
   }
 }
 
-.react-tabs__tab-list {
+.textTabs .react-tabs__tab-list {
   border: none !important;
   padding-bottom: 1.5rem !important;
+  text-align: left !important;
+}
+
+.textTabs .react-tabs__tab-panel {
+  //  p{
+  //     font: 1.5rem 400 $rubik !important;
+  //  }
+  font-size: 1.1rem;
+  line-height: 2;
+  //  text-align: justify;
+  background-color: $a-white;
+  border-radius: 12px;
+  box-shadow: 0 1rem 2rem -0.2rem rgba($a-black, 0.12);
+  padding: 3rem;
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+}
+
+.textTabs  .react-tabs__tab{
+//   box-shadow: none !important;
+//   box-shadow: 0px 1rem 1.3rem -0.2rem rgba($a-green, 0.1) !important;
+  // border: solid 2px $a-blue !important;
+  border-radius: 7px !important;
+//   color: $a-white !important;
+//   background: $a-blue !important;
+  padding: 1rem 2rem !important;
+  margin-bottom: 1rem;
+}
+
+.textTabs  .react-tabs__tab--selected {
+//   box-shadow: none !important;
+  box-shadow: 0px 1rem 1.3rem -0.2rem rgba($a-blue, 0.1) !important;
+  // border: solid 2px $a-blue !important;
+  border-radius: 7px !important;
+  color: $a-blue !important;
+  background: $a-white !important;
+  padding: 1rem 2rem !important;
 }
 
 .atLink {
@@ -676,15 +719,14 @@ p {
     width: 100%;
     max-width: 1500px;
   }
-  
 
   .react-tabs__tab {
-    font: 700 .2rem $poppins !important;
+    font: 700 1rem $poppins !important;
     color: #a8a8a8;
     img {
       filter: opacity(0.5) !important;
     }
-    
+
     padding: 0 !important;
     // transition: all ease-in-out .3s;
   }
@@ -725,7 +767,7 @@ p {
     border: none !important;
     padding-bottom: 1.5rem !important;
   }
-  
+
   .bgImg {
     background-position: auto;
     background-size: cover;

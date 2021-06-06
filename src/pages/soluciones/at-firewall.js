@@ -77,7 +77,7 @@ function atfirewall() {
       <div className="simpleSection mb-4">
         
         <div className="tabsWrapper">
-          <Tabs>
+          <Tabs className="textTabs">
             <TabList>
               <Tab>Opciones de VPN</Tab>
               <Tab>Cliente SSL VPN</Tab>
