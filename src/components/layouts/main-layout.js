@@ -6,8 +6,7 @@ import Header from "../Header"
 import Footer from "../Footer"
 import ToTopBtn from "../ToTopBtn"
 // import "./main-layout.scss"
-import WhatsAppWidget from "react-whatsapp-widget"
-import 'react-whatsapp-widget/dist/index.css'
+
 
 class Layout extends React.Component {
 
@@ -23,16 +22,7 @@ class Layout extends React.Component {
         <div>
           <main>
             {this.props.children}
-            <WhatsAppWidget 
-            style={{
-              positio: "fixed !important"
-            }}
-            phoneNumber="+593980950129"
-            textReplyTime="Responderemos cuanto antes"
-            message="¡Hola! 👋🏼 Cuéntamos cómo podemos ayudarte..."
-            companyName="Alpha Technologies"
-            sendButton="Enviar"
-            />
+            
           </main>
         </div>
         <Footer/>

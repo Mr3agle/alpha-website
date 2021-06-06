@@ -4,6 +4,8 @@ import Seo from "../components/seo"
 import ContactForm from "../components/ContactForm"
 // import {clients} from "../data/clientsData"
 import contactBg from "../images/contactbg.png"
+import WhatsAppWidget from "react-whatsapp-widget"
+import 'react-whatsapp-widget/dist/index.css'
 
 function ContactoPage() {
   return (
@@ -100,6 +102,16 @@ function ContactoPage() {
           })}
         </div> */}
       </div>
+      <WhatsAppWidget 
+            style={{
+              positio: "fixed !important"
+            }}
+            phoneNumber="+593980950129"
+            textReplyTime="Responderemos cuanto antes"
+            message="¡Hola! 👋🏼 Cuéntamos cómo podemos ayudarte..."
+            companyName="Alpha Technologies"
+            sendButton="Enviar"
+            />
       <div className="navSpacer" />
     </Layout>
   )
