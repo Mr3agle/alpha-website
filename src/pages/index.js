@@ -188,7 +188,7 @@ function IndexPage() {
               un filtro de contenido inteligente, se integra a las necesidades
               de toda corporación.
             </p>
-            <Link to="/servicios/at-proxy"> Saber más</Link>
+            <Link to="/soluciones/at-proxy"> Saber más</Link>
           </div>
         </div>
         <div className="cardH">
@@ -200,7 +200,7 @@ function IndexPage() {
               aplicarán políticas correctas para la prevención de ataques a sus
               sistemas.
             </p>
-            <Link to="/servicios/at-firewall"> Saber más</Link>
+            <Link to="/soluciones/at-firewall"> Saber más</Link>
           </div>
           <div className="cardHImg">
             <img className="floating" src={shieldIcon} alt="Protección" />
@@ -218,7 +218,7 @@ function IndexPage() {
               administración es sencilla. Es compatible con cualquier servidor
               de correo Exchange, Lotus, Zimbra, etc.
             </p>
-            <Link to="/servicios/at-inspector"> Saber más</Link>
+            <Link to="/soluciones/at-inspector"> Saber más</Link>
           </div>
         </div>
       </section>

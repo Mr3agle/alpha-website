@@ -3,6 +3,12 @@ import Layout from "../../components/layouts/main-layout"
 import Seo from "../../components/seo"
 import atMailing from "../../images/ATMailing-pkg.png"
 
+// import emailing from "../../images/emailing-design.jpg"
+// import servers from "../../images/cloud-server.jpg"
+import { Link } from "gatsby"
+import Lottie from '../../components/Lottie'
+import emailingLaptop from '../../animations/emailing-laptop.json'
+
 function atmailing() {
   return (
     <Layout>
@@ -23,18 +29,45 @@ function atmailing() {
           </div>
         </div>
       </section>
-      <section className="simpleSection" id="animateUp">
-        <div className="sectionWrapper">
-          <div className="sectionContent">
-            <div className="navSpacer productSpacer" />
-            <h1 className="titleUnderLine">
-              La herramienta ideal para tu negocio
-            </h1>
-            <p className="mt-4">
-              Envía correos electrónicos sin miedo de caer en listas negras.
+
+      <section className="simpleSection">
+        <div className="sectionWRImg">
+          <div className="productInfo">
+            <h1>¿Qué lo hace tan especial?</h1>
+            <p>
+              La manera más fácil de enviar tus correos electrónicos,{" "}
+              <b>sin temor </b>
+              a caer en listas negras.
+              <br />
+              AT mailing está desarrollado de tal manera que te permite enviar
+              más de 1.000000 correos <b>¡Diariamente!</b>
             </p>
           </div>
+          <div className="productImage">
+            {/* <img src={emailing} alt="Email Marketing" /> */}
+            <Lottie src={emailingLaptop} loop={true} ></Lottie>
+          </div>
         </div>
+      </section>
+
+      <section className="simpleSection mb-3">
+        <section className="sectionWrapper">
+          <div className="sectionContent">
+            <h1>
+              Con la seguridad y confianza que solo Alpha Technologies puede
+              ofrecer.
+            </h1>
+            <p>
+              Muchas compañías a nivel nacional e internacional ya lo están
+              usando. 
+              <br />
+              Ponte en contacto con nosotros para más información.
+            </p>
+            <Link to="/contacto" className="primaryBtn">
+              ¡Quiero saber más!
+            </Link>
+          </div>
+        </section>
       </section>
     </Layout>
   )

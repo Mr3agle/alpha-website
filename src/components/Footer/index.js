@@ -24,13 +24,13 @@ const Footer = () => (
         <h1>Servicios</h1>
         <ul>
           <li>
-            <Link to="/">
-              <i className="bx bx-lock-alt"></i>
-              Seguridad Integral
+            <Link to="/eventos/webinars">
+              <i className="bx bx-camera-home"></i>
+              Webinars
             </Link>
           </li>
           <li>
-            <Link to="/atdrone">
+            <Link to="/soluciones/at-drone">
               <i className="bx bx-loader"></i>
               AT Drone
             </Link>
@@ -41,7 +41,7 @@ const Footer = () => (
               target="_blank"
               rel="noreferrer"
             >
-              <i className="bx bx-certification"></i>
+              <i className="bx bx-lock-alt"></i>
               SSL Global Sign
             </a>
           </li>
@@ -55,12 +55,6 @@ const Footer = () => (
             <Link to="/contacto">
               <i className="bx bx-bug"></i>
               Análisis de Vulnerabilidad
-            </Link>
-          </li>
-          <li>
-            <Link to="/contacto">
-              <i className="bx bx-code-alt"></i>
-              Seguridad informática
             </Link>
           </li>
         </ul>
