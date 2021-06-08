@@ -26,13 +26,27 @@ function BlogPost() {
         <div className="navSpacer" />
 
         <h3 className="titleUnderLineL mb-4 italics">
-          Como especialista en marketing, nada es más frustrante que trabajar
-          duro en una campaña, solo para descubrir que no produjo los resultados
-          que esperaba. Hay una variedad de razones por las que esto podría
-          estar sucediendo, pero para los especialistas en marketing por correo
-          electrónico, uno de los mayores obstáculos que deben superar es el
-          filtro de correo no deseado.
+          Al rededor del mundo los correos electrónicos que llegan a la bandeja
+          de entrada tienen un promedio del 83%, esto significa que 2 de cada 10
+          emails se dirigen directamente a la carpeta de SPAM.
         </h3>
+        <br />
+        <p>
+          Invertir en una campaña de email marketing tiene su costo, y que al
+          final los correos no estén llegando a la audiencia se traduce en una
+          pérdida de ingreso potencial porque el producto o servicio que ofrece
+          no está cumpliendo su función.
+        </p>
+        <br />
+        <p>
+          Por esta razón existen herramientas de marketing como{" "}
+          <Link to="/soluciones/at-mailing" className="atLink">
+            AT Mailing
+          </Link>{" "}
+          que permite enviar sus correos electrónicos y tener las métricas
+          necesarias para controlar todo el proceso de la campaña.
+        </p>
+        <br />
         <p>
           El seguimiento de la tasa de apertura es una de las métricas de
           seguimiento de marketing por correo electrónico más importantes que
@@ -60,6 +74,8 @@ function BlogPost() {
         <br />
         <p>
           <ol className="ml-3">
+            <li>La audiencia correcta</li>
+            <li>Tu Dirección IP es o fue usada para enviar SPAM</li>
             <li>El asunto del correo no impacta</li>
             <li>El email fue reportado como no deseado</li>
             <li>Están rompiendo las reglas</li>
@@ -67,6 +83,54 @@ function BlogPost() {
             <li>La lista de receptores está desactualizada</li>
           </ol>
         </p>
+        <br />
+        <h1>La audiencia no es la correcta</h1>
+        <p>
+          Cuando los correos electrónicos se marcan incorrectamente como spam,
+          podría deberse a que tiene bajas tasas de interacción. Una de las
+          causas reveladoras de las bajas tasas de participación es, en primer
+          lugar, tener la audiencia incorrecta en tu lista de correo
+          electrónico.
+        </p>
+        <br />
+        <p>
+          Ahora, sabemos que todos los especialistas en marketing intentan hacer
+          crecer las listas de correo electrónico para que sea lo más grande
+          posible. Y teniendo en cuenta la importancia del marketing por correo
+          electrónico, deberían intentar mejorar estas lista de correo
+          electrónico tanto como puedan.
+        </p>
+        <br />
+        <p>
+          Pero en lugar de simplemente conseguir más suscriptores, los
+          especialistas en marketing deben centrarse en conseguir el tipo
+          adecuado de suscriptores.
+        </p>
+        <h1>Tu Dirección IP es o fue usada para enviar SPAM</h1>
+        <p>
+          Incluso si nunca envías emails basura, tus correos electrónicos
+          podrían ser marcados si tu dirección IP se usó para spam en el pasado.
+        </p>
+        <br />
+        <p>
+          Si envías tus campañas a través de un servicio de marketing por correo
+          electrónico, el correo electrónico se entrega a través de sus
+          servidores. Entonces, si incluso otro cliente envía spam, también
+          podría afectar tu capacidad de entrega.
+        </p>
+        <br />
+        <p>
+          En general, debería estar bien si te limitas a un proveedor de
+          servicios de correo electrónico de buena reputación. Y aunque no
+          podemos verificar todos los proveedores de servicios de correo
+          electrónico en esta publicación, recomendamos utilizar{" "}
+          <Link to="/soluciones/at-mailing" className="atLink">
+            AT Mailing
+          </Link>{" "}
+          puesto que la arquitectura con la que está construido evita el SPAM a
+          toda costa.
+        </p>
+        <br />
         <h1>El asunto del correo no impacta</h1>
         <p>
           La línea de asunto es la primera impresión que tus correos
@@ -180,7 +244,6 @@ function BlogPost() {
           <img
             src="https://files.reallygoodemails.com/emails/u-r-l-so-beautiful.png"
             alt="U R L so beatiful"
-            width="350px"
           />
           <br />
           Tomado de:{" "}
@@ -307,7 +370,6 @@ function BlogPost() {
           <img
             src="https://files.reallygoodemails.com/emails/don-t-let-free-shipping-go-to-waste.png"
             alt="Rudys Barber Shop"
-            width="350px"
           />
           <br />
           Tomado de:{" "}
@@ -343,7 +405,7 @@ function BlogPost() {
         </p>
         <br />
         <p>
-          En Campaign Monitor, le brindamos las herramientas para diseñar
+          En Alpha Technologiesr, le brindamos las herramientas para diseñar
           mejores correos electrónicos y realizar un seguimiento de métricas
           importantes que pueden ayudarlo a evitar la carpeta de correo no
           deseado y aumentar las conversiones de tus suscriptores.
