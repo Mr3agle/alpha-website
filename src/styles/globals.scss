@@ -35,6 +35,7 @@ p {
 @import "./soluciones.scss";
 @import "./contacto.scss";
 @import "./swiper.scss";
+@import "./blogpost.scss";
 
 .flex {
   display: flex;
@@ -281,6 +282,10 @@ p {
   position: relative;
   transform: translateX(20%);
 }
+.italic {
+  font-style: italic;
+  text-decoration: underline;
+}
 
 .sectionTitle {
   font: 700 3rem $poppins;
@@ -497,19 +502,19 @@ p {
   }
 }
 
-.textTabs  .react-tabs__tab{
-//   box-shadow: none !important;
-//   box-shadow: 0px 1rem 1.3rem -0.2rem rgba($a-green, 0.1) !important;
+.textTabs .react-tabs__tab {
+  //   box-shadow: none !important;
+  //   box-shadow: 0px 1rem 1.3rem -0.2rem rgba($a-green, 0.1) !important;
   // border: solid 2px $a-blue !important;
   border-radius: 7px !important;
-//   color: $a-white !important;
-//   background: $a-blue !important;
+  //   color: $a-white !important;
+  //   background: $a-blue !important;
   padding: 1rem 2rem !important;
   margin-bottom: 1rem;
 }
 
-.textTabs  .react-tabs__tab--selected {
-//   box-shadow: none !important;
+.textTabs .react-tabs__tab--selected {
+  //   box-shadow: none !important;
   box-shadow: 0px 1rem 1.3rem -0.2rem rgba($a-blue, 0.1) !important;
   // border: solid 2px $a-blue !important;
   border-radius: 7px !important;
