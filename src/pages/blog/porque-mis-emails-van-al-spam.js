@@ -55,21 +55,15 @@ function BlogPost() {
         <br />
         <p>
           Una tasa de apertura baja podría ser una señal de varios problemas con
-          tu marketing, incluida una copia deficiente de la línea de asunto. Sin
-          embargo, también podría indicar que tus suscriptores simplemente no
-          ven el correo electrónico. Esto podría deberse a que el correo
-          electrónico se ha dirigido a tu carpeta de correo no deseado en lugar
-          de a tu bandeja de entrada.
-        </p>
-        <br />
-        <p className="italic">
-          Entonces nos preguntamos: ¿Por qué mis correos electrónicos se envían
-          a correo basura?
+          el marketing. Sin embargo, también podría indicar que tus suscriptores
+          simplemente no ven el correo electrónico. Esto podría deberse a que el
+          correo electrónico se ha dirigido a tu carpeta de correo no deseado en
+          lugar de a tu bandeja de entrada.
         </p>
         <br />
         <h2>
           Estas son las principales razones por las que tus emails podrían estar
-          llegando a la carpeta de spam
+          llegando a la carpeta de spam:
         </h2>
         <br />
         <p>
@@ -190,6 +184,13 @@ function BlogPost() {
           correos electrónicos como spam o no.
         </p>
         <h2>Envía emails solo a aquellos que hayan dado tu consentimiento</h2>
+        <p style={{ textAlign: "center", margin: "2rem 0" }}>
+          <img
+            className="postIllustration"
+            src="https://www.tutorialrepublic.com/snippets/designs/subscribe-newsletter-form-inside-modal.png"
+            alt="U R L so beatiful"
+          />
+        </p>
         <p>
           Las quejas de spam ocurren con mayor frecuencia cuando los usuarios
           reciben correos electrónicos sin tu consentimiento. Enviar correo a
@@ -291,6 +292,13 @@ function BlogPost() {
           cancelar la suscripción en grandes cantidades.
         </p>
         <h1>Los email no están siendo abiertos</h1>
+        <p style={{ textAlign: "center", margin: "2rem 0" }}>
+          <img
+            className="postIllustration"
+            src="https://images.pexels.com/photos/193003/pexels-photo-193003.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            alt="U R L so beatiful"
+          />
+        </p>
         <p>
           Los proveedores de servicios de correo electrónico siguen de cerca qué
           correos electrónicos se abren a un ritmo elevado y cuáles no. Los
@@ -330,6 +338,13 @@ function BlogPost() {
         </p>
         <br />
         <h1>La lista de receptores está desactualizada</h1>
+        <p style={{ textAlign: "center", margin: "2rem 0" }}>
+          <img
+            className="postIllustration"
+            src="https://www.seedprod.com/wp-content/uploads/2019/10/email-marketing-1.jpg"
+            alt="U R L so beatiful"
+          />
+        </p>
         <p>
           Con el tiempo, tus suscriptores de correo electrónico pueden cambiar
           tu dirección de correo electrónico, dejar de usar la cuenta o salirse
@@ -383,32 +398,44 @@ function BlogPost() {
           </a>
         </p>
         <h1 className>En resumen...</h1>
+
         <p>
-          Entonces, ¿por qué mis correos electrónicos peden ser catalogados como
-          correo basura?
+          Para evitar que tus correos lleguen a a la carpeta de correos basura:
         </p>
-        <br />
+        <h3>- La audiencia correcta</h3>
         <p>
-          Este es el grito frustrado de innumerables especialistas en marketing
-          por correo electrónico que saben que tu contenido no es basura. Sin
-          embargo, existen algoritmos y tecnologías predictivas que funcionan
-          para proteger a los usuarios de correo electrónico del spam.
+          Revisa que la audiencia a la que va dirigida la campaña sea la
+          correcta.
         </p>
-        <br />
-        <p>Y, a veces, estas herramientas se vuelven un poco hiperactivas.</p>
-        <br />
+        <h3>- Asegurate de usar un servicio de emailing aprobado</h3>
         <p>
-          Si encuentra que tus correos electrónicos terminan en la carpeta de
-          correo no deseado con más frecuencia, es posible que desee considerar
-          los consejos anteriores para asegurarse de obtener una mejor ubicación
-          en la bandeja de entrada de tus suscriptores.
+          Para evitar que tu ip caiga en listas negras debes usar un servicio de
+          mailing que tenga servidores dedicados para cada uno de sus usuarios.
         </p>
-        <br />
+        <h3>- Procura tener un asunto impactante</h3>
         <p>
-          En Alpha Technologiesr, le brindamos las herramientas para diseñar
-          mejores correos electrónicos y realizar un seguimiento de métricas
-          importantes que pueden ayudarlo a evitar la carpeta de correo no
-          deseado y aumentar las conversiones de tus suscriptores.
+          Esto es lo primero que tu audiencia verá, por lo que es importante que
+          el asunto de la campaña sea interesante para tu audiencia, que impacte
+          y que sea pertinente.
+        </p>
+        <h3>- Para no ser reportado como no deseado</h3>
+        <p>
+          No incluyas en tu lista de audiencia a personas que no han dado su
+          consentimiento para que les envíes correos.
+        </p>
+        <h3>- No rompas las reglas</h3>
+        <p>
+          Que el crecimiento de tu lista de contactos sea orgánico, no adquieras
+          listas de contactos para enriquecer tu audiencia. Nadie le gusta
+          recibir algo que no pidió y que no le atrae o agrada. Da a conocer la
+          locación física de tu empresa y colocar un enlace para darse de baja.
+        </p>
+        <h3>- Y fíjate en la lista de tus suscriptores...</h3>
+        <p>
+          Siempre cuida a los suscriptores comprometidos, actualiza la lista de
+          vez en cuando eliminando aquellos que no abren los correos o tienen un
+          porcentaje alto de rebote, al mismo tiempo cuida que la línea de
+          asunto como ya mencionamos, esté bien redactada y sea pertinente.
         </p>
       </div>
       <div className="simpleSection mb-4 mt-4">
