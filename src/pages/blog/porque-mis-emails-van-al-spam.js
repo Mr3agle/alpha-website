@@ -11,7 +11,7 @@ function BlogPost() {
       <section
         className="blogPostHero"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),url('https://images.pexels.com/photos/193003/pexels-photo-193003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),url('https://media.istockphoto.com/photos/pixelated-email-spam-screenshot-picture-id153874873?k=6&m=153874873&s=612x612&w=0&h=vVHX14bglU8KX89UrK709oQ-Rca0UTj2ca8LNv6dQuQ=')`,
         }}
       >
         <div className="infoPostWrapper">
@@ -69,7 +69,7 @@ function BlogPost() {
         <p>
           <ol className="ml-3">
             <li>La audiencia correcta</li>
-            <li>Tu Dirección IP es o fue usada para enviar SPAM</li>
+            <li>Tu dirección IP es o fue usada para enviar SPAM</li>
             <li>El asunto del correo no impacta</li>
             <li>El email fue reportado como no deseado</li>
             <li>Están rompiendo las reglas</li>
@@ -121,8 +121,9 @@ function BlogPost() {
           <Link to="/soluciones/at-mailing" className="atLink">
             AT Mailing
           </Link>{" "}
-          puesto que la arquitectura con la que está construido evita el SPAM a
-          toda costa.
+          puesto que la arquitectura con la que está construido evita que tu ip
+          caiga en listas negras y que tus correos lleguen a la carpeta de
+          correo no deseado.
         </p>
         <br />
         <h1>El asunto del correo no impacta</h1>
