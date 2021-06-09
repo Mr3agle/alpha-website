@@ -11,7 +11,7 @@ function BlogPost() {
       <section
         className="blogPostHero"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),url('https://media.istockphoto.com/photos/pixelated-email-spam-screenshot-picture-id153874873?k=6&m=153874873&s=612x612&w=0&h=vVHX14bglU8KX89UrK709oQ-Rca0UTj2ca8LNv6dQuQ=')`,
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),url('https://images.pexels.com/photos/4491443/pexels-photo-4491443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')`,
         }}
       >
         <div className="infoPostWrapper">
