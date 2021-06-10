@@ -85,6 +85,20 @@ function CertificadosSSLPage() {
               <br />
             </p>
           </div>
+
+          <div className="simpleSection">
+            <iframe
+              src="https://www.youtube.com/embed/_O8qfyDFkWQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style={{
+                width: "90%",
+                height: "500px",
+              }}
+            ></iframe>
+          </div>
           {/* <div className="sectionIcons">
             <div className="sIcon">
               <img src={gsSSL} alt="Certificado SSL" />
@@ -726,9 +740,7 @@ function CertificadosSSLPage() {
       <div className="containerFull">
         <div className="helpCTA bgRed">
           <div>
-            <h1>
-              ¿Todavía tienes dudas?
-            </h1>
+            <h1>¿Todavía tienes dudas?</h1>
             <Link className="primaryBtn" to="/contacto">
               Déjanos un mensaje
             </Link>
