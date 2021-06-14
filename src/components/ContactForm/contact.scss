@@ -9,7 +9,7 @@
     margin-bottom: 1rem;
   }
   &:hover {
-    box-shadow: 0 2rem 3rem -0.8rem rgba($a-black, 0.10);
+    box-shadow: 0 2rem 3rem -0.8rem rgba($a-black, 0.1);
   }
   small {
     color: #747474;
@@ -102,14 +102,16 @@ form {
   }
 }
 
-.errorMessage{
+.errorMessage {
   color: #e90000 !important;
-  
 }
 
-@media only screen and (max-width: 640px){
-  .contactForm{
-    padding: .5rem;
-    border:none;
+@media only screen and (max-width: 640px) {
+  .contactForm {
+    padding: 0.5rem;
+    border: none;
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
