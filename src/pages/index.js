@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 // import * as gsap from 'gsap'
 // import {ScrollTrigger} from 'gsap/ScrollTrigger'
 // import { StaticImage } from "gatsby-plugin-image"
-
+import CountUp from "react-countup"
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 import Lottie from "../components/Lottie"
@@ -50,6 +50,26 @@ function IndexPage() {
   //     duration: 1
   //   })
   // },[])
+  // const [countstart, setCountStart] = React.useState(false)
+
+  // const handleScroll = () => {
+  //   if (window.scrollY > 200) {
+  //     setCountStart(true)
+  //   } else {
+  //     setCountStart(false)
+  //   }
+  // }
+  // React.useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll)
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll)
+  //   }
+  // })
+
+  // const { start } = useCountUp({
+  //   duration: 5,
+  // })
 
   return (
     <Layout>
@@ -110,48 +130,56 @@ function IndexPage() {
       </section>
 
       <div className="sectionIcons">
-            <div className="sIcon">
-              <img src={gsSSL} alt="Certificado SSL" />
-              <h3>SSL/TLS</h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsContract} alt="Certificado SSL" />
-              <h3>Firma Digital</h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsSecure} alt="Certificado SSL" />
-              <h3>Email Seguro</h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsCode} alt="Certificado SSL" />
-              <h3>Code Signing</h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsUser} alt="Certificado SSL" />
-              <h3>Autenticación</h3>
-            </div>
-            <div className="sIcon">
-              <img src={gsCheck} alt="Certificado SSL" />
-              <h3>Seguridad Móvil</h3>
-            </div>
-          </div>
+        <div className="sIcon">
+          <img src={gsSSL} alt="Certificado SSL" />
+          <h3>SSL/TLS</h3>
+        </div>
+        <div className="sIcon">
+          <img src={gsContract} alt="Certificado SSL" />
+          <h3>Firma Digital</h3>
+        </div>
+        <div className="sIcon">
+          <img src={gsSecure} alt="Certificado SSL" />
+          <h3>Email Seguro</h3>
+        </div>
+        <div className="sIcon">
+          <img src={gsCode} alt="Certificado SSL" />
+          <h3>Code Signing</h3>
+        </div>
+        <div className="sIcon">
+          <img src={gsUser} alt="Certificado SSL" />
+          <h3>Autenticación</h3>
+        </div>
+        <div className="sIcon">
+          <img src={gsCheck} alt="Certificado SSL" />
+          <h3>Seguridad Móvil</h3>
+        </div>
+      </div>
 
       <section className="fullWSection">
         <div className="sectionWrapper counters">
           <div className="upCounter">
-            <span>2500M +</span>
+            <span>
+              <CountUp end={2500} />M +
+            </span>
             <p>Cerificados emitidos desde Ecuador a todo el mundo.</p>
           </div>
           <div className="upCounter">
-            <span>250M +</span>
+            <span>
+              <CountUp end={250} /> +
+            </span>
             <p>Certificados de confianza accedidos.</p>
           </div>
           <div className="upCounter">
-            <span>5M +</span>
+            <span>
+              <CountUp end={5} />M +
+            </span>
             <p>Identificaciones digitales emitidas a sitios web y máquinas.</p>
           </div>
           <div className="upCounter">
-            <span>200B +</span>
+            <span>
+              <CountUp end={200} />B +
+            </span>
             <p>
               Respuestas OCSP (Online Certificate Status Protocol) entregadas
               diariamente.
@@ -160,9 +188,12 @@ function IndexPage() {
         </div>
       </section>
 
-      <div className="fullWSection bgImg" style={{
-        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${calmBg})`,
-      }}>
+      <div
+        className="fullWSection bgImg"
+        style={{
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${calmBg})`,
+        }}
+      >
         <div className="sectionContent">
           <div className="sectionWrapper">
             <h2 className="sectionSubTitle whiteText">
@@ -237,29 +268,24 @@ function IndexPage() {
         </div>
       </section>
       <section id="productos" className="simpleSection mb-4">
-        
-          <h1 className="sectionTitle mt-3 titleUnderLine">Soluciones con tecnología de punta</h1>
+        <h1 className="sectionTitle mt-3 titleUnderLine">
+          Soluciones con tecnología de punta
+        </h1>
 
-        <div className="navSpacer"/>
+        <div className="navSpacer" />
 
         <div className="productCards">
           <div className="productCard">
-            <img
-              src={atfirewallPortada}
-              alt="AT-Firewall"
-            />
+            <img src={atfirewallPortada} alt="AT-Firewall" />
             <h2>AT Firewall</h2>
             <p>
-              Evita los ataques externos con una solución integral de
-              seguridad perimetral.
+              Evita los ataques externos con una solución integral de seguridad
+              perimetral.
             </p>
             <Link to="/soluciones/at-firewall/">Ver más</Link>
           </div>
           <div className="productCard">
-            <img
-              src={atinspectorPortada}
-              alt="AT-MailInspector"
-            />
+            <img src={atinspectorPortada} alt="AT-MailInspector" />
             <h2>AT Mail Inspector</h2>
             <p>
               Controla y filtra grandes cantidades de correo basura de forma
@@ -268,10 +294,7 @@ function IndexPage() {
             <Link to="/soluciones/at-inspector">Ver más</Link>
           </div>
           <div className="productCard">
-            <img
-              src={atproxyPortada}
-              alt="AT-Proxy"
-            />
+            <img src={atproxyPortada} alt="AT-Proxy" />
             <h2>AT Proxy</h2>
             <p>
               Controla la navegación con un filtro de contenido inteligente y
@@ -280,10 +303,7 @@ function IndexPage() {
             <Link to="/soluciones/at-proxy">Ver más</Link>
           </div>
           <div className="productCard">
-            <img
-              src={atmailingPortada}
-              alt="AT-Mailing"
-            />
+            <img src={atmailingPortada} alt="AT-Mailing" />
             <h2>AT Mailing</h2>
             <p>
               Envía más de <b>1.000.000</b> de correos diarios sin caer en
@@ -292,22 +312,16 @@ function IndexPage() {
             <Link to="/soluciones/at-mailing">Ver más</Link>
           </div>
           <div className="productCard">
-            <img
-              src={athotspotPortada}
-              alt="AT-Hot Spot"
-            />
+            <img src={athotspotPortada} alt="AT-Hot Spot" />
             <h2>AT Hot Spot</h2>
             <p>
-              Tickets de navegación para clientes e invitados en una zona
-              segura de acceso inalámbrico.
+              Tickets de navegación para clientes e invitados en una zona segura
+              de acceso inalámbrico.
             </p>
             <Link to="/soluciones/at-hotspot">Ver más</Link>
           </div>
           <div className="productCard">
-            <img
-              src={atlogicPortada}
-              alt="AT-Logic"
-            />
+            <img src={atlogicPortada} alt="AT-Logic" />
             <h2>AT Logic</h2>
             <p>
               La solución óptima para el balanceo de carga, alto rendimiento y
@@ -321,9 +335,7 @@ function IndexPage() {
       <div className="containerFull">
         <div className="helpCTA bgBlue">
           <div>
-            <h1>
-              ¿Necesitas ayuda para escoger un servicio?
-            </h1>
+            <h1>¿Necesitas ayuda para escoger un servicio?</h1>
             <Link className="primaryBtn" to="/contacto">
               Ponte en contacto
             </Link>
@@ -336,8 +348,6 @@ function IndexPage() {
           </div>
         </div>
       </div>
-
-      
 
       {/* <StaticImage
         src="../images/gatsby-astronaut.png"

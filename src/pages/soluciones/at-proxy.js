@@ -10,7 +10,7 @@ function atproxy() {
       <section className="atProductHero">
         <div className="heroWrapper">
           <div className="atProductInfo blackText">
-            <h1>Toma el control total de la navegación.</h1>
+            <h1>Controla la navegación y optimiza tus recursos.</h1>
             <p className="blackText">
               AT Proxy es una solución corporativa para administrar los recursos
               de navegación junto con un filtro de contenido inteligente, se
@@ -28,7 +28,7 @@ function atproxy() {
             <div className="navSpacer productSpacer" />
             <h3>Certificado IEPI: QUI-043741 23-05-2014</h3>
             <h1 className="titleUnderLine">
-              Controla la navegación y optimiza tus recursos.
+              Toma el control total de la navegación.
             </h1>
             <p className="mt-4">
               (NG) NEW GENERATION AT-PROXY es un sistema que se incorpora a la
