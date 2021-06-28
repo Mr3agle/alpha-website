@@ -10,7 +10,7 @@ import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
 
 import aboutVideo from "../videos/alpha_tech_video.mp4"
-import {clients} from '../data/clientsData'
+import { clients } from "../data/clientsData"
 
 import commentsBg from "../images/bg_comments2.jpg"
 import gsap from "gsap"
@@ -18,7 +18,6 @@ import gsap from "gsap"
 SwiperCore.use([Autoplay, Pagination, Navigation])
 
 function NosotrosPage() {
-  
   React.useEffect(() => {
     gsap.from(".headerVideo", {
       opacity: 0,
@@ -60,26 +59,40 @@ function NosotrosPage() {
       <section className="simpleSection" id="animateUp">
         <div className="sectionWrapper">
           <div className="sectionContent">
-            <div className="navSpacer"/>
-            <h2 className="sectionSubTitle">
-            Innovation on your side
-            </h2>
-            <h1 className="titleUnderLine">
-              20 años de trayecotria
-            </h1>
-            
+            <div className="navSpacer" />
+            <h2 className="sectionSubTitle">Innovation on your side</h2>
+            <h1 className="titleUnderLine">20 años de trayecotria</h1>
+
             {/* <div className="sectionImg">
               <img src={Globalsign} alt="Globalsign Logo" />
             </div> */}
             <p className="mt-4">
-             Nuestro equipo especializado en seguridad de datos, seguridad web y medios digitales puede asegurar las áreas más vulnerables de todo tu flujo de trabajo mientras estás conectado.
-
-             Brindamos soluciones integrales de Seguridad Informática sustentados en las tecnologías de la información y la comunicación con colaboradores profesionalmente capacitados y comprometidos con la calidad de nuestros servicios para alcanzar la satisfacción de los clientes y la mejora continua de nuestros procesos.
-             
+              Nuestro equipo especializado en seguridad de datos, seguridad web
+              y medios digitales puede asegurar las áreas más vulnerables de
+              todo tu flujo de trabajo mientras estás conectado. Brindamos
+              soluciones integrales de Seguridad Informática sustentados en las
+              tecnologías de la información y la comunicación con colaboradores
+              profesionalmente capacitados y comprometidos con la calidad de
+              nuestros servicios para alcanzar la satisfacción de los clientes y
+              la mejora continua de nuestros procesos.
             </p>
-
           </div>
-         
+        </div>
+      </section>
+
+      <section className="simpleSection mt-4">
+        <h1 className="sectionTitle">
+          Las corporaciones más grandes <br /> del país cofían en nosotros.
+        </h1>
+
+        <div className="clientsShow">
+          {clients.map((item, index) => {
+            return (
+              <div className="clientLogo" key={index}>
+                <img src={item.path} alt={item.name} />
+              </div>
+            )
+          })}
         </div>
       </section>
 
@@ -87,13 +100,16 @@ function NosotrosPage() {
         className="sectionBg fullWSection simpleOverlay"
         style={{
           backgroundImage: `url(${commentsBg})`,
-          backgroundColor: "#000"
+          backgroundColor: "#000",
         }}
       >
-        <h1 className="sectionTitle whiteText mt-4" style={{
-          textShadow: "0 3px 3px #000"
-        }}>
-        Las corporaciones más grandes <br/> del país cofían en nosotros.
+        <h1
+          className="sectionTitle whiteText mt-4"
+          style={{
+            textShadow: "0 3px 3px #000",
+          }}
+        >
+          Las corporaciones más grandes <br /> del país cofían en nosotros.
         </h1>
         <Swiper
           slidesPerView={1}
@@ -117,26 +133,24 @@ function NosotrosPage() {
             },
           }}
           autoplay={{
-            "delay": 2500,
-            "disableOnInteraction": true
+            delay: 2500,
+            disableOnInteraction: true,
           }}
           className="mySwiper"
         >
-
-          {
-            clients.map((item,index)=>{
-              return(item.comment &&
+          {clients.map((item, index) => {
+            return (
+              item.comment && (
                 <SwiperSlide key={index}>
                   <img src={item.path} alt={item.name} />
-                  <p>"{item.comment}"</p>
-                  <small>&#8213; {item.product}</small>
+                  {/* <p>"{item.comment}"</p> */}
+                  {/* <small>&#8213; {item.product}</small> */}
                 </SwiperSlide>
               )
-            })
-          }
-
+            )
+          })}
         </Swiper>
-        <div className="navSpacer"/>
+        <div className="navSpacer" />
       </section>
     </Layout>
   )
