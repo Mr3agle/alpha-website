@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react"
 
 import "swiper/swiper.min.css"
 import "swiper/components/pagination/pagination.min.css"
@@ -12,7 +12,7 @@ import Seo from "../components/seo"
 import aboutVideo from "../videos/alpha_tech_video.mp4"
 import { clients } from "../data/clientsData"
 
-// import commentsBg from "../images/bg_comments2.jpg"
+import commentsBg from "../images/bg_comments2.jpg"
 import gsap from "gsap"
 
 SwiperCore.use([Autoplay, Pagination, Navigation])
@@ -95,7 +95,63 @@ function NosotrosPage() {
           })}
         </div>
       </section>
-      <div className="navSpacer" />
+
+      <section
+        className="sectionBg fullWSection simpleOverlay"
+        style={{
+          backgroundImage: `url(${commentsBg})`,
+          backgroundColor: "#000",
+        }}
+      >
+        <h1
+          className="sectionTitle whiteText mt-4"
+          style={{
+            textShadow: "0 3px 3px #000",
+          }}
+        >
+          Las corporaciones más grandes <br /> del país cofían en nosotros.
+        </h1>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={20}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: true,
+          }}
+          className="mySwiper"
+        >
+          {clients.map((item, index) => {
+            return (
+              item.comment && (
+                <SwiperSlide key={index}>
+                  <img src={item.path} alt={item.name} />
+                  {/* <p>"{item.comment}"</p> */}
+                  {/* <small>&#8213; {item.product}</small> */}
+                </SwiperSlide>
+              )
+            )
+          })}
+        </Swiper>
+        <div className="navSpacer" />
+      </section>
     </Layout>
   )
 }

@@ -20,7 +20,7 @@ import spamIcon from "../images/spam-email.svg"
 // import spamIcon from "../images/spam.svg"
 import lockIcon from "../images/cyber-security-browser.svg"
 // import lockIcon from "../images/internet.svg"
-import calmBg from "../images/hacker-bg-3.jpg"
+import calmBg from "../images/hacker-bg-6.jpg"
 // import calmBg from "../images/hacker-bg.jpg"
 
 import atlogicPortada from "../images/ATlogic-Portada.png"
@@ -191,6 +191,13 @@ function IndexPage() {
           </div>
         </div>
       </section>
+      {/* <div className="simpleSection">
+        <div className="sectionWrapper">
+          <div className="sectionContent">
+            <h1 className="titleUnderLine">Cyberataques en tiempo real</h1>
+          </div>
+        </div>
+      </div> */}
 
       <div
         className="fullWSection bgImg"
@@ -198,6 +205,17 @@ function IndexPage() {
           backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${calmBg})`,
         }}
       >
+        <div className="sectionContent">
+          <div className="sectionWrapper">
+            <h1 className="sectionTitle mt-4 whiteText">
+              Ciberataques en tiempo real
+            </h1>
+          </div>
+        </div>
+        <iframe
+          className="cyberAttacksFrame"
+          src="https://threatmap.bitdefender.com/"
+        />
         <div className="sectionContent">
           <div className="sectionWrapper">
             <h2 className="sectionSubTitle whiteText">
@@ -290,7 +308,7 @@ function IndexPage() {
           </div>
           <div className="productCard">
             <img src={atinspectorPortada} alt="AT-MailInspector" />
-            <h2>AT Mail Inspector</h2>
+            <h2>Mail Inspector</h2>
             <p>
               Controla y filtra grandes cantidades de correo basura de forma
               sencilla.

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layouts/main-layout"
 import Seo from "../components/seo"
+import madeInEcuador from "../images/made-in-ecuador.png"
 
 import { products } from "../data/productsData"
 
@@ -18,6 +19,10 @@ function SolucionesPage() {
           <h1 className="sectionTitle mb-3 titleUnderLine">
             Conoce nuestras soluciones
           </h1>
+
+          <div className="ecuador-seal mt-3">
+            <img src={madeInEcuador} alt="Hecho en Ecuador" />
+          </div>
         </div>
 
         {products.map((item, index) => {
@@ -28,8 +33,7 @@ function SolucionesPage() {
               </div>
               <div className="cardHDescription">
                 <h1>{item.title}</h1>
-                <p dangerouslySetInnerHTML={{__html: item.description}}>
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
                 <Link to={item.path}>{item.cta}</Link>
               </div>
             </div>
